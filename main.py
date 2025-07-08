@@ -30,6 +30,14 @@ import json
 import os
 from datetime import datetime
 
+# Import data science performance analyzer
+try:
+    from performance_analyzer import ModelPerformanceAnalyzer
+    PERFORMANCE_ANALYZER_AVAILABLE = True
+except ImportError:
+    PERFORMANCE_ANALYZER_AVAILABLE = False
+    print("Warning: Performance analyzer not available. Install pandas, matplotlib, seaborn for advanced analytics.")
+
 # Global variables to track model availability
 YOLO_AVAILABLE = False
 MEDIAPIPE_AVAILABLE = False
@@ -190,6 +198,14 @@ class ObjectUnderstandingApp:
         self.tracker = ObjectTracker()
         self.performance_monitor = PerformanceMonitor()
         
+        # Data science performance analyzer
+        if PERFORMANCE_ANALYZER_AVAILABLE:
+            self.data_analyzer = ModelPerformanceAnalyzer()
+            self.enable_data_logging = True
+        else:
+            self.data_analyzer = None
+            self.enable_data_logging = False
+        
         # UI settings
         self.show_fps = True
         self.show_confidence = True
@@ -198,7 +214,9 @@ class ObjectUnderstandingApp:
         
         # Statistics
         self.total_detections = 0
+        self.frame_number = 0
         self.session_start_time = time.time()
+        self.session_start_datetime = datetime.now()
         self.frame_count = 0
         
         # Screenshot settings
@@ -746,6 +764,9 @@ class ObjectUnderstandingApp:
             "T - Toggle Tracking IDs",
             "P - Toggle Performance",
             "+/- - Confidence Threshold",
+            "A - Generate Analytics",
+            "D - Toggle Data Logging",
+            "R - Reset Analytics",
             "Q - Quit"
         ]
         
@@ -860,6 +881,7 @@ class ObjectUnderstandingApp:
                             break
                     
                     self.frame_count += 1
+                    self.frame_number += 1  # For data science tracking
                     start_time = time.time()
                     
                     # Detect objects
@@ -879,6 +901,26 @@ class ObjectUnderstandingApp:
                     
                     # Update performance monitor
                     self.performance_monitor.update(fps, processing_time, len(detections))
+                    
+                    # Log data for advanced analytics
+                    if self.enable_data_logging and self.data_analyzer:
+                        # Prepare detection data for logging
+                        detection_data = []
+                        for det in detections:
+                            detection_data.append({
+                                'class_name': det.get('class_name', 'unknown'),
+                                'confidence': det.get('confidence', 0.0),
+                                'bbox': det.get('bbox', [0, 0, 0, 0])
+                            })
+                        
+                        # Log performance metrics
+                        self.data_analyzer.log_performance(
+                            model_name=self.current_model,
+                            inference_time=processing_time * 1000,  # Convert to ms
+                            detection_count=len(detections),
+                            detections=detection_data,
+                            frame_number=self.frame_number
+                        )
                     
                     # Draw results
                     frame_with_detections = self.draw_detections(frame, detections, tracked_objects)
@@ -919,6 +961,20 @@ class ObjectUnderstandingApp:
                 elif key == ord('-'):  # Decrease confidence
                     self.confidence_threshold = max(0.05, self.confidence_threshold - 0.05)
                     print(f"Confidence threshold: {self.confidence_threshold:.2f}")
+                elif key == ord('a'):  # Generate analytics report
+                    if self.enable_data_logging and self.data_analyzer:
+                        self.generate_analytics_report()
+                elif key == ord('d'):  # Toggle data logging
+                    if PERFORMANCE_ANALYZER_AVAILABLE:
+                        self.enable_data_logging = not self.enable_data_logging
+                        print(f"Data logging: {'ON' if self.enable_data_logging else 'OFF'}")
+                    else:
+                        print("Data science features not available. Install required packages.")
+                elif key == ord('r'):  # Reset analytics data
+                    if self.enable_data_logging and self.data_analyzer:
+                        self.data_analyzer = ModelPerformanceAnalyzer()
+                        self.frame_number = 0
+                        print("Analytics data reset")
         
         except KeyboardInterrupt:
             print("\n⚠️  Application interrupted by user")
@@ -926,6 +982,89 @@ class ObjectUnderstandingApp:
             print(f"❌ Error: {e}")
         finally:
             self.cleanup()
+    
+    def generate_analytics_report(self):
+        """Generate comprehensive analytics report"""
+        if not self.data_analyzer:
+            print("Data science analyzer not available")
+            return
+            
+        try:
+            print("\n📊 Generating Analytics Report...")
+            
+            # Get performance dataframe
+            df = self.data_analyzer.get_performance_dataframe()
+            if df.empty:
+                print("No data available for analysis")
+                return
+            
+            # Basic statistics
+            print(f"\n📈 Session Statistics:")
+            print(f"Duration: {datetime.now() - self.session_start_datetime}")
+            print(f"Frames processed: {self.frame_number}")
+            print(f"Total detections: {self.total_detections}")
+            print(f"Models used: {df['model'].unique().tolist()}")
+            
+            # Performance analysis
+            print(f"\n⚡ Performance Metrics:")
+            for model in df['model'].unique():
+                model_data = df[df['model'] == model]
+                avg_fps = 1000 / model_data['inference_time_ms'].mean() if model_data['inference_time_ms'].mean() > 0 else 0
+                print(f"{model.upper()}: {avg_fps:.1f} FPS, {model_data['detection_count'].mean():.1f} avg detections")
+            
+            # Generate comprehensive analysis
+            self.data_analyzer.analyze_model_comparison(save_plots=True)
+            self.data_analyzer.create_interactive_dashboard()
+            
+            # Generate performance report
+            report = self.data_analyzer.generate_performance_report()
+            
+            print("✅ Analytics report generated successfully!")
+            print("📄 Check 'ModelsAnalyze/' folder for detailed analysis files")
+            
+        except Exception as e:
+            print(f"❌ Error generating analytics report: {e}")
+    
+    def export_analytics_data(self):
+        """Export analytics data to file for later analysis"""
+        if not self.data_analyzer:
+            return
+            
+        try:
+            # Create data directory
+            data_dir = "data"
+            os.makedirs(data_dir, exist_ok=True)
+            
+            # Generate filename with timestamp
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            filename = f"{data_dir}/performance_data_{timestamp}.json"
+            
+            # Export performance data
+            df = self.data_analyzer.get_performance_dataframe()
+            if not df.empty:
+                # Convert to JSON serializable format
+                data_export = []
+                for _, row in df.iterrows():
+                    data_export.append({
+                        'timestamp': row['timestamp'].isoformat(),
+                        'model': row['model'],
+                        'frame_number': row['frame_number'],
+                        'inference_time_ms': row['inference_time_ms'],
+                        'detection_count': row['detection_count'],
+                        'fps': row['fps'],
+                        'detections': row['detections']
+                    })
+                
+                # Save to file
+                with open(filename, 'w') as f:
+                    json.dump(data_export, f, indent=2)
+                
+                print(f"📊 Analytics data exported to: {filename}")
+            else:
+                print("📊 No analytics data to export")
+                
+        except Exception as e:
+            print(f"❌ Error exporting analytics data: {e}")
     
     def cleanup(self):
         """Clean up resources"""
@@ -948,6 +1087,11 @@ class ObjectUnderstandingApp:
         print(f"Average FPS: {stats['avg_fps']:.1f}")
         print(f"Average processing time: {stats['avg_processing_time']*1000:.1f}ms")
         print(f"Screenshots saved in: {self.screenshots_dir}/")
+        
+        # Export analytics data if available
+        if self.enable_data_logging and self.data_analyzer:
+            self.export_analytics_data()
+        
         print("=" * 40)
         print("✅ Application closed successfully")
 

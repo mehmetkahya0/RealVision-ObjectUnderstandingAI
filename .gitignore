@@ -174,6 +174,17 @@ screenshots/*.gif
 !screenshots/sample_*
 !screenshots/demo_*
 
+# Model Analysis Output Directory
+ModelsAnalyze/*.png
+ModelsAnalyze/*.jpg
+ModelsAnalyze/*.jpeg
+ModelsAnalyze/*.html
+ModelsAnalyze/*.json
+# Keep directory and sample files
+!ModelsAnalyze/.gitkeep
+!ModelsAnalyze/sample_*
+!ModelsAnalyze/demo_*
+
 # Output directories for processed content
 output/
 results/

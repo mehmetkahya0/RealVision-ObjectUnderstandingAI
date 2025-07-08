@@ -343,6 +343,7 @@ ObjectUnderstanding/
 ├── requirements.txt     # Python dependencies
 ├── README.md           # This file
 ├── screenshots/        # Screenshot output directory
+├── ModelsAnalyze/      # Model analysis and performance graphs
 ├── models/            # Downloaded model files
 └── logs/              # Application logs
 ```
@@ -367,6 +368,176 @@ ObjectUnderstanding/
 - **MobileNet-SSD**: Efficient architecture (5.8M parameters)
 - **Input size**: 640x640 (YOLO), 300x300 (MobileNet)
 - **Output**: Bounding boxes, confidence scores, class predictions
+
+## 📊 Data Science & Performance Analysis
+
+### Advanced Analytics Features
+The application includes comprehensive data science capabilities for analyzing model performance, detection patterns, and system optimization.
+
+#### Real-time Performance Monitoring
+- **Automatic data logging** of inference times, detection counts, and model performance
+- **Statistical analysis** with pandas, numpy, and scipy
+- **Interactive visualizations** using matplotlib, seaborn, and plotly
+- **Performance comparisons** between different AI models
+- **Export capabilities** for offline analysis
+
+#### Analytics Controls
+| Key | Function |
+|-----|----------|
+| **A** | Generate comprehensive analytics report |
+| **D** | Toggle data logging on/off |
+| **R** | Reset analytics data |
+
+#### Data Science Tools Included
+```python
+# Core data science libraries
+pandas>=1.5.0          # Data manipulation and analysis
+numpy>=1.9.0           # Numerical computing
+matplotlib>=3.6.0      # Static visualizations
+seaborn>=0.11.0        # Statistical visualizations
+plotly>=5.0.0          # Interactive visualizations
+scikit-learn>=1.2.0    # Machine learning metrics
+scipy>=1.9.0           # Scientific computing
+statsmodels>=0.14.0    # Statistical modeling
+```
+
+#### Analytics Outputs
+The system generates several types of analysis in the `ModelsAnalyze/` folder:
+
+1. **Performance Reports** (`ModelsAnalyze/performance_report.json`)
+   - Model comparison statistics
+   - FPS analysis over time
+   - Detection accuracy trends
+   - Resource utilization metrics
+
+2. **Interactive Dashboards** (`ModelsAnalyze/performance_dashboard.html`)
+   - Real-time performance charts
+   - Model switching impact analysis
+   - Confidence threshold optimization
+   - Detection pattern analysis
+
+3. **Statistical Plots** (`ModelsAnalyze/`)
+   - `model_performance_comparison.png` - Box plots for inference time comparison
+   - `detection_patterns_analysis.png` - Histogram distributions of detection counts
+   - Time series analysis of performance metrics
+   - Correlation matrices for performance factors
+
+4. **Data Exports** (`data/`)
+   - JSON format performance logs
+   - CSV exports for external analysis
+   - Timestamp-indexed datasets
+
+#### Using the Analytics Features
+
+##### During Application Runtime
+```bash
+# Run with analytics enabled (default)
+python run.py
+
+# During runtime:
+# Press 'A' to generate reports
+# Press 'D' to toggle logging
+# Press 'M' to switch models and compare performance
+```
+
+##### Standalone Analysis
+```bash
+# Analyze saved performance data
+python analyze_performance.py
+
+# Interactive analysis with dashboard
+python analyze_performance.py --interactive
+
+# Analyze specific data file
+python analyze_performance.py --data-file data/performance_data_20250709_143022.json
+```
+
+##### Analytics Demo
+```bash
+# Run analytics demo with camera
+python demo_analytics.py
+
+# Demo with video file
+python demo_analytics.py --video traffic.mp4
+
+# Extended demo session
+python demo_analytics.py --duration 120
+```
+
+#### Performance Metrics Tracked
+
+**System Performance:**
+- Frame processing time (ms)
+- Frames per second (FPS)
+- Memory usage patterns
+- CPU/GPU utilization
+
+**Model Performance:**
+- Inference time per model
+- Detection accuracy rates
+- Confidence score distributions
+- Model switching overhead
+
+**Detection Analytics:**
+- Object class frequency
+- Detection confidence trends
+- Spatial detection patterns
+- Temporal detection consistency
+
+#### Jupyter Notebook Analysis
+Interactive analysis notebook is included:
+
+```bash
+# Start Jupyter
+jupyter notebook
+
+# Open the analysis notebook
+# File: performance_analysis.ipynb
+```
+
+The notebook includes:
+- Data loading and preprocessing
+- Statistical analysis and hypothesis testing
+- Advanced visualizations
+- Model performance optimization recommendations
+- Custom analysis workflows
+
+#### Advanced Analytics Examples
+
+**Model Comparison Analysis:**
+```python
+from performance_analyzer import ModelPerformanceAnalyzer
+
+analyzer = ModelPerformanceAnalyzer()
+# Data is automatically logged during application use
+
+# Generate comparison report
+analyzer.analyze_model_comparison(save_plots=True)
+
+# Create interactive dashboard
+analyzer.create_interactive_dashboard()
+
+# Statistical analysis
+df = analyzer.get_performance_dataframe()
+print(df.groupby('model')['inference_time_ms'].describe())
+```
+
+**Custom Analysis:**
+```python
+# Load performance data
+import pandas as pd
+df = pd.read_json('data/performance_data_latest.json')
+
+# Analyze performance by time of day
+df['hour'] = pd.to_datetime(df['timestamp']).dt.hour
+hourly_performance = df.groupby('hour')['fps'].mean()
+
+# Find optimal confidence threshold
+confidence_analysis = df.groupby('confidence_threshold').agg({
+    'detection_count': 'mean',
+    'inference_time_ms': 'mean'
+})
+```
 
 ## 🤝 Contributing
 
