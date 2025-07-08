@@ -17,7 +17,7 @@ Watch the application in action detecting objects in real-time:
 *Alternative formats:*
 - [Download Demo Video (MOV)](./traffic.mov)
 
-> **Note**: The demo shows real-time object detection on traffic footage, demonstrating multi-object tracking, confidence adjustments, and model switching capabilities.
+> **Note**: The demo shows real-time object detection on traffic footage, demonstrating multi-object tracking, confidence adjustments, and model switching capabilities
 
 
 
