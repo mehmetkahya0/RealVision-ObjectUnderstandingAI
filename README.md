@@ -2,12 +2,14 @@
 
 A powerful, real-time object detection and understanding application using Python, OpenCV, and state-of-the-art AI models. Features dual model support (YOLO v8 + MobileNet-SSD), object tracking, performance monitoring, and modern GUI interface.
 
+
+
+
 ![Application Demo](https://img.shields.io/badge/Python-3.8%2B-blue) ![OpenCV](https://img.shields.io/badge/OpenCV-4.9.0-green) ![YOLOv8](https://img.shields.io/badge/YOLOv8-Latest-orange)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Fmehmetkahya0%2FRealVision-ObjectUnderstandingAI&label=VISITOR&countColor=%23263759)
+
 
 ## 🎬 Demo
-
-
-
 Watch the application in action detecting objects in real-time:
 
 [https://github.com/user-attachments/assets/traffic.mov](https://github.com/user-attachments/assets/528289d2-f751-4afb-b446-c4921c53e3f1)
