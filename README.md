@@ -8,7 +8,10 @@ A powerful, real-time object detection and understanding application using Pytho
 
 Watch the application in action detecting objects in real-time:
 
-https://github.com/user-attachments/assets/demo.mov
+https://github.com/user-attachments/assets/traffic.mov
+
+*Alternative formats:*
+- [Download Demo Video (MOV)](./traffic.mov)
 
 > **Note**: The demo shows real-time object detection on traffic footage, demonstrating multi-object tracking, confidence adjustments, and model switching capabilities.
 
