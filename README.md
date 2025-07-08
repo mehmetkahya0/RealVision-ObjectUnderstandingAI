@@ -65,8 +65,8 @@ Watch the application in action detecting objects in real-time:
 1. **Clone or download the project:**
    ```bash
    cd ~/Desktop
-   # Project is already in ObjectUnderstanding folder
-   cd ObjectUnderstanding
+   # Project is in RealVision-ObjectUnderstandingAI folder
+   cd RealVision-ObjectUnderstandingAI
    ```
 
 2. **Install dependencies:**
@@ -167,14 +167,16 @@ app.run(camera_index=0)
 | **Q** or **ESC** | Quit application |
 | **SPACE** | Pause/Resume detection |
 | **S** | Take screenshot |
-| **M** | Switch between models (YOLO ↔ MobileNet) |
+| **M** | Switch between models (YOLO ↔ MobileNet ↔ ONNX) |
 | **C** | Toggle confidence display |
 | **T** | Toggle tracking IDs |
 | **P** | Toggle performance statistics |
+| **A** | Generate analytics report |
+| **D** | Toggle data logging on/off |
+| **R** | Reset analytics data |
 | **+** / **=** | Increase confidence threshold |
 | **-** | Decrease confidence threshold |
 | **F** | Toggle fullscreen mode |
-| **R** | Reset all settings |
 
 ## 📊 Performance Features
 
@@ -264,9 +266,11 @@ Each screenshot includes:
 
 ## 🔧 Configuration
 
-### Configuration File (config.py)
+### Configuration Settings
+Configuration is handled directly in the main application. Key settings can be adjusted:
+
 ```python
-# Camera settings
+# Camera settings (in main.py)
 CAMERA_CONFIG = {
     'default_camera_index': 0,
     'frame_width': 1280,
@@ -274,7 +278,7 @@ CAMERA_CONFIG = {
     'fps': 30
 }
 
-# Detection settings
+# Detection settings (in main.py)
 DETECTION_CONFIG = {
     'default_confidence_threshold': 0.5,
     'nms_threshold': 0.4,
@@ -283,7 +287,7 @@ DETECTION_CONFIG = {
 ```
 
 ### Runtime Configuration
-All settings can be adjusted during runtime using keyboard shortcuts or by modifying the configuration file.
+All settings can be adjusted during runtime using keyboard shortcuts:
 
 ## 🚨 Troubleshooting
 
@@ -301,7 +305,7 @@ python run.py --camera 1
 #### Low Performance
 - Try MobileNet-SSD model: `python run.py --model dnn`
 - Lower confidence threshold: `python run.py --confidence 0.3`
-- Reduce camera resolution in config.py
+- Use lower camera resolution or reduce detection frequency
 
 #### Model Loading Errors
 ```bash
@@ -335,17 +339,30 @@ rm -rf ~/.ultralytics
 ## 📁 Project Structure
 
 ```
-ObjectUnderstanding/
-├── main.py              # Main application code
-├── run.py               # Application launcher
-├── config.py            # Configuration settings
-├── utils.py             # Utility functions
-├── requirements.txt     # Python dependencies
-├── README.md           # This file
-├── screenshots/        # Screenshot output directory
-├── ModelsAnalyze/      # Model analysis and performance graphs
-├── models/            # Downloaded model files
-└── logs/              # Application logs
+RealVision-ObjectUnderstandingAI/
+├── main.py                          # Main application code
+├── run.py                           # Application launcher  
+├── performance_analyzer.py          # Data science analytics module
+├── analyze_performance.py           # Standalone analysis tool
+├── demo_analytics.py                # Analytics demonstration script
+├── demo_sample_analytics.py         # Sample data analytics demo
+├── requirements.txt                 # Python dependencies
+├── README.md                       # This documentation
+├── USAGE.md                        # Usage instructions
+├── setup.py                        # Installation setup
+├── performance_analysis.ipynb      # Jupyter notebook for analysis
+├── test_data_science.py            # Data science feature tests
+├── test_models_analyze.py          # ModelsAnalyze folder tests
+├── .gitignore                      # Git ignore rules
+├── screenshots/                    # Screenshot output directory
+├── ModelsAnalyze/                  # Model analysis and performance graphs
+├── data/                           # Performance data exports
+├── demo.mov                        # Demo video file
+├── traffic.mp4                     # Sample video for testing
+├── yolov8n.pt                      # YOLOv8 model weights
+├── yolov5s.onnx                    # ONNX model weights
+├── MobileNetSSD_deploy.prototxt    # MobileNet model architecture
+└── MobileNetSSD_deploy.caffemodel  # MobileNet model weights
 ```
 
 ## 🔬 Technical Details
@@ -452,16 +469,25 @@ python analyze_performance.py --interactive
 python analyze_performance.py --data-file data/performance_data_20250709_143022.json
 ```
 
-##### Analytics Demo
+##### Analytics Testing & Demo
 ```bash
+# Test data science features
+python test_data_science.py
+
+# Test ModelsAnalyze folder functionality  
+python test_models_analyze.py
+
 # Run analytics demo with camera
 python demo_analytics.py
 
 # Demo with video file
 python demo_analytics.py --video traffic.mp4
 
-# Extended demo session
-python demo_analytics.py --duration 120
+# Generate sample analytics data
+python demo_sample_analytics.py
+
+# Analyze existing performance data
+python analyze_performance.py --interactive
 ```
 
 #### Performance Metrics Tracked
@@ -581,4 +607,4 @@ If you encounter any issues or have questions:
 
 **Mehmet Kahya - July 2025**
 
-*Last updated: July 8, 2025*
+*Last updated: July 9, 2025*
