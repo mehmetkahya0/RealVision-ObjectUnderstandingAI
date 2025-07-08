@@ -494,75 +494,144 @@ class ObjectUnderstandingApp:
             return []
     
     def detect_objects_onnx(self, frame: np.ndarray) -> List[Dict]:
-        """Detect objects using ONNX Runtime with YOLOv5"""
+        """Detect objects using ONNX Runtime with YOLOv5 - Optimized with NMS"""
         if not ONNX_AVAILABLE or self.onnx_session is None:
             return []
             
         try:
             import onnxruntime
             
-            # COCO class names
-            class_names = [
-                'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
-                'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
-                'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
-                'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard',
-                'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
-                'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
-                'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard',
-                'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase',
-                'scissors', 'teddy bear', 'hair drier', 'toothbrush'
-            ]
+            # COCO class names (cached as class variable to avoid recreation)
+            if not hasattr(self, '_onnx_class_names'):
+                self._onnx_class_names = [
+                    'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
+                    'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
+                    'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
+                    'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard',
+                    'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
+                    'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
+                    'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard',
+                    'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase',
+                    'scissors', 'teddy bear', 'hair drier', 'toothbrush'
+                ]
             
-            # Preprocess image
+            # Preprocess image - Optimized with minimal operations
             input_size = 640
             original_shape = frame.shape[:2]
+            scale_x = original_shape[1] / input_size
+            scale_y = original_shape[0] / input_size
             
-            # Resize and pad
-            resized = cv2.resize(frame, (input_size, input_size))
-            input_image = resized.astype(np.float32) / 255.0
+            # Efficient resize with pre-allocated array
+            resized = cv2.resize(frame, (input_size, input_size), interpolation=cv2.INTER_LINEAR)
+            
+            # Optimized normalization and transposition
+            input_image = resized.astype(np.float32)
+            input_image *= (1.0 / 255.0)  # In-place normalization
             input_image = np.transpose(input_image, (2, 0, 1))  # HWC to CHW
             input_image = np.expand_dims(input_image, axis=0)   # Add batch dimension
             
             # Check the expected input data type and convert if necessary
-            input_name = self.onnx_session.get_inputs()[0].name
-            expected_type = self.onnx_session.get_inputs()[0].type
+            if not hasattr(self, '_onnx_input_name'):
+                self._onnx_input_name = self.onnx_session.get_inputs()[0].name
+                expected_type = self.onnx_session.get_inputs()[0].type
+                self._onnx_use_float16 = 'float16' in expected_type
             
-            if 'float16' in expected_type:
+            if self._onnx_use_float16:
                 input_image = input_image.astype(np.float16)
             
             # Run inference
-            outputs = self.onnx_session.run(None, {input_name: input_image})
+            outputs = self.onnx_session.run(None, {self._onnx_input_name: input_image})
             
-            # Post-process results
+            # Post-process results - Optimized with vectorized operations
+            predictions = outputs[0]  # Shape: [1, 25200, 85] for YOLOv5
+            
+            # Reshape if needed
+            if len(predictions.shape) == 3:
+                predictions = predictions[0]  # Remove batch dimension: [25200, 85]
+            
+            # Early exit if no predictions
+            if len(predictions) == 0:
+                return []
+            
+            # Vectorized confidence filtering (much faster than loops)
+            conf_threshold = self.confidence_threshold
+            objectness_scores = predictions[:, 4]
+            conf_mask = objectness_scores > conf_threshold
+            
+            if not np.any(conf_mask):
+                return []
+            
+            # Filter predictions early
+            filtered_predictions = predictions[conf_mask]
+            
+            # Extract components (vectorized)
+            boxes = filtered_predictions[:, :4]  # x_center, y_center, width, height
+            confidences = filtered_predictions[:, 4]  # objectness confidence
+            class_scores = filtered_predictions[:, 5:]  # class probabilities
+            
+            # Get class predictions (vectorized)
+            class_ids = np.argmax(class_scores, axis=1)
+            class_confidences = np.max(class_scores, axis=1)
+            
+            # Final confidence = objectness * class_confidence
+            final_confidences = confidences * class_confidences
+            
+            # Second confidence filter
+            final_conf_mask = final_confidences > conf_threshold
+            if not np.any(final_conf_mask):
+                return []
+            
+            boxes = boxes[final_conf_mask]
+            final_confidences = final_confidences[final_conf_mask]
+            class_ids = class_ids[final_conf_mask]
+            
+            # Convert to x1, y1, x2, y2 format for NMS (vectorized)
+            half_w = boxes[:, 2] / 2
+            half_h = boxes[:, 3] / 2
+            boxes_xyxy = np.column_stack([
+                boxes[:, 0] - half_w,  # x1
+                boxes[:, 1] - half_h,  # y1
+                boxes[:, 0] + half_w,  # x2
+                boxes[:, 1] + half_h   # y2
+            ])
+            
+            # Apply Non-Maximum Suppression using OpenCV
+            indices = cv2.dnn.NMSBoxes(
+                boxes_xyxy.tolist(),
+                final_confidences.tolist(),
+                conf_threshold,
+                0.4  # NMS threshold
+            )
+            
             detections = []
-            predictions = outputs[0][0]  # Remove batch dimension
-            
-            for prediction in predictions:
-                x_center, y_center, width, height = prediction[:4]
-                confidence = prediction[4]
-                class_scores = prediction[5:]
+            if len(indices) > 0:
+                if isinstance(indices[0], list):
+                    indices = [i[0] for i in indices]
                 
-                if confidence > self.confidence_threshold:
-                    class_id = np.argmax(class_scores)
-                    class_confidence = class_scores[class_id]
+                # Vectorized coordinate conversion
+                selected_boxes = boxes_xyxy[indices]
+                selected_confidences = final_confidences[indices]
+                selected_class_ids = class_ids[indices]
+                
+                # Convert back to original image coordinates (vectorized)
+                selected_boxes[:, [0, 2]] *= scale_x  # x coordinates
+                selected_boxes[:, [1, 3]] *= scale_y  # y coordinates
+                
+                # Clamp coordinates to image bounds (vectorized)
+                selected_boxes[:, [0, 2]] = np.clip(selected_boxes[:, [0, 2]], 0, original_shape[1])
+                selected_boxes[:, [1, 3]] = np.clip(selected_boxes[:, [1, 3]], 0, original_shape[0])
+                
+                # Build detection list
+                for i in range(len(selected_boxes)):
+                    x1, y1, x2, y2 = selected_boxes[i].astype(int)
+                    class_id = int(selected_class_ids[i])
                     
-                    if class_confidence > self.confidence_threshold:
-                        # Convert to original image coordinates
-                        scale_x = original_shape[1] / input_size
-                        scale_y = original_shape[0] / input_size
-                        
-                        x1 = int((x_center - width/2) * scale_x)
-                        y1 = int((y_center - height/2) * scale_y)
-                        x2 = int((x_center + width/2) * scale_x)
-                        y2 = int((y_center + height/2) * scale_y)
-                        
-                        detections.append({
-                            'bbox': [x1, y1, x2, y2],
-                            'confidence': float(confidence * class_confidence),
-                            'class_name': class_names[class_id] if class_id < len(class_names) else 'unknown',
-                            'class_id': class_id
-                        })
+                    detections.append({
+                        'bbox': [x1, y1, x2, y2],
+                        'confidence': float(selected_confidences[i]),
+                        'class_name': self._onnx_class_names[class_id] if class_id < len(self._onnx_class_names) else 'unknown',
+                        'class_id': class_id
+                    })
             
             return detections
             
