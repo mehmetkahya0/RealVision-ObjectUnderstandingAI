@@ -6,9 +6,11 @@ A powerful, real-time object detection and understanding application using Pytho
 
 ## 🎬 Demo
 
+
+
 Watch the application in action detecting objects in real-time:
 
-https://github.com/user-attachments/assets/traffic.mov
+[https://github.com/user-attachments/assets/traffic.mov](https://github.com/user-attachments/assets/528289d2-f751-4afb-b446-c4921c53e3f1)
 
 *Alternative formats:*
 - [Download Demo Video (MOV)](./traffic.mov)
