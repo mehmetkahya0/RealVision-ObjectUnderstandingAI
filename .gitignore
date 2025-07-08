@@ -28,8 +28,6 @@ share/python-wheels/
 MANIFEST
 
 # PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
 
@@ -85,13 +83,9 @@ ipython_config.py
 .python-version
 
 # pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
 #Pipfile.lock
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow
+# PEP 582
 __pypackages__/
 
 # Celery stuff
@@ -128,67 +122,108 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# ===============================================
 # Machine Learning / AI specific
-# Model files (but keep requirements to download them)
+# ===============================================
+
+# Model files (large pre-trained models)
 *.pt
 *.pth
 *.onnx
 *.pb
 *.h5
 *.weights
-*.caffemodel
-*.prototxt
-models/
-checkpoints/
+# Keep specific model files that are part of the project
+!yolov8n.pt
+!MobileNetSSD_deploy.caffemodel
+!MobileNetSSD_deploy.prototxt
+!yolov5s.onnx
 
-# YOLO/Ultralytics cache
+# Model directories
+models/downloaded/
+checkpoints/
+saved_models/
+
+# YOLO/Ultralytics cache and logs
 .ultralytics/
 yolo_cache/
 wandb/
+runs/
 
-# Computer Vision specific
-# Large video files
-*.mp4
-*.avi
-*.mov
-*.mkv
-*.wmv
-*.flv
-*.webm
-*.m4v
-# Keep sample video if it's small
-!sample_video.mp4
+# ===============================================
+# Media Files - ALLOW VIDEOS, IGNORE TEMP IMAGES
+# ===============================================
 
-# Image files (screenshots, test images)
+# Allow video files for deployment and demos
+# Videos are typically smaller and important for demos
+# !*.mp4
+# !*.avi
+# !*.mov
+# !*.mkv
+# !*.webm
+
+# Ignore temporary/generated images but keep sample images
 screenshots/*.jpg
 screenshots/*.jpeg
 screenshots/*.png
 screenshots/*.bmp
 screenshots/*.tiff
 screenshots/*.gif
-# Keep directory structure
+# Keep directory structure and sample files
 !screenshots/.gitkeep
+!screenshots/sample_*
+!screenshots/demo_*
 
-# Dataset directories
-datasets/
-data/
+# Output directories for processed content
+output/
+results/
+processed/
+temp_output/
+
+# ===============================================
+# Data and Datasets
+# ===============================================
+
+# Large dataset directories
+datasets/large/
+data/training/
 train/
 val/
 test/
+# Keep small sample datasets
+!datasets/samples/
+!data/demo/
 
-# Logs and output files
+# ===============================================
+# Logs and Output
+# ===============================================
+
+# Application logs
 logs/
 *.log
-output/
-results/
-runs/
+app.log
+debug.log
+error.log
+detection.log
+
+# Performance profiling
+*.prof
+profile_results/
+
+# ===============================================
+# Configuration and Secrets
+# ===============================================
 
 # Configuration files with sensitive data
 config_local.py
 .env.local
 secrets.json
+api_keys.json
 
+# ===============================================
 # IDE and Editor files
+# ===============================================
+
 # VSCode
 .vscode/
 # PyCharm
@@ -207,7 +242,10 @@ secrets.json
 /.emacs.desktop.lock
 *.elc
 
+# ===============================================
 # OS generated files
+# ===============================================
+
 # macOS
 .DS_Store
 .AppleDouble
@@ -250,36 +288,36 @@ $RECYCLE.BIN/
 .Trash-*
 .nfs*
 
-# Application specific
-# Temporary detection files
+# ===============================================
+# Application Specific
+# ===============================================
+
+# Temporary files
 temp/
 tmp/
 cache/
-
-# Performance profiling
-*.prof
-profile_results/
+.cache/
 
 # Backup files
 *.bak
 *.backup
 *.orig
 
-# Compiled translations
-*.mo
-
-# Large data files
+# Large compressed files (except small samples)
 *.zip
 *.tar.gz
 *.rar
 *.7z
-# Exception for small sample files
-!sample_data.zip
+# Exception for small demo/sample files
+!demo.zip
+!sample*.zip
+!samples.tar.gz
 
-# Jupyter notebook checkpoints
-.ipynb_checkpoints/
+# Database files
+*.db
+*.sqlite
 
-# Virtual environment directories
+# Virtual environments
 venv*/
 .conda/
 anaconda3/
@@ -290,19 +328,10 @@ node_modules/
 yarn.lock
 package-lock.json
 
-# Documentation build
-docs/build/
-site/
-
 # Coverage reports
 htmlcov/
 .coverage
 
-# Local database files
-*.db
-*.sqlite
-
-# Application logs
-app.log
-debug.log
-error.log
+# Documentation build
+docs/build/
+site/
