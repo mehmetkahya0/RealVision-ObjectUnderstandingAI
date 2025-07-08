@@ -4,13 +4,26 @@ A powerful, real-time object detection and understanding application using Pytho
 
 ![Application Demo](https://img.shields.io/badge/Python-3.8%2B-blue) ![OpenCV](https://img.shields.io/badge/OpenCV-4.9.0-green) ![YOLOv8](https://img.shields.io/badge/YOLOv8-Latest-orange)
 
+## 🎬 Demo
+
+Watch the application in action detecting objects in real-time:
+
+https://github.com/user-attachments/assets/demo.mov
+
+> **Note**: The demo shows real-time object detection on traffic footage, demonstrating multi-object tracking, confidence adjustments, and model switching capabilities.
+
+
+
 ## 🚀 Features
 
 ### Core Functionality
 - **Real-time object detection** with multiple model support (YOLOv8, MobileNet-SSD)
+- **Video file processing** with support for MP4, AVI, MOV, and other formats
+- **Live camera feed analysis** with automatic camera detection
 - **Advanced object tracking** with unique ID assignment
 - **Performance optimization** for smooth real-time processing
 - **Multi-camera support** with automatic camera detection
+- **Batch video processing** for multiple files
 
 ### Detection Models
 - **YOLOv8**: State-of-the-art accuracy and speed
@@ -27,17 +40,20 @@ A powerful, real-time object detection and understanding application using Pytho
 
 ### Advanced Features
 - **Screenshot capture** with detection metadata
+- **Video output generation** with processed detections
 - **Session statistics** and performance analytics
 - **Detection logging** for analysis
 - **Configurable settings** via configuration files
 - **Keyboard shortcuts** for all functions
+- **Multiple input sources** (camera, video files, image sequences)
 
 ## 📦 Installation
 
 ### Prerequisites
 - Python 3.8 or higher
 - macOS, Windows, or Linux
-- Webcam or USB camera
+- Webcam or USB camera (for live detection)
+- Video files in supported formats (MP4, AVI, MOV, etc.) for video processing
 
 ### Quick Setup
 
@@ -80,17 +96,38 @@ python run.py
 
 ### Basic Usage
 ```bash
-# Run with default settings
+# Run with default settings (webcam)
 python run.py
 
 # Use specific camera
 python run.py --camera 1
+
+# Process video file
+python run.py --input video.mp4
 
 # Set confidence threshold
 python run.py --confidence 0.7
 
 # List available cameras
 python run.py --list-cameras
+```
+
+### Video Processing
+```bash
+# Process various video formats
+python run.py --input traffic.mp4
+python run.py --input demo.avi
+python run.py --input sample.mov
+
+# Process video with specific model
+python run.py --input video.mp4 --model yolo
+python run.py --input video.mp4 --model dnn
+
+# Save processed video output
+python run.py --input video.mp4 --output processed_video.mp4
+
+# Batch process multiple videos
+python run.py --input-dir ./videos/ --output-dir ./processed/
 ```
 
 ### Advanced Usage
@@ -104,6 +141,9 @@ python run.py --output-dir my_screenshots
 
 # Headless mode (no GUI)
 python run.py --no-gui
+
+# Process video with custom settings
+python run.py --input video.mp4 --confidence 0.6 --output-dir results/
 ```
 
 ### Direct Python Usage
@@ -145,6 +185,33 @@ app.run(camera_index=0)
 - **Frame buffering**: Efficient memory management
 - **GPU acceleration**: Automatic CUDA detection
 - **Adaptive processing**: Dynamic quality adjustment
+
+## 📹 Video Processing Features
+
+### Supported Video Formats
+- **MP4**: Most common format, excellent compatibility
+- **AVI**: Windows standard format
+- **MOV**: QuickTime format, ideal for macOS
+- **MKV**: Matroska container format
+- **WMV**: Windows Media Video
+- **FLV**: Flash Video format
+- **WebM**: Web-optimized format
+
+### Video Processing Capabilities
+- **Frame-by-frame analysis** with object detection
+- **Real-time playback** with detection overlays
+- **Export processed videos** with bounding boxes and labels
+- **Performance metrics** during video processing
+- **Pause/resume** functionality during processing
+- **Seek controls** for navigation through video
+- **Batch processing** for multiple video files
+
+### Video Output Options
+- **Original video** with detection overlays
+- **Detection-only output** (bounding boxes and labels)
+- **Statistical overlay** showing detection counts and performance
+- **Custom resolution** and quality settings
+- **Multiple output formats** (MP4, AVI, MOV)
 
 ## 🎯 Object Detection
 
