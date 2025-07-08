@@ -1,4 +1,4 @@
-# 🎯 Real-Time Object Understanding Application
+# 🤖 RealVision-ObjectUnderstandingAI
 
 A powerful, real-time object detection and understanding application using Python, OpenCV, and state-of-the-art AI models. Features dual model support (YOLO v8 + MobileNet-SSD), object tracking, performance monitoring, and modern GUI interface.
 
