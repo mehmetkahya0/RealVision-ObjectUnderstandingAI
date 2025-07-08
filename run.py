@@ -112,7 +112,7 @@ Examples:
     
     parser.add_argument(
         '--model', '-m',
-        choices=['yolo', 'dnn', 'auto'],
+        choices=['yolo', 'dnn', 'mediapipe', 'onnx', 'auto'],
         default='auto',
         help='Object detection model to use (default: auto)'
     )
@@ -190,18 +190,11 @@ Examples:
         print("=" * 55)
         
         # Create application instance
-        app = ObjectUnderstandingApp()
+        app = ObjectUnderstandingApp(preferred_model=args.model)
         
         # Configure application
         app.confidence_threshold = args.confidence
         app.screenshots_dir = args.output_dir
-        
-        # Set model preference
-        if args.model == 'yolo':
-            app.current_model = 'yolo'
-        elif args.model == 'dnn':
-            app.current_model = 'dnn'
-        # 'auto' uses default model selection
         
         # Create output directory
         os.makedirs(args.output_dir, exist_ok=True)

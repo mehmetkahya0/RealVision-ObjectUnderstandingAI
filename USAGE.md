@@ -33,9 +33,11 @@ python run.py --confidence 0.7
 
 **Choose detection model:**
 ```bash
-python run.py --model yolo      # Use YOLO only
-python run.py --model dnn       # Use MobileNet-SSD only
-python run.py --model auto      # Auto-select (default)
+python run.py --model yolo         # Use YOLO v8 (best accuracy)
+python run.py --model dnn          # Use MobileNet-SSD (fastest)
+python run.py --model mediapipe    # Use MediaPipe (hands + objects)
+python run.py --model onnx         # Use ONNX Runtime (YOLOv5)
+python run.py --model auto         # Auto-select best model (default)
 ```
 
 **Custom output directory:**
@@ -61,17 +63,20 @@ python run.py --output-dir my_screenshots
 
 ### 4. Features
 
-✅ **Dual Model Support**: YOLO v8 and MobileNet-SSD
+✅ **Multiple AI Models**: YOLO v8, MobileNet-SSD, MediaPipe, ONNX Runtime
 ✅ **Real-time Processing**: 25-30 FPS on most hardware
 ✅ **Object Tracking**: Persistent object IDs across frames
 ✅ **Multiple Input Sources**: Webcam, video files, or IP cameras
 ✅ **Performance Monitoring**: Real-time FPS and inference time display
 ✅ **Screenshot Capture**: Save frames with detections
 ✅ **Adjustable Settings**: Real-time confidence threshold adjustment
+✅ **Hand Detection**: MediaPipe hand tracking and gestures
+✅ **3D Object Detection**: MediaPipe 3D object recognition
 
-### 5. Supported Object Classes
+### 5. Supported Object Classes & Models
 
-The application can detect 80+ object classes from the COCO dataset, including:
+#### **YOLO v8** (Best Accuracy)
+- 80+ COCO dataset classes
 - **People**: person
 - **Vehicles**: car, truck, bus, motorcycle, bicycle, airplane, train, boat
 - **Animals**: bird, cat, dog, horse, sheep, cow, elephant, bear, zebra, giraffe
@@ -79,12 +84,38 @@ The application can detect 80+ object classes from the COCO dataset, including:
 - **Food**: banana, apple, sandwich, orange, pizza, donut, cake
 - And many more...
 
+#### **MobileNet-SSD** (Fastest)
+- 21 classes optimized for speed
+- person, car, bicycle, dog, cat, chair, bottle, etc.
+
+#### **MediaPipe** (Specialized)
+- **Hand Detection**: Real-time hand tracking with 21 landmarks
+- **3D Objects**: Cups, chairs, cameras, shoes (3D detection)
+- **Pose Detection**: Full body pose estimation
+
+#### **ONNX Runtime** (Flexible)
+- Supports YOLOv5 and custom ONNX models
+- 80 COCO classes (same as YOLO v8)
+- Optimized for cross-platform performance
+
 ### 6. Performance Tips
 
-- **For better FPS**: Use YOLO nano model (default) or switch to DNN model
-- **For better accuracy**: Use YOLO small/medium model (modify config.py)
-- **Lower confidence threshold**: See more detections (may include false positives)
-- **Higher confidence threshold**: See only high-confidence detections
+**For better FPS:**
+- Use MobileNet-SSD: `python run.py --model dnn`
+- Use ONNX Runtime: `python run.py --model onnx`
+- Lower camera resolution in config.py
+- Increase confidence threshold
+
+**For better accuracy:**
+- Use YOLO v8: `python run.py --model yolo`
+- Lower confidence threshold: `python run.py --confidence 0.3`
+- Enable GPU acceleration
+- Use higher camera resolution
+
+**For specialized detection:**
+- Use MediaPipe for hands: `python run.py --model mediapipe`
+- MediaPipe excels at hand tracking and 3D objects
+- YOLO v8 best for general object detection
 
 ### 7. Troubleshooting
 
@@ -103,7 +134,29 @@ The application can detect 80+ object classes from the COCO dataset, including:
 - Ensure good lighting conditions
 - Point camera at recognizable objects
 
-### 8. Sample Video
+### 8. Installing Optional AI Models
+
+**Automatic setup (recommended):**
+```bash
+python setup.py
+```
+
+**Manual installation:**
+```bash
+# For MediaPipe (hand tracking + 3D objects)
+pip install mediapipe
+
+# For ONNX Runtime (YOLOv5 + custom models)
+pip install onnxruntime
+
+# For GPU acceleration (if you have NVIDIA GPU)
+pip install onnxruntime-gpu
+```
+
+**Check available models:**
+```bash
+python run.py --list-cameras  # Also shows available AI models
+```
 
 A sample video is included for testing:
 ```bash

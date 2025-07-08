@@ -30,14 +30,39 @@ import json
 import os
 from datetime import datetime
 
-# Global variable to track YOLO availability
+# Global variables to track model availability
 YOLO_AVAILABLE = False
+MEDIAPIPE_AVAILABLE = False
+ONNX_AVAILABLE = False
 
 try:
     from ultralytics import YOLO
     YOLO_AVAILABLE = True
 except ImportError:
-    print("Warning: YOLO not available. Using OpenCV DNN only.")
+    pass
+
+try:
+    import mediapipe as mp
+    MEDIAPIPE_AVAILABLE = True
+except ImportError:
+    pass
+
+try:
+    import onnxruntime
+    ONNX_AVAILABLE = True
+except ImportError:
+    pass
+
+# Print available models
+available_models = []
+if YOLO_AVAILABLE:
+    available_models.append("YOLO v8")
+if MEDIAPIPE_AVAILABLE:
+    available_models.append("MediaPipe")
+if ONNX_AVAILABLE:
+    available_models.append("ONNX Runtime")
+    
+print(f"Available AI models: {', '.join(available_models) if available_models else 'OpenCV DNN only'}")
 
 class ObjectTracker:
     """Advanced object tracking with ID assignment"""
@@ -141,16 +166,20 @@ class PerformanceMonitor:
 
 class ObjectUnderstandingApp:
     """Main application class for real-time object understanding"""
-    
-    def __init__(self):
+    def __init__(self, preferred_model="auto"):
         self.cap = None
         self.running = False
         self.paused = False
-        
+
         # Models
         self.yolo_model = None
         self.dnn_net = None
-        self.current_model = "yolo"  # "yolo" or "dnn"
+        self.mediapipe_objectron = None
+        self.mediapipe_hands = None
+        self.onnx_session = None
+        self.preferred_model = preferred_model
+        self.current_model = "auto"  # "yolo", "dnn", "mediapipe", "onnx", "auto"
+        self.available_models = []
         
         # Detection settings
         self.confidence_threshold = 0.5
@@ -180,8 +209,8 @@ class ObjectUnderstandingApp:
         self.initialize_models()
         
     def initialize_models(self):
-        """Initialize object detection models"""
-        global YOLO_AVAILABLE
+        """Initialize all available object detection models"""
+        global YOLO_AVAILABLE, MEDIAPIPE_AVAILABLE, ONNX_AVAILABLE
         print("Initializing object detection models...")
         
         # Initialize YOLO model
@@ -189,6 +218,7 @@ class ObjectUnderstandingApp:
             try:
                 print("Loading YOLOv8 model...")
                 self.yolo_model = YOLO('yolov8n.pt')  # nano version for speed
+                self.available_models.append("yolo")
                 print("✓ YOLOv8 model loaded successfully")
             except Exception as e:
                 print(f"✗ Failed to load YOLOv8: {e}")
@@ -197,7 +227,6 @@ class ObjectUnderstandingApp:
         # Initialize OpenCV DNN model (MobileNet-SSD)
         try:
             print("Loading MobileNet-SSD model...")
-            # Download model files if not present
             self.download_dnn_model()
             
             config_path = "MobileNetSSD_deploy.prototxt"
@@ -205,21 +234,82 @@ class ObjectUnderstandingApp:
             
             if os.path.exists(config_path) and os.path.exists(weights_path):
                 self.dnn_net = cv2.dnn.readNetFromCaffe(config_path, weights_path)
+                self.available_models.append("dnn")
                 print("✓ MobileNet-SSD model loaded successfully")
             else:
                 print("✗ MobileNet-SSD model files not found")
                 
         except Exception as e:
             print(f"✗ Failed to load MobileNet-SSD: {e}")
-            
-        # Set default model
-        if YOLO_AVAILABLE and self.yolo_model is not None:
-            self.current_model = "yolo"
-        elif self.dnn_net is not None:
-            self.current_model = "dnn"
-        else:
+        
+        # Initialize MediaPipe models
+        if MEDIAPIPE_AVAILABLE:
+            try:
+                print("Loading MediaPipe models...")
+                import mediapipe as mp
+                
+                # Initialize object detection
+                mp_objectron = mp.solutions.objectron
+                self.mediapipe_objectron = mp_objectron.Objectron(
+                    static_image_mode=False,
+                    max_num_objects=5,
+                    min_detection_confidence=0.5,
+                    min_tracking_confidence=0.5,
+                    model_name='Cup'  # Can be 'Cup', 'Chair', 'Camera', 'Shoe'
+                )
+                
+                # Initialize hand detection
+                mp_hands = mp.solutions.hands
+                self.mediapipe_hands = mp_hands.Hands(
+                    static_image_mode=False,
+                    max_num_hands=2,
+                    min_detection_confidence=0.5,
+                    min_tracking_confidence=0.5
+                )
+                
+                self.available_models.append("mediapipe")
+                print("✓ MediaPipe models loaded successfully")
+                
+            except Exception as e:
+                print(f"✗ Failed to load MediaPipe: {e}")
+                MEDIAPIPE_AVAILABLE = False
+        
+        # Initialize ONNX models
+        if ONNX_AVAILABLE:
+            try:
+                print("Loading ONNX models...")
+                self.download_onnx_model()
+                
+                import onnxruntime
+                onnx_model_path = "yolov5s.onnx"
+                
+                if os.path.exists(onnx_model_path):
+                    self.onnx_session = onnxruntime.InferenceSession(onnx_model_path)
+                    self.available_models.append("onnx")
+                    print("✓ ONNX YOLOv5 model loaded successfully")
+                else:
+                    print("✗ ONNX model file not found")
+                    
+            except Exception as e:
+                print(f"✗ Failed to load ONNX model: {e}")
+                ONNX_AVAILABLE = False
+        
+        # Set model based on preference and availability
+        if not self.available_models:
             raise RuntimeError("No object detection models available!")
-            
+        
+        # Use preferred model if available
+        if self.preferred_model != "auto" and self.preferred_model in self.available_models:
+            self.current_model = self.preferred_model
+        else:
+            # Prioritize models by performance and accuracy
+            model_priority = ["yolo", "onnx", "dnn", "mediapipe"]
+            for model in model_priority:
+                if model in self.available_models:
+                    self.current_model = model
+                    break
+                
+        print(f"Available models: {', '.join(self.available_models)}")
         print(f"Using model: {self.current_model}")
     
     def download_dnn_model(self):
@@ -245,6 +335,23 @@ class ObjectUnderstandingApp:
                     print(f"✓ Downloaded {file_info['filename']}")
                 except Exception as e:
                     print(f"✗ Failed to download {file_info['filename']}: {e}")
+    
+    def download_onnx_model(self):
+        """Download ONNX model files if not present"""
+        import urllib.request
+        
+        onnx_model_info = {
+            'url': 'https://github.com/ultralytics/yolov5/releases/download/v7.0/yolov5s.onnx',
+            'filename': 'yolov5s.onnx'
+        }
+        
+        if not os.path.exists(onnx_model_info['filename']):
+            try:
+                print(f"Downloading {onnx_model_info['filename']}...")
+                urllib.request.urlretrieve(onnx_model_info['url'], onnx_model_info['filename'])
+                print(f"✓ Downloaded {onnx_model_info['filename']}")
+            except Exception as e:
+                print(f"✗ Failed to download {onnx_model_info['filename']}: {e}")
     
     def detect_objects_yolo(self, frame: np.ndarray) -> List[Dict]:
         """Detect objects using YOLO model"""
@@ -329,12 +436,152 @@ class ObjectUnderstandingApp:
             print(f"Error in DNN detection: {e}")
             return []
     
+    def detect_objects_mediapipe(self, frame: np.ndarray) -> List[Dict]:
+        """Detect objects using MediaPipe models"""
+        if not MEDIAPIPE_AVAILABLE or (self.mediapipe_objectron is None and self.mediapipe_hands is None):
+            return []
+            
+        try:
+            detections = []
+            rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            
+            # Hand detection
+            if self.mediapipe_hands:
+                hands_results = self.mediapipe_hands.process(rgb_frame)
+                if hands_results.multi_hand_landmarks:
+                    for hand_landmarks in hands_results.multi_hand_landmarks:
+                        # Get bounding box for hand
+                        h, w, _ = frame.shape
+                        x_coords = [landmark.x * w for landmark in hand_landmarks.landmark]
+                        y_coords = [landmark.y * h for landmark in hand_landmarks.landmark]
+                        
+                        x1, x2 = int(min(x_coords)), int(max(x_coords))
+                        y1, y2 = int(min(y_coords)), int(max(y_coords))
+                        
+                        detections.append({
+                            'bbox': [x1, y1, x2, y2],
+                            'confidence': 0.8,  # MediaPipe doesn't provide confidence scores
+                            'class_name': 'hand',
+                            'class_id': 100  # Custom ID for hand
+                        })
+            
+            # Object detection (3D objects like cups, chairs)
+            if self.mediapipe_objectron:
+                objectron_results = self.mediapipe_objectron.process(rgb_frame)
+                if objectron_results.detected_objects:
+                    for detected_object in objectron_results.detected_objects:
+                        # Get 2D bounding box from 3D landmarks
+                        h, w, _ = frame.shape
+                        landmarks_2d = detected_object.landmarks_2d
+                        
+                        x_coords = [landmark.x * w for landmark in landmarks_2d.landmark]
+                        y_coords = [landmark.y * h for landmark in landmarks_2d.landmark]
+                        
+                        x1, x2 = int(min(x_coords)), int(max(x_coords))
+                        y1, y2 = int(min(y_coords)), int(max(y_coords))
+                        
+                        detections.append({
+                            'bbox': [x1, y1, x2, y2],
+                            'confidence': 0.8,
+                            'class_name': 'cup',  # Based on current model
+                            'class_id': 101
+                        })
+            
+            return detections
+            
+        except Exception as e:
+            print(f"Error in MediaPipe detection: {e}")
+            return []
+    
+    def detect_objects_onnx(self, frame: np.ndarray) -> List[Dict]:
+        """Detect objects using ONNX Runtime with YOLOv5"""
+        if not ONNX_AVAILABLE or self.onnx_session is None:
+            return []
+            
+        try:
+            import onnxruntime
+            
+            # COCO class names
+            class_names = [
+                'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
+                'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
+                'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
+                'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard',
+                'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
+                'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
+                'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard',
+                'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase',
+                'scissors', 'teddy bear', 'hair drier', 'toothbrush'
+            ]
+            
+            # Preprocess image
+            input_size = 640
+            original_shape = frame.shape[:2]
+            
+            # Resize and pad
+            resized = cv2.resize(frame, (input_size, input_size))
+            input_image = resized.astype(np.float32) / 255.0
+            input_image = np.transpose(input_image, (2, 0, 1))  # HWC to CHW
+            input_image = np.expand_dims(input_image, axis=0)   # Add batch dimension
+            
+            # Check the expected input data type and convert if necessary
+            input_name = self.onnx_session.get_inputs()[0].name
+            expected_type = self.onnx_session.get_inputs()[0].type
+            
+            if 'float16' in expected_type:
+                input_image = input_image.astype(np.float16)
+            
+            # Run inference
+            outputs = self.onnx_session.run(None, {input_name: input_image})
+            
+            # Post-process results
+            detections = []
+            predictions = outputs[0][0]  # Remove batch dimension
+            
+            for prediction in predictions:
+                x_center, y_center, width, height = prediction[:4]
+                confidence = prediction[4]
+                class_scores = prediction[5:]
+                
+                if confidence > self.confidence_threshold:
+                    class_id = np.argmax(class_scores)
+                    class_confidence = class_scores[class_id]
+                    
+                    if class_confidence > self.confidence_threshold:
+                        # Convert to original image coordinates
+                        scale_x = original_shape[1] / input_size
+                        scale_y = original_shape[0] / input_size
+                        
+                        x1 = int((x_center - width/2) * scale_x)
+                        y1 = int((y_center - height/2) * scale_y)
+                        x2 = int((x_center + width/2) * scale_x)
+                        y2 = int((y_center + height/2) * scale_y)
+                        
+                        detections.append({
+                            'bbox': [x1, y1, x2, y2],
+                            'confidence': float(confidence * class_confidence),
+                            'class_name': class_names[class_id] if class_id < len(class_names) else 'unknown',
+                            'class_id': class_id
+                        })
+            
+            return detections
+            
+        except Exception as e:
+            print(f"Error in ONNX detection: {e}")
+            return []
+    
     def detect_objects(self, frame: np.ndarray) -> List[Dict]:
         """Detect objects using the current model"""
         if self.current_model == "yolo":
             return self.detect_objects_yolo(frame)
-        else:
+        elif self.current_model == "dnn":
             return self.detect_objects_dnn(frame)
+        elif self.current_model == "mediapipe":
+            return self.detect_objects_mediapipe(frame)
+        elif self.current_model == "onnx":
+            return self.detect_objects_onnx(frame)
+        else:
+            return []
     
     def draw_detections(self, frame: np.ndarray, detections: List[Dict], 
                        tracked_objects: Dict) -> np.ndarray:
@@ -586,8 +833,10 @@ class ObjectUnderstandingApp:
                     if not self.paused:
                         self.save_screenshot(frame_with_ui, detections)
                 elif key == ord('m'):  # Switch model
-                    if YOLO_AVAILABLE and self.dnn_net is not None:
-                        self.current_model = "dnn" if self.current_model == "yolo" else "yolo"
+                    if len(self.available_models) > 1:
+                        current_index = self.available_models.index(self.current_model)
+                        next_index = (current_index + 1) % len(self.available_models)
+                        self.current_model = self.available_models[next_index]
                         print(f"Switched to {self.current_model.upper()} model")
                 elif key == ord('c'):  # Toggle confidence display
                     self.show_confidence = not self.show_confidence
