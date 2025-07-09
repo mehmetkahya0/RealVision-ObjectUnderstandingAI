@@ -1,0 +1,6888 @@
+[
+  {
+    "timestamp": "2025-07-09T14:57:46.819719",
+    "model": "yolo",
+    "frame_number": 1,
+    "inference_time_ms": 125.52952766418457,
+    "detection_count": 16,
+    "fps": 7.966253188454519,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8705585598945618,
+        "bbox": [
+          463,
+          313,
+          647,
+          443
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.867202877998352,
+        "bbox": [
+          638,
+          204,
+          790,
+          299
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8409527540206909,
+        "bbox": [
+          173,
+          207,
+          324,
+          334
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8273477554321289,
+        "bbox": [
+          491,
+          163,
+          628,
+          259
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8210813403129578,
+        "bbox": [
+          835,
+          92,
+          1013,
+          273
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8086743354797363,
+        "bbox": [
+          819,
+          236,
+          982,
+          351
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.799878716468811,
+        "bbox": [
+          1143,
+          302,
+          1279,
+          435
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7915146350860596,
+        "bbox": [
+          826,
+          483,
+          1003,
+          663
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7683612108230591,
+        "bbox": [
+          139,
+          109,
+          256,
+          195
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7499599456787109,
+        "bbox": [
+          364,
+          108,
+          490,
+          195
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7401033639907837,
+        "bbox": [
+          78,
+          181,
+          212,
+          302
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6727515459060669,
+        "bbox": [
+          314,
+          490,
+          910,
+          717
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6572205424308777,
+        "bbox": [
+          0,
+          420,
+          252,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5702565908432007,
+        "bbox": [
+          0,
+          64,
+          71,
+          137
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5320891737937927,
+        "bbox": [
+          0,
+          241,
+          48,
+          360
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.529109537601471,
+        "bbox": [
+          1016,
+          678,
+          1238,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:46.934425",
+    "model": "yolo",
+    "frame_number": 2,
+    "inference_time_ms": 53.55095863342285,
+    "detection_count": 15,
+    "fps": 18.67380202930426,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8884040713310242,
+        "bbox": [
+          652,
+          206,
+          802,
+          304
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8832598924636841,
+        "bbox": [
+          168,
+          206,
+          317,
+          331
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8601601719856262,
+        "bbox": [
+          457,
+          309,
+          638,
+          439
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.852799117565155,
+        "bbox": [
+          832,
+          238,
+          998,
+          355
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8446447849273682,
+        "bbox": [
+          1161,
+          305,
+          1279,
+          439
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8289766907691956,
+        "bbox": [
+          504,
+          165,
+          640,
+          261
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7814826369285583,
+        "bbox": [
+          844,
+          92,
+          1021,
+          276
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7588459849357605,
+        "bbox": [
+          149,
+          110,
+          267,
+          200
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7503157258033752,
+        "bbox": [
+          70,
+          178,
+          207,
+          302
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7433346509933472,
+        "bbox": [
+          374,
+          110,
+          501,
+          195
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7093523740768433,
+        "bbox": [
+          820,
+          475,
+          992,
+          657
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6517199277877808,
+        "bbox": [
+          0,
+          420,
+          253,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6495924592018127,
+        "bbox": [
+          0,
+          67,
+          79,
+          135
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6359105110168457,
+        "bbox": [
+          318,
+          481,
+          905,
+          715
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5583942532539368,
+        "bbox": [
+          1006,
+          671,
+          1231,
+          717
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:46.994530",
+    "model": "yolo",
+    "frame_number": 3,
+    "inference_time_ms": 53.17974090576172,
+    "detection_count": 15,
+    "fps": 18.804153291609133,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8852527141571045,
+        "bbox": [
+          664,
+          209,
+          814,
+          306
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8583501577377319,
+        "bbox": [
+          448,
+          307,
+          628,
+          435
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8541086912155151,
+        "bbox": [
+          846,
+          240,
+          1010,
+          362
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8476274609565735,
+        "bbox": [
+          516,
+          167,
+          656,
+          264
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8311386108398438,
+        "bbox": [
+          385,
+          111,
+          511,
+          197
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8204677104949951,
+        "bbox": [
+          160,
+          205,
+          310,
+          329
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7919043302536011,
+        "bbox": [
+          856,
+          93,
+          1032,
+          278
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.78074049949646,
+        "bbox": [
+          1179,
+          309,
+          1279,
+          446
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.757073700428009,
+        "bbox": [
+          62,
+          179,
+          194,
+          297
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7227231860160828,
+        "bbox": [
+          820,
+          482,
+          983,
+          651
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7056837677955627,
+        "bbox": [
+          159,
+          111,
+          279,
+          202
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6973811388015747,
+        "bbox": [
+          0,
+          420,
+          254,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6103680729866028,
+        "bbox": [
+          0,
+          67,
+          91,
+          143
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5855872631072998,
+        "bbox": [
+          320,
+          474,
+          905,
+          713
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.553350031375885,
+        "bbox": [
+          990,
+          665,
+          1219,
+          717
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.076296",
+    "model": "yolo",
+    "frame_number": 4,
+    "inference_time_ms": 65.84405899047852,
+    "detection_count": 13,
+    "fps": 15.187399065792809,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.879892110824585,
+        "bbox": [
+          680,
+          211,
+          832,
+          309
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8787465691566467,
+        "bbox": [
+          864,
+          245,
+          1030,
+          364
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8689737915992737,
+        "bbox": [
+          438,
+          304,
+          617,
+          430
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8506693840026855,
+        "bbox": [
+          532,
+          171,
+          672,
+          268
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8344497084617615,
+        "bbox": [
+          400,
+          112,
+          526,
+          199
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8115902543067932,
+        "bbox": [
+          868,
+          96,
+          1048,
+          281
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7465195059776306,
+        "bbox": [
+          1207,
+          313,
+          1279,
+          452
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7445737719535828,
+        "bbox": [
+          51,
+          174,
+          181,
+          294
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7317594885826111,
+        "bbox": [
+          173,
+          114,
+          292,
+          202
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7269580960273743,
+        "bbox": [
+          150,
+          202,
+          299,
+          324
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6839800477027893,
+        "bbox": [
+          0,
+          67,
+          105,
+          145
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6274424195289612,
+        "bbox": [
+          0,
+          419,
+          254,
+          711
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5581457018852234,
+        "bbox": [
+          313,
+          468,
+          898,
+          712
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.140003",
+    "model": "yolo",
+    "frame_number": 5,
+    "inference_time_ms": 56.75053596496582,
+    "detection_count": 14,
+    "fps": 17.620978956345656,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8909860849380493,
+        "bbox": [
+          692,
+          213,
+          846,
+          312
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8480296730995178,
+        "bbox": [
+          429,
+          302,
+          607,
+          427
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8454124927520752,
+        "bbox": [
+          878,
+          248,
+          1043,
+          367
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8040509223937988,
+        "bbox": [
+          411,
+          114,
+          538,
+          201
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8013679385185242,
+        "bbox": [
+          145,
+          200,
+          291,
+          322
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7870700359344482,
+        "bbox": [
+          545,
+          173,
+          687,
+          271
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7688042521476746,
+        "bbox": [
+          878,
+          97,
+          1055,
+          287
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.739453911781311,
+        "bbox": [
+          179,
+          115,
+          303,
+          202
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7353470325469971,
+        "bbox": [
+          802,
+          460,
+          956,
+          635
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6914738416671753,
+        "bbox": [
+          1226,
+          314,
+          1279,
+          456
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6892819404602051,
+        "bbox": [
+          43,
+          173,
+          175,
+          290
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5980783700942993,
+        "bbox": [
+          0,
+          420,
+          254,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.578923225402832,
+        "bbox": [
+          0,
+          69,
+          117,
+          146
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5761558413505554,
+        "bbox": [
+          967,
+          641,
+          1199,
+          719
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.191131",
+    "model": "yolo",
+    "frame_number": 6,
+    "inference_time_ms": 42.9990291595459,
+    "detection_count": 15,
+    "fps": 23.25633902778471,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8546695113182068,
+        "bbox": [
+          421,
+          300,
+          598,
+          425
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8496801257133484,
+        "bbox": [
+          891,
+          251,
+          1057,
+          372
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8351142406463623,
+        "bbox": [
+          559,
+          175,
+          699,
+          274
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.82555091381073,
+        "bbox": [
+          704,
+          216,
+          859,
+          316
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8076958656311035,
+        "bbox": [
+          136,
+          198,
+          284,
+          321
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7883098125457764,
+        "bbox": [
+          421,
+          115,
+          547,
+          204
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7840438485145569,
+        "bbox": [
+          34,
+          175,
+          170,
+          290
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7257393598556519,
+        "bbox": [
+          807,
+          462,
+          944,
+          625
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7197864651679993,
+        "bbox": [
+          194,
+          116,
+          314,
+          206
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.714545726776123,
+        "bbox": [
+          889,
+          98,
+          1068,
+          286
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7111039757728577,
+        "bbox": [
+          1246,
+          325,
+          1279,
+          460
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5856521129608154,
+        "bbox": [
+          959,
+          631,
+          1191,
+          719
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5644087195396423,
+        "bbox": [
+          18,
+          69,
+          127,
+          144
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5554627776145935,
+        "bbox": [
+          321,
+          453,
+          887,
+          714
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5051043629646301,
+        "bbox": [
+          0,
+          420,
+          254,
+          711
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.246327",
+    "model": "yolo",
+    "frame_number": 7,
+    "inference_time_ms": 55.19676208496094,
+    "detection_count": 12,
+    "fps": 18.117004734095858,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.9095454216003418,
+        "bbox": [
+          910,
+          257,
+          1078,
+          377
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8657832741737366,
+        "bbox": [
+          720,
+          220,
+          875,
+          320
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8491188287734985,
+        "bbox": [
+          129,
+          195,
+          275,
+          317
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8416281342506409,
+        "bbox": [
+          411,
+          296,
+          587,
+          422
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8412216305732727,
+        "bbox": [
+          575,
+          175,
+          716,
+          279
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7858409285545349,
+        "bbox": [
+          24,
+          174,
+          167,
+          287
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7501088380813599,
+        "bbox": [
+          902,
+          97,
+          1081,
+          286
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7439602017402649,
+        "bbox": [
+          207,
+          118,
+          329,
+          207
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7387431263923645,
+        "bbox": [
+          435,
+          116,
+          562,
+          206
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7027658820152283,
+        "bbox": [
+          32,
+          71,
+          141,
+          147
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6544178128242493,
+        "bbox": [
+          807,
+          461,
+          930,
+          620
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5741545557975769,
+        "bbox": [
+          931,
+          619,
+          1179,
+          717
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.290800",
+    "model": "yolo",
+    "frame_number": 8,
+    "inference_time_ms": 44.472694396972656,
+    "detection_count": 13,
+    "fps": 22.4857075461583,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8740876913070679,
+        "bbox": [
+          922,
+          259,
+          1093,
+          383
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8323953151702881,
+        "bbox": [
+          587,
+          177,
+          730,
+          281
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7944384813308716,
+        "bbox": [
+          735,
+          224,
+          889,
+          324
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7943750619888306,
+        "bbox": [
+          403,
+          292,
+          578,
+          418
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7827572226524353,
+        "bbox": [
+          445,
+          117,
+          575,
+          208
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.742699146270752,
+        "bbox": [
+          218,
+          119,
+          339,
+          209
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7305692434310913,
+        "bbox": [
+          121,
+          194,
+          266,
+          313
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7157021760940552,
+        "bbox": [
+          911,
+          100,
+          1089,
+          288
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7144216895103455,
+        "bbox": [
+          17,
+          172,
+          162,
+          281
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6640571355819702,
+        "bbox": [
+          306,
+          436,
+          880,
+          712
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6511965394020081,
+        "bbox": [
+          931,
+          610,
+          1168,
+          716
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5850200653076172,
+        "bbox": [
+          42,
+          72,
+          152,
+          149
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5650805234909058,
+        "bbox": [
+          0,
+          419,
+          255,
+          709
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.348895",
+    "model": "yolo",
+    "frame_number": 9,
+    "inference_time_ms": 40.46225547790527,
+    "detection_count": 12,
+    "fps": 24.714390935178038,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.866261899471283,
+        "bbox": [
+          747,
+          227,
+          903,
+          328
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8439239859580994,
+        "bbox": [
+          395,
+          290,
+          569,
+          413
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8208478093147278,
+        "bbox": [
+          936,
+          262,
+          1105,
+          385
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8092771172523499,
+        "bbox": [
+          601,
+          179,
+          742,
+          285
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8061612248420715,
+        "bbox": [
+          457,
+          119,
+          587,
+          209
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7860514521598816,
+        "bbox": [
+          114,
+          191,
+          260,
+          312
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7109665870666504,
+        "bbox": [
+          8,
+          172,
+          151,
+          280
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7060685157775879,
+        "bbox": [
+          229,
+          122,
+          350,
+          208
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6431186199188232,
+        "bbox": [
+          923,
+          100,
+          1101,
+          293
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5898787975311279,
+        "bbox": [
+          0,
+          419,
+          255,
+          709
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5812897086143494,
+        "bbox": [
+          891,
+          603,
+          1166,
+          716
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5757314562797546,
+        "bbox": [
+          53,
+          73,
+          161,
+          150
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.411670",
+    "model": "yolo",
+    "frame_number": 10,
+    "inference_time_ms": 47.9733943939209,
+    "detection_count": 12,
+    "fps": 20.844887309594217,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8613245487213135,
+        "bbox": [
+          384,
+          285,
+          557,
+          408
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8314391374588013,
+        "bbox": [
+          955,
+          265,
+          1129,
+          393
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8200326561927795,
+        "bbox": [
+          763,
+          229,
+          922,
+          336
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8149359822273254,
+        "bbox": [
+          616,
+          183,
+          761,
+          289
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7793362140655518,
+        "bbox": [
+          239,
+          124,
+          363,
+          214
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7488158941268921,
+        "bbox": [
+          472,
+          121,
+          603,
+          212
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7350081205368042,
+        "bbox": [
+          64,
+          75,
+          175,
+          152
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7289979457855225,
+        "bbox": [
+          103,
+          187,
+          250,
+          307
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6681299805641174,
+        "bbox": [
+          0,
+          421,
+          254,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6240367889404297,
+        "bbox": [
+          884,
+          591,
+          1142,
+          715
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5380172729492188,
+        "bbox": [
+          0,
+          171,
+          140,
+          277
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5118876695632935,
+        "bbox": [
+          935,
+          103,
+          1115,
+          294
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.463848",
+    "model": "yolo",
+    "frame_number": 11,
+    "inference_time_ms": 46.41461372375488,
+    "detection_count": 12,
+    "fps": 21.544938539221377,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.85936039686203,
+        "bbox": [
+          777,
+          233,
+          935,
+          339
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8571648597717285,
+        "bbox": [
+          967,
+          267,
+          1143,
+          396
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8501825332641602,
+        "bbox": [
+          377,
+          283,
+          551,
+          405
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8313536643981934,
+        "bbox": [
+          629,
+          187,
+          773,
+          291
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8185144662857056,
+        "bbox": [
+          254,
+          126,
+          375,
+          216
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7748487591743469,
+        "bbox": [
+          483,
+          123,
+          611,
+          215
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7695848345756531,
+        "bbox": [
+          98,
+          186,
+          243,
+          306
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7195428013801575,
+        "bbox": [
+          944,
+          105,
+          1127,
+          294
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.683001697063446,
+        "bbox": [
+          0,
+          419,
+          254,
+          708
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6635611057281494,
+        "bbox": [
+          76,
+          78,
+          188,
+          154
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5794039368629456,
+        "bbox": [
+          900,
+          583,
+          1134,
+          716
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5305525660514832,
+        "bbox": [
+          0,
+          164,
+          135,
+          274
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.517093",
+    "model": "yolo",
+    "frame_number": 12,
+    "inference_time_ms": 49.48925971984863,
+    "detection_count": 13,
+    "fps": 20.206404493840722,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8790209889411926,
+        "bbox": [
+          788,
+          234,
+          947,
+          342
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8660871982574463,
+        "bbox": [
+          983,
+          270,
+          1161,
+          401
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8634448647499084,
+        "bbox": [
+          263,
+          128,
+          386,
+          220
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.845089852809906,
+        "bbox": [
+          89,
+          187,
+          235,
+          304
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8445401787757874,
+        "bbox": [
+          370,
+          280,
+          542,
+          401
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8212946057319641,
+        "bbox": [
+          493,
+          124,
+          624,
+          215
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8197721838951111,
+        "bbox": [
+          956,
+          108,
+          1135,
+          297
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8089496493339539,
+        "bbox": [
+          641,
+          189,
+          787,
+          294
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7265592813491821,
+        "bbox": [
+          0,
+          162,
+          124,
+          273
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7209710478782654,
+        "bbox": [
+          87,
+          78,
+          197,
+          154
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6981638669967651,
+        "bbox": [
+          0,
+          419,
+          255,
+          708
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6890596747398376,
+        "bbox": [
+          865,
+          576,
+          1121,
+          715
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5176049470901489,
+        "bbox": [
+          286,
+          407,
+          874,
+          710
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.567814",
+    "model": "yolo",
+    "frame_number": 13,
+    "inference_time_ms": 50.7204532623291,
+    "detection_count": 12,
+    "fps": 19.71591213564166,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.899818480014801,
+        "bbox": [
+          806,
+          240,
+          966,
+          344
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8996362686157227,
+        "bbox": [
+          1001,
+          274,
+          1181,
+          408
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.877698540687561,
+        "bbox": [
+          81,
+          184,
+          224,
+          301
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8773996233940125,
+        "bbox": [
+          276,
+          131,
+          400,
+          222
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8739987015724182,
+        "bbox": [
+          359,
+          276,
+          527,
+          395
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8672456741333008,
+        "bbox": [
+          657,
+          192,
+          802,
+          297
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7756803035736084,
+        "bbox": [
+          99,
+          79,
+          211,
+          157
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7665407061576843,
+        "bbox": [
+          508,
+          126,
+          639,
+          217
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7400177121162415,
+        "bbox": [
+          0,
+          161,
+          117,
+          271
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6915625929832458,
+        "bbox": [
+          968,
+          109,
+          1150,
+          304
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6639437675476074,
+        "bbox": [
+          867,
+          566,
+          1107,
+          716
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6535232663154602,
+        "bbox": [
+          0,
+          418,
+          255,
+          708
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.616349",
+    "model": "yolo",
+    "frame_number": 14,
+    "inference_time_ms": 48.53463172912598,
+    "detection_count": 13,
+    "fps": 20.603844396740172,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8786709308624268,
+        "bbox": [
+          1015,
+          279,
+          1194,
+          413
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8615449070930481,
+        "bbox": [
+          287,
+          131,
+          413,
+          222
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.858642041683197,
+        "bbox": [
+          351,
+          273,
+          520,
+          393
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8547897934913635,
+        "bbox": [
+          670,
+          193,
+          817,
+          302
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8363645672798157,
+        "bbox": [
+          518,
+          128,
+          652,
+          219
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8352411985397339,
+        "bbox": [
+          818,
+          243,
+          979,
+          349
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8295658230781555,
+        "bbox": [
+          74,
+          182,
+          220,
+          298
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8090693950653076,
+        "bbox": [
+          978,
+          110,
+          1163,
+          303
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7230767011642456,
+        "bbox": [
+          110,
+          81,
+          222,
+          159
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6696053743362427,
+        "bbox": [
+          867,
+          559,
+          1101,
+          715
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6517001986503601,
+        "bbox": [
+          0,
+          418,
+          254,
+          708
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6172084212303162,
+        "bbox": [
+          0,
+          160,
+          112,
+          265
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5196296572685242,
+        "bbox": [
+          275,
+          395,
+          863,
+          711
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.672074",
+    "model": "yolo",
+    "frame_number": 15,
+    "inference_time_ms": 55.7253360748291,
+    "detection_count": 12,
+    "fps": 17.945158709445554,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8995710611343384,
+        "bbox": [
+          1031,
+          284,
+          1211,
+          417
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8775532841682434,
+        "bbox": [
+          682,
+          196,
+          831,
+          305
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.859105110168457,
+        "bbox": [
+          830,
+          244,
+          993,
+          353
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.828325629234314,
+        "bbox": [
+          299,
+          132,
+          423,
+          226
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.817213773727417,
+        "bbox": [
+          69,
+          181,
+          212,
+          294
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8159971833229065,
+        "bbox": [
+          342,
+          271,
+          511,
+          390
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8087357878684998,
+        "bbox": [
+          530,
+          130,
+          662,
+          221
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7549116015434265,
+        "bbox": [
+          988,
+          111,
+          1174,
+          307
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7196042537689209,
+        "bbox": [
+          120,
+          82,
+          232,
+          161
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6763279438018799,
+        "bbox": [
+          844,
+          554,
+          1085,
+          715
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.636241614818573,
+        "bbox": [
+          0,
+          418,
+          255,
+          708
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5524436235427856,
+        "bbox": [
+          0,
+          159,
+          97,
+          261
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.725340",
+    "model": "yolo",
+    "frame_number": 16,
+    "inference_time_ms": 53.26581001281738,
+    "detection_count": 14,
+    "fps": 18.77376876009901,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8792685270309448,
+        "bbox": [
+          1048,
+          289,
+          1229,
+          420
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8758338689804077,
+        "bbox": [
+          848,
+          248,
+          1010,
+          355
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8432236313819885,
+        "bbox": [
+          333,
+          267,
+          498,
+          385
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8264971375465393,
+        "bbox": [
+          698,
+          199,
+          849,
+          313
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8137704730033875,
+        "bbox": [
+          312,
+          135,
+          436,
+          228
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7974808216094971,
+        "bbox": [
+          545,
+          131,
+          679,
+          224
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7691038250923157,
+        "bbox": [
+          58,
+          177,
+          201,
+          292
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7368136048316956,
+        "bbox": [
+          131,
+          83,
+          247,
+          162
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6960591673851013,
+        "bbox": [
+          1002,
+          114,
+          1189,
+          310
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6766879558563232,
+        "bbox": [
+          0,
+          418,
+          255,
+          708
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6309305429458618,
+        "bbox": [
+          841,
+          543,
+          1070,
+          716
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6005032062530518,
+        "bbox": [
+          270,
+          381,
+          828,
+          710
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5434809923171997,
+        "bbox": [
+          32,
+          98,
+          144,
+          163
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5097739100456238,
+        "bbox": [
+          273,
+          380,
+          828,
+          711
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.774288",
+    "model": "yolo",
+    "frame_number": 17,
+    "inference_time_ms": 48.948049545288086,
+    "detection_count": 13,
+    "fps": 20.429823236874277,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8856483697891235,
+        "bbox": [
+          325,
+          265,
+          490,
+          382
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.864517331123352,
+        "bbox": [
+          1064,
+          295,
+          1247,
+          425
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8524882793426514,
+        "bbox": [
+          859,
+          251,
+          1026,
+          360
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8508685231208801,
+        "bbox": [
+          711,
+          202,
+          862,
+          315
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8101487159729004,
+        "bbox": [
+          323,
+          137,
+          448,
+          232
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7709767818450928,
+        "bbox": [
+          556,
+          133,
+          690,
+          226
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7202182412147522,
+        "bbox": [
+          52,
+          174,
+          193,
+          291
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7168484330177307,
+        "bbox": [
+          144,
+          84,
+          257,
+          163
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6837891340255737,
+        "bbox": [
+          1011,
+          115,
+          1198,
+          311
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.674960196018219,
+        "bbox": [
+          0,
+          418,
+          255,
+          708
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6425872445106506,
+        "bbox": [
+          830,
+          539,
+          1058,
+          716
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5417472124099731,
+        "bbox": [
+          283,
+          374,
+          823,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5410417914390564,
+        "bbox": [
+          43,
+          99,
+          162,
+          168
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.829046",
+    "model": "yolo",
+    "frame_number": 18,
+    "inference_time_ms": 54.758310317993164,
+    "detection_count": 12,
+    "fps": 18.262068244852465,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8827856779098511,
+        "bbox": [
+          1079,
+          298,
+          1263,
+          430
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8687922358512878,
+        "bbox": [
+          874,
+          255,
+          1039,
+          364
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8441422581672668,
+        "bbox": [
+          335,
+          139,
+          459,
+          233
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8187907934188843,
+        "bbox": [
+          724,
+          205,
+          873,
+          316
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8183873891830444,
+        "bbox": [
+          567,
+          134,
+          702,
+          227
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8088662028312683,
+        "bbox": [
+          317,
+          263,
+          482,
+          378
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7800772190093994,
+        "bbox": [
+          153,
+          84,
+          269,
+          165
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6396275758743286,
+        "bbox": [
+          44,
+          171,
+          185,
+          288
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6322559118270874,
+        "bbox": [
+          816,
+          532,
+          1048,
+          713
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.630764901638031,
+        "bbox": [
+          0,
+          418,
+          255,
+          708
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6263859272003174,
+        "bbox": [
+          1022,
+          117,
+          1209,
+          316
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6188830137252808,
+        "bbox": [
+          261,
+          369,
+          818,
+          710
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.877944",
+    "model": "yolo",
+    "frame_number": 19,
+    "inference_time_ms": 48.897504806518555,
+    "detection_count": 11,
+    "fps": 20.45094128947638,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8987107872962952,
+        "bbox": [
+          1098,
+          301,
+          1279,
+          434
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8875564336776733,
+        "bbox": [
+          306,
+          259,
+          470,
+          372
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8670651912689209,
+        "bbox": [
+          890,
+          259,
+          1058,
+          370
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8402525782585144,
+        "bbox": [
+          740,
+          207,
+          892,
+          320
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8286387324333191,
+        "bbox": [
+          581,
+          136,
+          718,
+          230
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8218916058540344,
+        "bbox": [
+          35,
+          169,
+          176,
+          286
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8136042952537537,
+        "bbox": [
+          349,
+          142,
+          474,
+          237
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7019644975662231,
+        "bbox": [
+          1035,
+          118,
+          1224,
+          320
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6481155157089233,
+        "bbox": [
+          165,
+          85,
+          285,
+          169
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6023619174957275,
+        "bbox": [
+          814,
+          525,
+          1030,
+          714
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5438786745071411,
+        "bbox": [
+          0,
+          418,
+          255,
+          708
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.927101",
+    "model": "yolo",
+    "frame_number": 20,
+    "inference_time_ms": 49.15785789489746,
+    "detection_count": 12,
+    "fps": 20.34262766571444,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8950508236885071,
+        "bbox": [
+          298,
+          258,
+          461,
+          370
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8944976329803467,
+        "bbox": [
+          1115,
+          303,
+          1279,
+          438
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8928534984588623,
+        "bbox": [
+          905,
+          261,
+          1074,
+          373
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8591808676719666,
+        "bbox": [
+          592,
+          138,
+          729,
+          231
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.848054051399231,
+        "bbox": [
+          752,
+          209,
+          904,
+          323
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8295390009880066,
+        "bbox": [
+          357,
+          143,
+          485,
+          238
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8155774474143982,
+        "bbox": [
+          27,
+          169,
+          168,
+          285
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7620707154273987,
+        "bbox": [
+          1046,
+          120,
+          1238,
+          323
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.712790310382843,
+        "bbox": [
+          176,
+          86,
+          296,
+          173
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6785215735435486,
+        "bbox": [
+          810,
+          518,
+          1019,
+          714
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.520098090171814,
+        "bbox": [
+          269,
+          359,
+          817,
+          710
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5058333873748779,
+        "bbox": [
+          0,
+          418,
+          255,
+          708
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:47.982577",
+    "model": "yolo",
+    "frame_number": 21,
+    "inference_time_ms": 55.47523498535156,
+    "detection_count": 13,
+    "fps": 18.026061543751073,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8758782148361206,
+        "bbox": [
+          1130,
+          306,
+          1279,
+          442
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8733314275741577,
+        "bbox": [
+          291,
+          254,
+          455,
+          367
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.869260311126709,
+        "bbox": [
+          919,
+          265,
+          1088,
+          377
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8607355356216431,
+        "bbox": [
+          369,
+          145,
+          497,
+          239
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8461215496063232,
+        "bbox": [
+          764,
+          213,
+          920,
+          327
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8312891721725464,
+        "bbox": [
+          604,
+          139,
+          741,
+          232
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8196372985839844,
+        "bbox": [
+          24,
+          170,
+          159,
+          281
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7275193333625793,
+        "bbox": [
+          187,
+          89,
+          303,
+          170
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.694791853427887,
+        "bbox": [
+          1056,
+          121,
+          1248,
+          325
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6919878125190735,
+        "bbox": [
+          1037,
+          632,
+          1277,
+          714
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6379128098487854,
+        "bbox": [
+          799,
+          513,
+          1010,
+          714
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5460326075553894,
+        "bbox": [
+          0,
+          419,
+          255,
+          709
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5293567776679993,
+        "bbox": [
+          90,
+          104,
+          192,
+          173
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.030702",
+    "model": "yolo",
+    "frame_number": 22,
+    "inference_time_ms": 48.12502861022949,
+    "detection_count": 12,
+    "fps": 20.77920842601721,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8834053874015808,
+        "bbox": [
+          1151,
+          311,
+          1279,
+          448
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8814830780029297,
+        "bbox": [
+          620,
+          141,
+          756,
+          235
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8752166032791138,
+        "bbox": [
+          281,
+          251,
+          442,
+          362
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8660613894462585,
+        "bbox": [
+          383,
+          146,
+          512,
+          243
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8527372479438782,
+        "bbox": [
+          935,
+          270,
+          1105,
+          384
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8475678563117981,
+        "bbox": [
+          782,
+          217,
+          936,
+          330
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8200084567070007,
+        "bbox": [
+          9,
+          166,
+          150,
+          278
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.781777024269104,
+        "bbox": [
+          203,
+          91,
+          319,
+          173
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7110496759414673,
+        "bbox": [
+          1026,
+          623,
+          1265,
+          715
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6445055603981018,
+        "bbox": [
+          1070,
+          123,
+          1264,
+          329
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6424872279167175,
+        "bbox": [
+          97,
+          106,
+          212,
+          176
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.557694673538208,
+        "bbox": [
+          228,
+          411,
+          336,
+          564
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.085973",
+    "model": "yolo",
+    "frame_number": 23,
+    "inference_time_ms": 55.27138710021973,
+    "detection_count": 14,
+    "fps": 18.092543944785938,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8888509273529053,
+        "bbox": [
+          1167,
+          317,
+          1279,
+          454
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8798307180404663,
+        "bbox": [
+          793,
+          220,
+          949,
+          335
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8703405857086182,
+        "bbox": [
+          273,
+          249,
+          434,
+          360
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.868694007396698,
+        "bbox": [
+          394,
+          148,
+          522,
+          246
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8455520868301392,
+        "bbox": [
+          633,
+          143,
+          768,
+          238
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.829304039478302,
+        "bbox": [
+          948,
+          271,
+          1121,
+          387
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8068169951438904,
+        "bbox": [
+          215,
+          92,
+          333,
+          175
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7431346774101257,
+        "bbox": [
+          226,
+          408,
+          331,
+          558
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7359152436256409,
+        "bbox": [
+          0,
+          139,
+          141,
+          276
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7034447193145752,
+        "bbox": [
+          109,
+          106,
+          223,
+          180
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6903637051582336,
+        "bbox": [
+          1082,
+          125,
+          1275,
+          331
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5802991986274719,
+        "bbox": [
+          784,
+          497,
+          987,
+          698
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5440582036972046,
+        "bbox": [
+          0,
+          417,
+          255,
+          709
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5018720030784607,
+        "bbox": [
+          1022,
+          613,
+          1249,
+          717
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.135351",
+    "model": "yolo",
+    "frame_number": 24,
+    "inference_time_ms": 49.378156661987305,
+    "detection_count": 12,
+    "fps": 20.251869806428562,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.9106681942939758,
+        "bbox": [
+          404,
+          149,
+          534,
+          248
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8885659575462341,
+        "bbox": [
+          805,
+          223,
+          963,
+          339
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8808345198631287,
+        "bbox": [
+          644,
+          145,
+          781,
+          240
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8678701519966125,
+        "bbox": [
+          266,
+          246,
+          425,
+          357
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8557713627815247,
+        "bbox": [
+          1182,
+          320,
+          1279,
+          460
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8416999578475952,
+        "bbox": [
+          962,
+          274,
+          1134,
+          391
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7847340106964111,
+        "bbox": [
+          219,
+          93,
+          344,
+          181
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7373349666595459,
+        "bbox": [
+          0,
+          136,
+          134,
+          274
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7335178852081299,
+        "bbox": [
+          116,
+          109,
+          231,
+          180
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7295922636985779,
+        "bbox": [
+          996,
+          606,
+          1240,
+          717
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6407737135887146,
+        "bbox": [
+          0,
+          417,
+          255,
+          709
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6041670441627502,
+        "bbox": [
+          1091,
+          126,
+          1279,
+          333
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.183454",
+    "model": "yolo",
+    "frame_number": 25,
+    "inference_time_ms": 48.10285568237305,
+    "detection_count": 14,
+    "fps": 20.78878656608412,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8750321865081787,
+        "bbox": [
+          419,
+          151,
+          548,
+          252
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8720218539237976,
+        "bbox": [
+          659,
+          146,
+          798,
+          241
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8678178191184998,
+        "bbox": [
+          821,
+          226,
+          981,
+          343
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8430005311965942,
+        "bbox": [
+          255,
+          243,
+          413,
+          354
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8426362872123718,
+        "bbox": [
+          980,
+          278,
+          1154,
+          397
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8346142172813416,
+        "bbox": [
+          1105,
+          127,
+          1280,
+          337
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8215671181678772,
+        "bbox": [
+          0,
+          159,
+          123,
+          272
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7939184904098511,
+        "bbox": [
+          1204,
+          327,
+          1279,
+          465
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7871078252792358,
+        "bbox": [
+          988,
+          593,
+          1227,
+          715
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7576513290405273,
+        "bbox": [
+          234,
+          95,
+          359,
+          181
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.742767870426178,
+        "bbox": [
+          131,
+          111,
+          243,
+          180
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7386325001716614,
+        "bbox": [
+          215,
+          397,
+          328,
+          548
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6683731079101562,
+        "bbox": [
+          0,
+          417,
+          255,
+          709
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5977134704589844,
+        "bbox": [
+          769,
+          483,
+          960,
+          681
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.232595",
+    "model": "yolo",
+    "frame_number": 26,
+    "inference_time_ms": 49.14069175720215,
+    "detection_count": 14,
+    "fps": 20.349733881258157,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.9039473533630371,
+        "bbox": [
+          431,
+          154,
+          561,
+          254
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8907376527786255,
+        "bbox": [
+          994,
+          282,
+          1170,
+          404
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8779189586639404,
+        "bbox": [
+          671,
+          147,
+          809,
+          243
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8749502301216125,
+        "bbox": [
+          835,
+          228,
+          994,
+          346
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8614895343780518,
+        "bbox": [
+          248,
+          241,
+          404,
+          352
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8600443005561829,
+        "bbox": [
+          1116,
+          130,
+          1280,
+          340
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8338721394538879,
+        "bbox": [
+          1,
+          159,
+          115,
+          269
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8146348595619202,
+        "bbox": [
+          245,
+          97,
+          370,
+          183
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.734670877456665,
+        "bbox": [
+          140,
+          111,
+          256,
+          181
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7339511513710022,
+        "bbox": [
+          1219,
+          331,
+          1279,
+          470
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7074485421180725,
+        "bbox": [
+          207,
+          392,
+          333,
+          545
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6783354878425598,
+        "bbox": [
+          0,
+          418,
+          254,
+          709
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.636236310005188,
+        "bbox": [
+          969,
+          585,
+          1218,
+          713
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6182241439819336,
+        "bbox": [
+          20,
+          91,
+          149,
+          168
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.288266",
+    "model": "yolo",
+    "frame_number": 27,
+    "inference_time_ms": 55.67121505737305,
+    "detection_count": 13,
+    "fps": 17.962604174696576,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.9113856554031372,
+        "bbox": [
+          239,
+          239,
+          394,
+          346
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8966245055198669,
+        "bbox": [
+          1006,
+          286,
+          1185,
+          409
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8905134201049805,
+        "bbox": [
+          441,
+          157,
+          573,
+          256
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.889881432056427,
+        "bbox": [
+          683,
+          148,
+          820,
+          246
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.841890275478363,
+        "bbox": [
+          1127,
+          132,
+          1279,
+          341
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8384612798690796,
+        "bbox": [
+          847,
+          231,
+          1008,
+          350
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8305317163467407,
+        "bbox": [
+          254,
+          98,
+          382,
+          185
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8032358288764954,
+        "bbox": [
+          964,
+          578,
+          1211,
+          714
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7707454562187195,
+        "bbox": [
+          151,
+          113,
+          266,
+          183
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7648807764053345,
+        "bbox": [
+          200,
+          390,
+          327,
+          538
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7639317512512207,
+        "bbox": [
+          0,
+          150,
+          106,
+          268
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6807062029838562,
+        "bbox": [
+          0,
+          418,
+          255,
+          710
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6053518056869507,
+        "bbox": [
+          1236,
+          339,
+          1279,
+          477
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.331961",
+    "model": "yolo",
+    "frame_number": 28,
+    "inference_time_ms": 43.69497299194336,
+    "detection_count": 12,
+    "fps": 22.88592786599007,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8999342322349548,
+        "bbox": [
+          231,
+          236,
+          383,
+          344
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8784604072570801,
+        "bbox": [
+          698,
+          149,
+          837,
+          249
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.86956787109375,
+        "bbox": [
+          456,
+          160,
+          587,
+          258
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8598830699920654,
+        "bbox": [
+          1025,
+          291,
+          1205,
+          414
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8483425378799438,
+        "bbox": [
+          865,
+          236,
+          1026,
+          353
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8307260274887085,
+        "bbox": [
+          272,
+          99,
+          396,
+          186
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8134588599205017,
+        "bbox": [
+          951,
+          569,
+          1200,
+          715
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7724241614341736,
+        "bbox": [
+          198,
+          384,
+          325,
+          532
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7672982811927795,
+        "bbox": [
+          1141,
+          133,
+          1279,
+          343
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.750400722026825,
+        "bbox": [
+          0,
+          151,
+          96,
+          264
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7054755687713623,
+        "bbox": [
+          163,
+          116,
+          287,
+          193
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7031588554382324,
+        "bbox": [
+          0,
+          418,
+          255,
+          710
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.390589",
+    "model": "yolo",
+    "frame_number": 29,
+    "inference_time_ms": 42.66071319580078,
+    "detection_count": 13,
+    "fps": 23.440770795609506,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8914045691490173,
+        "bbox": [
+          223,
+          234,
+          375,
+          341
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8861179351806641,
+        "bbox": [
+          466,
+          161,
+          597,
+          261
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.853754460811615,
+        "bbox": [
+          709,
+          152,
+          849,
+          251
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8522216081619263,
+        "bbox": [
+          878,
+          239,
+          1040,
+          358
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8282042145729065,
+        "bbox": [
+          1040,
+          297,
+          1218,
+          416
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8207111954689026,
+        "bbox": [
+          934,
+          562,
+          1175,
+          716
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8080596923828125,
+        "bbox": [
+          190,
+          381,
+          322,
+          529
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8038352131843567,
+        "bbox": [
+          280,
+          99,
+          409,
+          187
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7346229553222656,
+        "bbox": [
+          0,
+          147,
+          89,
+          262
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6962401866912842,
+        "bbox": [
+          177,
+          117,
+          295,
+          194
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.694475531578064,
+        "bbox": [
+          0,
+          418,
+          255,
+          709
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6088261008262634,
+        "bbox": [
+          1151,
+          135,
+          1279,
+          348
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5037628412246704,
+        "bbox": [
+          0,
+          92,
+          49,
+          152
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.441316",
+    "model": "yolo",
+    "frame_number": 30,
+    "inference_time_ms": 50.726890563964844,
+    "detection_count": 12,
+    "fps": 19.713410163373503,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8806502223014832,
+        "bbox": [
+          215,
+          231,
+          368,
+          338
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8664836287498474,
+        "bbox": [
+          1055,
+          301,
+          1233,
+          421
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.857484757900238,
+        "bbox": [
+          479,
+          162,
+          611,
+          264
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8550217151641846,
+        "bbox": [
+          721,
+          153,
+          862,
+          253
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8340195417404175,
+        "bbox": [
+          889,
+          240,
+          1054,
+          363
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8285052180290222,
+        "bbox": [
+          924,
+          554,
+          1161,
+          716
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8124039769172668,
+        "bbox": [
+          185,
+          379,
+          316,
+          523
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7959362864494324,
+        "bbox": [
+          290,
+          101,
+          418,
+          189
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7209450602531433,
+        "bbox": [
+          184,
+          117,
+          303,
+          194
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7033444046974182,
+        "bbox": [
+          1162,
+          138,
+          1279,
+          354
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6595143675804138,
+        "bbox": [
+          0,
+          418,
+          255,
+          709
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5815065503120422,
+        "bbox": [
+          0,
+          135,
+          80,
+          260
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.496185",
+    "model": "yolo",
+    "frame_number": 31,
+    "inference_time_ms": 54.86869812011719,
+    "detection_count": 12,
+    "fps": 18.22532763235652,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8875024914741516,
+        "bbox": [
+          206,
+          228,
+          358,
+          335
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8844535946846008,
+        "bbox": [
+          493,
+          164,
+          626,
+          269
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8740379214286804,
+        "bbox": [
+          1072,
+          303,
+          1253,
+          427
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.860786497592926,
+        "bbox": [
+          179,
+          371,
+          315,
+          517
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8551890254020691,
+        "bbox": [
+          907,
+          244,
+          1074,
+          368
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8386498093605042,
+        "bbox": [
+          307,
+          103,
+          435,
+          194
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8381431102752686,
+        "bbox": [
+          904,
+          545,
+          1140,
+          718
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8306503295898438,
+        "bbox": [
+          737,
+          156,
+          877,
+          255
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7715644240379333,
+        "bbox": [
+          199,
+          120,
+          320,
+          200
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7204138040542603,
+        "bbox": [
+          0,
+          146,
+          70,
+          258
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6725056171417236,
+        "bbox": [
+          0,
+          418,
+          256,
+          709
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5868054628372192,
+        "bbox": [
+          1177,
+          141,
+          1279,
+          356
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.546576",
+    "model": "yolo",
+    "frame_number": 32,
+    "inference_time_ms": 50.391435623168945,
+    "detection_count": 13,
+    "fps": 19.844642003813455,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8896433115005493,
+        "bbox": [
+          198,
+          225,
+          351,
+          330
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.879352331161499,
+        "bbox": [
+          1086,
+          306,
+          1266,
+          432
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8649072051048279,
+        "bbox": [
+          502,
+          167,
+          638,
+          272
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8486163020133972,
+        "bbox": [
+          171,
+          368,
+          311,
+          515
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8462320566177368,
+        "bbox": [
+          920,
+          248,
+          1088,
+          371
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8439856767654419,
+        "bbox": [
+          893,
+          541,
+          1125,
+          717
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8219387531280518,
+        "bbox": [
+          749,
+          158,
+          889,
+          256
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8082693219184875,
+        "bbox": [
+          319,
+          103,
+          448,
+          193
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7631106376647949,
+        "bbox": [
+          207,
+          121,
+          335,
+          205
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7111299633979797,
+        "bbox": [
+          0,
+          149,
+          62,
+          256
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6573230624198914,
+        "bbox": [
+          0,
+          418,
+          255,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5752087235450745,
+        "bbox": [
+          0,
+          91,
+          62,
+          157
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5320759415626526,
+        "bbox": [
+          1189,
+          142,
+          1279,
+          325
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.595275",
+    "model": "yolo",
+    "frame_number": 33,
+    "inference_time_ms": 33.12420845031738,
+    "detection_count": 12,
+    "fps": 30.189400646354716,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.895330548286438,
+        "bbox": [
+          880,
+          534,
+          1112,
+          717
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8820610642433167,
+        "bbox": [
+          1100,
+          308,
+          1279,
+          435
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8781713247299194,
+        "bbox": [
+          514,
+          169,
+          649,
+          272
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8697541952133179,
+        "bbox": [
+          190,
+          223,
+          341,
+          328
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8576362729072571,
+        "bbox": [
+          934,
+          253,
+          1101,
+          375
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8489766716957092,
+        "bbox": [
+          761,
+          160,
+          902,
+          259
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.815292239189148,
+        "bbox": [
+          326,
+          107,
+          458,
+          192
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8138045072555542,
+        "bbox": [
+          165,
+          364,
+          311,
+          510
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6443620324134827,
+        "bbox": [
+          222,
+          123,
+          343,
+          202
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6270250082015991,
+        "bbox": [
+          0,
+          149,
+          54,
+          255
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5964524149894714,
+        "bbox": [
+          0,
+          418,
+          256,
+          710
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5344618558883667,
+        "bbox": [
+          0,
+          92,
+          85,
+          161
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.651498",
+    "model": "yolo",
+    "frame_number": 34,
+    "inference_time_ms": 40.377140045166016,
+    "detection_count": 14,
+    "fps": 24.7664891292795,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8894263505935669,
+        "bbox": [
+          1120,
+          313,
+          1279,
+          442
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8823887705802917,
+        "bbox": [
+          529,
+          173,
+          666,
+          279
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8819342851638794,
+        "bbox": [
+          179,
+          220,
+          332,
+          326
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8610256910324097,
+        "bbox": [
+          951,
+          257,
+          1121,
+          379
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8466759324073792,
+        "bbox": [
+          865,
+          525,
+          1099,
+          715
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8400192856788635,
+        "bbox": [
+          159,
+          360,
+          308,
+          502
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8212319016456604,
+        "bbox": [
+          776,
+          162,
+          917,
+          262
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8071159720420837,
+        "bbox": [
+          348,
+          109,
+          474,
+          194
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7385865449905396,
+        "bbox": [
+          233,
+          125,
+          358,
+          206
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6464643478393555,
+        "bbox": [
+          0,
+          151,
+          43,
+          250
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5938188433647156,
+        "bbox": [
+          0,
+          419,
+          255,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5653944611549377,
+        "bbox": [
+          1080,
+          666,
+          1279,
+          716
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5318352580070496,
+        "bbox": [
+          0,
+          94,
+          102,
+          164
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5163697004318237,
+        "bbox": [
+          1216,
+          147,
+          1279,
+          334
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.706461",
+    "model": "yolo",
+    "frame_number": 35,
+    "inference_time_ms": 39.983272552490234,
+    "detection_count": 15,
+    "fps": 25.010459028514866,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8838345408439636,
+        "bbox": [
+          174,
+          217,
+          324,
+          323
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8783323764801025,
+        "bbox": [
+          542,
+          174,
+          677,
+          282
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8699971437454224,
+        "bbox": [
+          1135,
+          317,
+          1279,
+          445
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8638405799865723,
+        "bbox": [
+          856,
+          520,
+          1086,
+          713
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.850881040096283,
+        "bbox": [
+          964,
+          259,
+          1134,
+          384
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8451193571090698,
+        "bbox": [
+          788,
+          163,
+          930,
+          263
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8333443999290466,
+        "bbox": [
+          155,
+          359,
+          304,
+          499
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8032950162887573,
+        "bbox": [
+          359,
+          111,
+          485,
+          196
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7304872870445251,
+        "bbox": [
+          244,
+          127,
+          369,
+          212
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6532691121101379,
+        "bbox": [
+          1066,
+          656,
+          1280,
+          716
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5996339321136475,
+        "bbox": [
+          0,
+          419,
+          254,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5810648798942566,
+        "bbox": [
+          107,
+          100,
+          267,
+          185
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5699978470802307,
+        "bbox": [
+          0,
+          150,
+          36,
+          248
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5646169781684875,
+        "bbox": [
+          0,
+          95,
+          111,
+          164
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5381886959075928,
+        "bbox": [
+          591,
+          426,
+          847,
+          610
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.772559",
+    "model": "yolo",
+    "frame_number": 36,
+    "inference_time_ms": 38.588523864746094,
+    "detection_count": 12,
+    "fps": 25.91444035291501,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8946533799171448,
+        "bbox": [
+          1149,
+          321,
+          1279,
+          451
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8919420838356018,
+        "bbox": [
+          844,
+          512,
+          1075,
+          712
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8787237405776978,
+        "bbox": [
+          541,
+          176,
+          688,
+          282
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8784852027893066,
+        "bbox": [
+          800,
+          164,
+          943,
+          266
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8505827784538269,
+        "bbox": [
+          166,
+          215,
+          315,
+          320
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.845673143863678,
+        "bbox": [
+          371,
+          112,
+          497,
+          197
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8192663192749023,
+        "bbox": [
+          150,
+          353,
+          302,
+          496
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8164170980453491,
+        "bbox": [
+          977,
+          262,
+          1151,
+          386
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7364579439163208,
+        "bbox": [
+          255,
+          127,
+          377,
+          213
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6882569193840027,
+        "bbox": [
+          1058,
+          643,
+          1279,
+          714
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6364824175834656,
+        "bbox": [
+          0,
+          420,
+          254,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5781901478767395,
+        "bbox": [
+          3,
+          96,
+          127,
+          164
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.846623",
+    "model": "yolo",
+    "frame_number": 37,
+    "inference_time_ms": 44.14987564086914,
+    "detection_count": 12,
+    "fps": 22.650120424672476,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8879495859146118,
+        "bbox": [
+          566,
+          177,
+          705,
+          283
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8778775334358215,
+        "bbox": [
+          1169,
+          327,
+          1279,
+          457
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8722918033599854,
+        "bbox": [
+          155,
+          212,
+          305,
+          317
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8678686022758484,
+        "bbox": [
+          829,
+          504,
+          1064,
+          706
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8592162132263184,
+        "bbox": [
+          816,
+          165,
+          960,
+          269
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8568375110626221,
+        "bbox": [
+          995,
+          266,
+          1172,
+          392
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8376873135566711,
+        "bbox": [
+          142,
+          351,
+          297,
+          489
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8237928152084351,
+        "bbox": [
+          389,
+          112,
+          512,
+          198
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7475494146347046,
+        "bbox": [
+          269,
+          130,
+          394,
+          214
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6795974373817444,
+        "bbox": [
+          1028,
+          631,
+          1277,
+          716
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6308892965316772,
+        "bbox": [
+          0,
+          418,
+          254,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5651354193687439,
+        "bbox": [
+          13,
+          97,
+          138,
+          165
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.903461",
+    "model": "yolo",
+    "frame_number": 38,
+    "inference_time_ms": 56.838035583496094,
+    "detection_count": 12,
+    "fps": 17.593852245843053,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.9000399112701416,
+        "bbox": [
+          822,
+          498,
+          1051,
+          688
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8869122862815857,
+        "bbox": [
+          146,
+          210,
+          297,
+          314
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8759851455688477,
+        "bbox": [
+          828,
+          168,
+          972,
+          272
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8719560503959656,
+        "bbox": [
+          580,
+          180,
+          716,
+          285
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8537413477897644,
+        "bbox": [
+          1009,
+          269,
+          1186,
+          397
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8528372645378113,
+        "bbox": [
+          1184,
+          332,
+          1279,
+          462
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8102478981018066,
+        "bbox": [
+          135,
+          347,
+          295,
+          485
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8081200122833252,
+        "bbox": [
+          400,
+          114,
+          525,
+          199
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7999244928359985,
+        "bbox": [
+          996,
+          624,
+          1270,
+          717
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7778804302215576,
+        "bbox": [
+          281,
+          131,
+          404,
+          212
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6439837217330933,
+        "bbox": [
+          0,
+          418,
+          254,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5857004523277283,
+        "bbox": [
+          31,
+          98,
+          146,
+          166
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:48.956407",
+    "model": "yolo",
+    "frame_number": 39,
+    "inference_time_ms": 37.54377365112305,
+    "detection_count": 13,
+    "fps": 26.635575030164475,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8943491578102112,
+        "bbox": [
+          140,
+          208,
+          287,
+          311
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8793495893478394,
+        "bbox": [
+          1023,
+          272,
+          1201,
+          401
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8669681549072266,
+        "bbox": [
+          592,
+          181,
+          730,
+          287
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.864054262638092,
+        "bbox": [
+          812,
+          491,
+          1038,
+          679
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8246416449546814,
+        "bbox": [
+          132,
+          343,
+          292,
+          483
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8238794803619385,
+        "bbox": [
+          840,
+          170,
+          986,
+          273
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7818877696990967,
+        "bbox": [
+          1199,
+          337,
+          1279,
+          470
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.772638738155365,
+        "bbox": [
+          290,
+          131,
+          415,
+          215
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7492555379867554,
+        "bbox": [
+          1003,
+          613,
+          1257,
+          716
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7339637279510498,
+        "bbox": [
+          410,
+          115,
+          539,
+          204
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6442360281944275,
+        "bbox": [
+          0,
+          417,
+          254,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6316890120506287,
+        "bbox": [
+          42,
+          99,
+          157,
+          166
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5330634713172913,
+        "bbox": [
+          268,
+          268,
+          705,
+          713
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.012323",
+    "model": "yolo",
+    "frame_number": 40,
+    "inference_time_ms": 38.17296028137207,
+    "detection_count": 14,
+    "fps": 26.196553597861456,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8963322639465332,
+        "bbox": [
+          130,
+          205,
+          278,
+          308
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8743632435798645,
+        "bbox": [
+          800,
+          482,
+          1024,
+          666
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8603876829147339,
+        "bbox": [
+          1042,
+          277,
+          1221,
+          409
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8553101420402527,
+        "bbox": [
+          607,
+          184,
+          745,
+          294
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8362498879432678,
+        "bbox": [
+          125,
+          337,
+          292,
+          477
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8224075436592102,
+        "bbox": [
+          858,
+          173,
+          1002,
+          276
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8050137758255005,
+        "bbox": [
+          972,
+          603,
+          1243,
+          714
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7896692752838135,
+        "bbox": [
+          425,
+          118,
+          555,
+          208
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7849609851837158,
+        "bbox": [
+          304,
+          136,
+          432,
+          216
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7843960523605347,
+        "bbox": [
+          1220,
+          343,
+          1279,
+          472
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6705031394958496,
+        "bbox": [
+          0,
+          417,
+          255,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5451200604438782,
+        "bbox": [
+          49,
+          100,
+          162,
+          167
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5279849767684937,
+        "bbox": [
+          177,
+          112,
+          305,
+          200
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5165321230888367,
+        "bbox": [
+          259,
+          265,
+          698,
+          712
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.067864",
+    "model": "yolo",
+    "frame_number": 41,
+    "inference_time_ms": 37.70089149475098,
+    "detection_count": 14,
+    "fps": 26.524571710438945,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8928176760673523,
+        "bbox": [
+          790,
+          479,
+          1010,
+          658
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8622445464134216,
+        "bbox": [
+          1055,
+          280,
+          1236,
+          412
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8557809591293335,
+        "bbox": [
+          617,
+          188,
+          756,
+          294
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8516824245452881,
+        "bbox": [
+          122,
+          204,
+          268,
+          307
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8496818542480469,
+        "bbox": [
+          119,
+          335,
+          290,
+          472
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8381562232971191,
+        "bbox": [
+          868,
+          175,
+          1016,
+          279
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8359769582748413,
+        "bbox": [
+          960,
+          594,
+          1232,
+          718
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7412553429603577,
+        "bbox": [
+          318,
+          137,
+          447,
+          222
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7346373796463013,
+        "bbox": [
+          437,
+          118,
+          566,
+          208
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.65884929895401,
+        "bbox": [
+          1235,
+          340,
+          1279,
+          482
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6460261344909668,
+        "bbox": [
+          0,
+          416,
+          255,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6059815883636475,
+        "bbox": [
+          186,
+          116,
+          320,
+          201
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5286688804626465,
+        "bbox": [
+          60,
+          101,
+          171,
+          169
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5171347260475159,
+        "bbox": [
+          684,
+          400,
+          784,
+          569
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.117966",
+    "model": "yolo",
+    "frame_number": 42,
+    "inference_time_ms": 33.067941665649414,
+    "detection_count": 13,
+    "fps": 30.240769447068068,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.881374716758728,
+        "bbox": [
+          629,
+          191,
+          771,
+          297
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8768259882926941,
+        "bbox": [
+          780,
+          474,
+          998,
+          650
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.864825963973999,
+        "bbox": [
+          114,
+          203,
+          262,
+          304
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8498189449310303,
+        "bbox": [
+          880,
+          176,
+          1028,
+          280
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8364898562431335,
+        "bbox": [
+          947,
+          587,
+          1219,
+          716
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.835476279258728,
+        "bbox": [
+          1070,
+          286,
+          1251,
+          416
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8291714191436768,
+        "bbox": [
+          115,
+          332,
+          286,
+          469
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7863237857818604,
+        "bbox": [
+          450,
+          121,
+          577,
+          209
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7636213302612305,
+        "bbox": [
+          329,
+          139,
+          462,
+          224
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6247870922088623,
+        "bbox": [
+          0,
+          416,
+          253,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.574228048324585,
+        "bbox": [
+          195,
+          116,
+          331,
+          199
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5455566644668579,
+        "bbox": [
+          259,
+          256,
+          691,
+          710
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.518344521522522,
+        "bbox": [
+          73,
+          102,
+          186,
+          172
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.187334",
+    "model": "yolo",
+    "frame_number": 43,
+    "inference_time_ms": 46.75745964050293,
+    "detection_count": 13,
+    "fps": 21.38696173163705,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.896521270275116,
+        "bbox": [
+          105,
+          201,
+          249,
+          300
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8664860129356384,
+        "bbox": [
+          766,
+          465,
+          985,
+          643
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8654502034187317,
+        "bbox": [
+          935,
+          576,
+          1205,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8643548488616943,
+        "bbox": [
+          644,
+          192,
+          786,
+          301
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8588588833808899,
+        "bbox": [
+          466,
+          122,
+          594,
+          214
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8484426736831665,
+        "bbox": [
+          107,
+          330,
+          281,
+          465
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8416658043861389,
+        "bbox": [
+          897,
+          178,
+          1045,
+          283
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8208866715431213,
+        "bbox": [
+          1087,
+          291,
+          1271,
+          420
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7504004836082458,
+        "bbox": [
+          339,
+          142,
+          479,
+          240
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7155662775039673,
+        "bbox": [
+          0,
+          418,
+          253,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6072865128517151,
+        "bbox": [
+          83,
+          104,
+          200,
+          177
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5474045276641846,
+        "bbox": [
+          253,
+          253,
+          684,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5191059112548828,
+        "bbox": [
+          207,
+          116,
+          344,
+          205
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.234661",
+    "model": "yolo",
+    "frame_number": 44,
+    "inference_time_ms": 38.54560852050781,
+    "detection_count": 12,
+    "fps": 25.94329259240932,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8953244090080261,
+        "bbox": [
+          758,
+          463,
+          974,
+          636
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8907216191291809,
+        "bbox": [
+          910,
+          179,
+          1058,
+          286
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8769662380218506,
+        "bbox": [
+          478,
+          124,
+          607,
+          216
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8765166401863098,
+        "bbox": [
+          656,
+          195,
+          800,
+          305
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8755822777748108,
+        "bbox": [
+          96,
+          198,
+          240,
+          298
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8549044728279114,
+        "bbox": [
+          927,
+          569,
+          1196,
+          714
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8412601351737976,
+        "bbox": [
+          101,
+          327,
+          275,
+          460
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.835412323474884,
+        "bbox": [
+          1102,
+          294,
+          1280,
+          424
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7938157320022583,
+        "bbox": [
+          351,
+          142,
+          488,
+          251
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6872791647911072,
+        "bbox": [
+          0,
+          418,
+          253,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6626303195953369,
+        "bbox": [
+          218,
+          118,
+          353,
+          205
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6338698267936707,
+        "bbox": [
+          91,
+          107,
+          206,
+          178
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.285774",
+    "model": "yolo",
+    "frame_number": 45,
+    "inference_time_ms": 34.81864929199219,
+    "detection_count": 13,
+    "fps": 28.720241029854833,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8811053037643433,
+        "bbox": [
+          918,
+          562,
+          1186,
+          715
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8720823526382446,
+        "bbox": [
+          750,
+          458,
+          965,
+          630
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8706624507904053,
+        "bbox": [
+          362,
+          144,
+          502,
+          249
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8673228621482849,
+        "bbox": [
+          1118,
+          297,
+          1279,
+          428
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8631165027618408,
+        "bbox": [
+          668,
+          197,
+          811,
+          308
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8600313067436218,
+        "bbox": [
+          489,
+          127,
+          618,
+          217
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8592422008514404,
+        "bbox": [
+          88,
+          196,
+          233,
+          296
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8365200757980347,
+        "bbox": [
+          922,
+          180,
+          1071,
+          287
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8025039434432983,
+        "bbox": [
+          96,
+          323,
+          262,
+          456
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7257630825042725,
+        "bbox": [
+          0,
+          419,
+          253,
+          711
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6959463953971863,
+        "bbox": [
+          246,
+          245,
+          684,
+          712
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.629115879535675,
+        "bbox": [
+          103,
+          110,
+          222,
+          180
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6192758679389954,
+        "bbox": [
+          228,
+          119,
+          366,
+          215
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.366090",
+    "model": "yolo",
+    "frame_number": 46,
+    "inference_time_ms": 46.80156707763672,
+    "detection_count": 13,
+    "fps": 21.366805909322466,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8878881335258484,
+        "bbox": [
+          685,
+          201,
+          830,
+          311
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8804243206977844,
+        "bbox": [
+          79,
+          193,
+          223,
+          294
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8802640438079834,
+        "bbox": [
+          376,
+          144,
+          516,
+          244
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8704657554626465,
+        "bbox": [
+          506,
+          128,
+          636,
+          220
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8650561571121216,
+        "bbox": [
+          740,
+          450,
+          953,
+          624
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8547869920730591,
+        "bbox": [
+          1136,
+          301,
+          1279,
+          434
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8512670993804932,
+        "bbox": [
+          905,
+          554,
+          1172,
+          717
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.846998393535614,
+        "bbox": [
+          938,
+          182,
+          1089,
+          291
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8279017210006714,
+        "bbox": [
+          89,
+          320,
+          262,
+          452
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6811131238937378,
+        "bbox": [
+          120,
+          111,
+          236,
+          181
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6775884032249451,
+        "bbox": [
+          239,
+          120,
+          380,
+          219
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6637106537818909,
+        "bbox": [
+          0,
+          420,
+          254,
+          711
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.644819438457489,
+        "bbox": [
+          250,
+          241,
+          675,
+          709
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.421801",
+    "model": "yolo",
+    "frame_number": 47,
+    "inference_time_ms": 38.857460021972656,
+    "detection_count": 13,
+    "fps": 25.73508405939379,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.888519823551178,
+        "bbox": [
+          895,
+          547,
+          1163,
+          714
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8853710889816284,
+        "bbox": [
+          730,
+          446,
+          941,
+          616
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8769073486328125,
+        "bbox": [
+          515,
+          128,
+          648,
+          224
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8715255856513977,
+        "bbox": [
+          386,
+          147,
+          529,
+          242
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8631764650344849,
+        "bbox": [
+          696,
+          203,
+          842,
+          315
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8556947112083435,
+        "bbox": [
+          1152,
+          303,
+          1279,
+          438
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8534132242202759,
+        "bbox": [
+          84,
+          316,
+          259,
+          449
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8489417433738708,
+        "bbox": [
+          72,
+          191,
+          217,
+          291
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8260963559150696,
+        "bbox": [
+          950,
+          184,
+          1101,
+          294
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7149952054023743,
+        "bbox": [
+          127,
+          112,
+          237,
+          182
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6506849527359009,
+        "bbox": [
+          246,
+          238,
+          665,
+          710
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6358546614646912,
+        "bbox": [
+          0,
+          419,
+          253,
+          711
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5938585996627808,
+        "bbox": [
+          253,
+          122,
+          391,
+          216
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.471943",
+    "model": "yolo",
+    "frame_number": 48,
+    "inference_time_ms": 32.50885009765625,
+    "detection_count": 13,
+    "fps": 30.760854259563484,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.9049782156944275,
+        "bbox": [
+          399,
+          147,
+          541,
+          236
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8861616253852844,
+        "bbox": [
+          720,
+          442,
+          932,
+          610
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8736797571182251,
+        "bbox": [
+          65,
+          189,
+          206,
+          289
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8668019771575928,
+        "bbox": [
+          887,
+          541,
+          1150,
+          715
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.859521746635437,
+        "bbox": [
+          528,
+          130,
+          658,
+          224
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8580953478813171,
+        "bbox": [
+          1166,
+          308,
+          1279,
+          443
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8532957434654236,
+        "bbox": [
+          78,
+          314,
+          254,
+          447
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8501805067062378,
+        "bbox": [
+          708,
+          205,
+          854,
+          319
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8433184027671814,
+        "bbox": [
+          963,
+          189,
+          1115,
+          296
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6692726016044617,
+        "bbox": [
+          139,
+          114,
+          249,
+          183
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6499404311180115,
+        "bbox": [
+          0,
+          419,
+          254,
+          711
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5422159433364868,
+        "bbox": [
+          241,
+          233,
+          673,
+          708
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5012874603271484,
+        "bbox": [
+          260,
+          124,
+          396,
+          221
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.535292",
+    "model": "yolo",
+    "frame_number": 49,
+    "inference_time_ms": 40.62509536743164,
+    "detection_count": 13,
+    "fps": 24.615326830756953,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8746104836463928,
+        "bbox": [
+          54,
+          188,
+          199,
+          285
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8734886050224304,
+        "bbox": [
+          1186,
+          313,
+          1279,
+          450
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8644735813140869,
+        "bbox": [
+          980,
+          192,
+          1132,
+          299
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8593378067016602,
+        "bbox": [
+          875,
+          530,
+          1135,
+          714
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8463324904441833,
+        "bbox": [
+          724,
+          207,
+          872,
+          323
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8444050550460815,
+        "bbox": [
+          710,
+          434,
+          918,
+          600
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8430630564689636,
+        "bbox": [
+          414,
+          150,
+          546,
+          232
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8426485657691956,
+        "bbox": [
+          72,
+          310,
+          249,
+          441
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.814623236656189,
+        "bbox": [
+          542,
+          133,
+          675,
+          226
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7062288522720337,
+        "bbox": [
+          0,
+          419,
+          255,
+          711
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5727773904800415,
+        "bbox": [
+          231,
+          230,
+          652,
+          709
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.564195990562439,
+        "bbox": [
+          281,
+          127,
+          409,
+          217
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5086613297462463,
+        "bbox": [
+          153,
+          115,
+          264,
+          186
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.555031",
+    "model": "dnn",
+    "frame_number": 50,
+    "inference_time_ms": 2.2928714752197266,
+    "detection_count": 0,
+    "fps": 436.13434542996777,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.561710",
+    "model": "dnn",
+    "frame_number": 51,
+    "inference_time_ms": 1.5721321105957031,
+    "detection_count": 0,
+    "fps": 636.0788595693055,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.573207",
+    "model": "dnn",
+    "frame_number": 52,
+    "inference_time_ms": 2.002239227294922,
+    "detection_count": 0,
+    "fps": 499.4408192426768,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T14:57:49.585318",
+    "model": "dnn",
+    "frame_number": 53,
+    "inference_time_ms": 0.0,
+    "detection_count": 0,
+    "fps": 0.0,
+    "detections": []
+  }
+]

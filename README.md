@@ -127,13 +127,13 @@ For Windows users, we provide convenient activation scripts that automatically s
 cd "c:\Users\[YourUsername]\Desktop\RealVision-ObjectUnderstandingAI"
 
 # Run the setup script (creates venv and installs dependencies automatically)
-.\activate_env.ps1
+scripts\activate_env.ps1
 ```
 
 **Option 2: Batch File**
 ```cmd
-# Double-click activate_env.bat or run from Command Prompt:
-activate_env.bat
+# Double-click scripts\activate_env.bat or run from Command Prompt:
+scripts\activate_env.bat
 ```
 
 **Option 3: Manual Windows Setup**
@@ -152,11 +152,11 @@ python run.py
 ```
 
 **Windows Features:**
-- 🚀 **One-click activation scripts** (`activate_env.bat` and `activate_env.ps1`)
+- 🚀 **One-click activation scripts** (`scripts/activate_env.bat` and `scripts/activate_env.ps1`)
 - 📊 **Automatic environment setup** with all dependencies
 - 🐍 **Python version verification** and path confirmation
 - 💡 **Built-in command reference** displayed on activation
-- ✅ **Library verification** with `test_imports.py`
+- ✅ **Library verification** with `tests/test_imports.py`
 
 ## 🎯 Usage
 
@@ -180,13 +180,13 @@ python run.py --list-cameras
 
 ### Windows Quick Start
 
-After running `activate_env.bat` or `activate_env.ps1`, you'll see available commands. Here are the most common:
+After running `scripts/activate_env.bat` or `scripts/activate_env.ps1`, you'll see available commands. Here are the most common:
 
 ```powershell
 # Basic operations
 python run.py                          # Use default camera
 python run.py --camera 1               # Use specific camera
-python run.py --input traffic.mp4      # Process the included sample video
+python run.py --input media/traffic.mp4      # Process the included sample video
 python run.py --list-cameras           # Check available cameras
 
 # Advanced features
@@ -195,10 +195,16 @@ python run.py --model yolo             # Force YOLO model
 python run.py --no-gui                 # Run without display (save results only)
 
 # Data science features (Windows optimized)
-python test_imports.py                 # Verify all libraries are working
-python demo_analytics.py               # Interactive analytics demo
-python test_data_science.py           # Test analytics features
+python tests/test_imports.py                 # Verify all libraries are working
+python src/demo_analytics.py               # Interactive analytics demo
+python tests/test_data_science.py           # Test analytics features
 jupyter notebook                       # Open Jupyter for analysis
+
+# Performance data visualization
+python visualization/launch_visualizer.py           # Launch visualization tool launcher
+python visualization/visualize_performance.py       # Command-line data visualizer
+python visualization/visualize_performance_gui.py   # GUI data visualizer
+scripts/visualize_data.bat                     # Windows batch launcher
 ```
 
 **Windows-Specific Tips:**
@@ -210,16 +216,16 @@ jupyter notebook                       # Open Jupyter for analysis
 ### Video Processing
 ```bash
 # Process various video formats
-python run.py --input traffic.mp4
-python run.py --input demo.avi
-python run.py --input sample.mov
+python run.py --input media/traffic.mp4
+python run.py --input media/demo.avi
+python run.py --input media/sample.mov
 
 # Process video with specific model
-python run.py --input video.mp4 --model yolo
-python run.py --input video.mp4 --model dnn
+python run.py --input media/traffic.mp4 --model yolo
+python run.py --input media/traffic.mp4 --model onnx
 
 # Save processed video output
-python run.py --input video.mp4 --output processed_video.mp4
+python run.py --input media/traffic.mp4 --output processed_video.mp4
 
 # Batch process multiple videos
 python run.py --input-dir ./videos/ --output-dir ./processed/
@@ -435,8 +441,8 @@ python run.py --camera 1
 ```
 
 #### Low Performance
-- Try MobileNet-SSD model: `python run.py --model dnn`
-- Lower confidence threshold: `python run.py --confidence 0.3`
+- Try ONNX model: `python run.py --model onnx`
+- Use YOLOv8 with lower confidence: `python run.py --model yolo --confidence 0.3`
 - Use lower camera resolution or reduce detection frequency
 
 #### Model Loading Errors
@@ -449,6 +455,37 @@ pip install ultralytics
 rm -rf ~/.ultralytics
 ```
 
+#### DNN (MobileNet-SSD) Model Issues
+If you encounter OpenCV DNN errors like "!blobs.empty() || inputs.size() > 1":
+
+**Quick Solution - Use Alternative Models:**
+```bash
+# Use YOLOv8 (recommended, works out of the box)
+python run.py --model yolo
+
+# Use ONNX model (also works reliably)
+python run.py --model onnx
+```
+
+**Manual MobileNet-SSD Fix:**
+1. Download the correct model files manually:
+   - **Prototxt**: [MobileNetSSD_deploy.prototxt](https://raw.githubusercontent.com/chuanqi305/MobileNet-SSD/master/deploy.prototxt)
+   - **Caffemodel**: [MobileNetSSD_deploy.caffemodel](https://drive.google.com/uc?export=download&id=0B3gersZ2cHIxRm5PMWRoTkdHdHc) (23MB)
+
+2. Place both files in the `models/` directory
+
+3. Verify file sizes:
+   ```bash
+   # Should be ~44KB for prototxt and ~23MB for caffemodel
+   dir models\MobileNet*
+   ```
+
+**Alternative Download Script:**
+```bash
+# Run the model downloader script
+python scripts\download_models.py
+```
+
 #### GPU Issues
 - Ensure CUDA is properly installed
 - Check PyTorch CUDA compatibility
@@ -457,7 +494,7 @@ rm -rf ~/.ultralytics
 ### Performance Optimization
 
 #### For Better Speed
-1. Use MobileNet-SSD model (`--model dnn`)
+1. Use ONNX model (`--model onnx`)
 2. Lower camera resolution
 3. Increase confidence threshold
 4. Disable tracking IDs display
@@ -472,39 +509,66 @@ rm -rf ~/.ultralytics
 
 ```
 RealVision-ObjectUnderstandingAI/
-├── main.py                          # Main application code
-├── run.py                           # Application launcher  
-├── performance_analyzer.py          # Data science analytics module
-├── analyze_performance.py           # Standalone analysis tool
-├── demo_analytics.py                # Analytics demonstration script
-├── demo_sample_analytics.py         # Sample data analytics demo
-├── requirements.txt                 # Python dependencies
-├── README.md                       # This documentation
-├── USAGE.md                        # Usage instructions
-├── setup.py                        # Installation setup
-├── performance_analysis.ipynb      # Jupyter notebook for analysis
-├── test_data_science.py            # Data science feature tests
-├── test_models_analyze.py          # ModelsAnalyze folder tests
-├── test_imports.py                 # Library verification script
-├── activate_env.bat                # Windows batch activation script
-├── activate_env.ps1                # Windows PowerShell activation script
-├── .gitignore                      # Git ignore rules
-├── venv/                           # Virtual environment (after setup)
-├── screenshots/                    # Screenshot output directory
-├── ModelsAnalyze/                  # Model analysis and performance graphs
-├── data/                           # Performance data exports
-├── demo.mov                        # Demo video file
-├── traffic.mp4                     # Sample video for testing
-├── yolov8n.pt                      # YOLOv8 model weights
-├── yolov5s.onnx                    # ONNX model weights
-├── MobileNetSSD_deploy.prototxt    # MobileNet model architecture
-└── MobileNetSSD_deploy.caffemodel  # MobileNet model weights
+├── 📁 src/                           # Main source code
+│   ├── main.py                       # Core application with GUI and analytics
+│   ├── run.py                        # Application launcher and CLI
+│   ├── performance_analyzer.py       # Real-time performance monitoring
+│   ├── analyze_performance.py        # Standalone analysis tool
+│   ├── demo_analytics.py             # Interactive analytics demo
+│   └── demo_sample_analytics.py      # Sample data generation
+├── 📁 models/                        # AI model files
+│   ├── yolov8n.pt                    # YOLOv8 model weights
+│   ├── yolov5s.onnx                  # ONNX model weights
+│   ├── MobileNetSSD_deploy.prototxt  # MobileNet architecture
+│   └── MobileNetSSD_deploy.caffemodel # MobileNet weights
+├── 📁 visualization/                 # Performance data visualization tools
+│   ├── launch_visualizer.py          # Visualization tool launcher
+│   ├── visualize_performance.py      # CLI visualizer
+│   └── visualize_performance_gui.py  # GUI visualizer
+├── 📁 tests/                         # Test suite
+│   ├── test_imports.py               # Library verification
+│   ├── test_data_science.py          # Analytics tests
+│   ├── test_models_analyze.py        # Model analysis tests
+│   └── test_visualization_system.py  # Visualization tests
+├── 📁 scripts/                       # Utility scripts and launchers
+│   ├── activate_env.bat              # Windows batch activation
+│   ├── activate_env.ps1              # PowerShell activation
+│   ├── visualize_data.bat            # Visualization launcher
+│   └── setup.py                      # Installation setup
+├── 📁 notebooks/                     # Jupyter notebooks
+│   └── performance_analysis.ipynb    # Interactive analysis notebook
+├── 📁 media/                         # Demo videos and screenshots
+│   ├── demo.mov                      # Demo video file
+│   ├── traffic.mp4                   # Sample video for testing
+│   └── screenshots/                  # Screenshot output directory
+├── 📁 data/                          # Performance data exports
+│   └── performance_data_*.json       # Generated performance logs
+├── 📁 docs/                          # Documentation and analysis reports
+│   └── ModelsAnalyze/                # Model analysis and performance graphs
+├── 📁 output/                        # Generated reports and charts
+│   ├── *.html                        # Interactive dashboards
+│   ├── *.md                          # Analysis reports
+│   └── *.png                         # Chart exports
+├── run.py                            # Main application launcher (root)
+├── app.py                            # Advanced launcher with subcommands
+├── requirements.txt                  # Python dependencies
+├── README.md                         # This documentation
+├── LICENSE                           # MIT License
+├── .gitignore                        # Git ignore rules
+└── venv/                            # Virtual environment (after setup)
 ```
 
-**Windows-Specific Files:**
-- `activate_env.bat` - One-click environment setup for Command Prompt
-- `activate_env.ps1` - PowerShell environment setup with enhanced features
-- `test_imports.py` - Comprehensive library verification for Windows
+**Professional Organization:**
+- 📁 **Structured directories** for different components (src/, models/, tests/, etc.)
+- 📚 **Comprehensive documentation** with README files in each directory
+- 🔧 **Utility scripts** in dedicated scripts/ folder
+- 📊 **Organized outputs** in separate directories (data/, output/, docs/)
+
+**Windows-Specific Features:**
+- `scripts/activate_env.bat` - One-click environment setup for Command Prompt
+- `scripts/activate_env.ps1` - PowerShell environment setup with enhanced features
+- `tests/test_imports.py` - Comprehensive library verification for Windows
+- `scripts/visualize_data.bat` - Quick launcher for performance data visualization
 - `venv/` - Virtual environment directory (created during setup)
 
 ## 🔬 Technical Details
@@ -602,35 +666,138 @@ python run.py
 ##### Standalone Analysis
 ```bash
 # Analyze saved performance data
-python analyze_performance.py
+python src/analyze_performance.py
 
 # Interactive analysis with dashboard
-python analyze_performance.py --interactive
+python src/analyze_performance.py --interactive
 
 # Analyze specific data file
-python analyze_performance.py --data-file data/performance_data_20250709_143022.json
+python src/analyze_performance.py --data-file data/performance_data_20250709_143022.json
 ```
 
 ##### Analytics Testing & Demo
 ```bash
 # Test data science features
-python test_data_science.py
+python tests/test_data_science.py
 
 # Test ModelsAnalyze folder functionality  
-python test_models_analyze.py
+python tests/test_models_analyze.py
 
 # Run analytics demo with camera
-python demo_analytics.py
+python src/demo_analytics.py
 
 # Demo with video file
-python demo_analytics.py --video traffic.mp4
+python src/demo_analytics.py --video media/traffic.mp4
 
 # Generate sample analytics data
-python demo_sample_analytics.py
+python src/demo_sample_analytics.py
 
 # Analyze existing performance data
-python analyze_performance.py --interactive
+python src/analyze_performance.py --interactive
 ```
+
+### 📊 Performance Data Visualization System
+
+The application includes a comprehensive performance data visualization system that allows users to analyze their detection performance data anytime after testing.
+
+#### Visualization Tools Available
+
+**1. 🚀 Quick Launcher (Recommended)**
+```bash
+# Launch the visualization tool selector
+python visualization/launch_visualizer.py
+
+# Or use Windows batch file
+scripts/visualize_data.bat
+```
+
+**2. 🖥️ GUI Visualizer (User-Friendly)**
+```bash
+# Launch GUI application
+python visualization/visualize_performance_gui.py
+```
+
+**3. 💻 Command-Line Visualizer (Advanced)**
+```bash
+# Launch interactive command-line tool
+python visualization/visualize_performance.py
+```
+
+#### Features of the Visualization System
+
+**📈 Dashboard Creation:**
+- **Comprehensive Performance Dashboard** - Interactive HTML dashboards with multiple charts
+- **Model Comparison Charts** - Side-by-side performance comparisons
+- **Time Series Analysis** - Performance trends over time
+- **Detection Pattern Analysis** - Object detection frequency and types
+
+**📊 Chart Types:**
+- FPS performance over time
+- Inference time distributions
+- Detection count trends
+- Model performance box plots
+- Detection type pie charts
+- Performance correlation scatter plots
+
+**💾 Export Options:**
+- Interactive HTML dashboards (opens in browser)
+- High-resolution PNG charts
+- Detailed markdown reports
+- CSV data exports
+
+**🔍 Data Analysis:**
+- Automatic data file detection
+- File browser for data selection
+- Real-time statistics display
+- Performance summary reports
+
+#### Using the Visualization System
+
+**Quick Start:**
+1. Run your object detection application to generate performance data
+2. Launch `python visualization/launch_visualizer.py` or double-click `scripts/visualize_data.bat`
+3. Select option 1 for GUI or option 3 for quick dashboard
+4. Choose your data file and generate visualizations
+
+**GUI Workflow:**
+1. Launch the GUI: `python visualization/visualize_performance_gui.py`
+2. Select a data file from the dropdown or browse for one
+3. View data summary in the information panel
+4. Click visualization buttons to generate charts
+5. Charts automatically open in your browser or image viewer
+
+**Advanced Analysis:**
+```bash
+# Command-line interactive mode
+python visualization/visualize_performance.py
+
+# Available actions:
+# 1. List available data files
+# 2. Load data file
+# 3. Show data summary
+# 4. Create performance dashboard
+# 5. Create model comparison charts
+# 6. Create time series analysis
+# 7. Generate summary report
+```
+
+#### Sample Outputs
+
+**Performance Dashboard** (`dashboard_YYYYMMDD_HHMMSS.html`):
+- Interactive multi-panel dashboard
+- Real-time performance metrics
+- Model switching analysis
+- Detection pattern visualization
+
+**Model Comparison** (`model_comparison_YYYYMMDD_HHMMSS.png`):
+- Statistical comparison between models
+- Performance distribution analysis
+- Speed vs accuracy trade-offs
+
+**Summary Reports** (`performance_report_YYYYMMDD_HHMMSS.md`):
+- Detailed performance statistics
+- Model-specific analysis
+- Recommendations for optimization
 
 #### Performance Metrics Tracked
 
@@ -672,8 +839,11 @@ The notebook includes:
 
 #### Advanced Analytics Examples
 
-**Model Comparison Analysis:**
+**Advanced Analysis:**
 ```python
+# Load performance data
+import sys
+sys.path.append('src')
 from performance_analyzer import ModelPerformanceAnalyzer
 
 analyzer = ModelPerformanceAnalyzer()

@@ -1,0 +1,73 @@
+{
+  "analysis_timestamp": "2025-07-09T14:14:28.591725",
+  "total_frames_analyzed": 173,
+  "analysis_duration_seconds": 9.93227,
+  "models_tested": [
+    "yolo",
+    "dnn"
+  ],
+  "overall_metrics": {
+    "avg_inference_time_ms": 49.63148811649036,
+    "std_inference_time_ms": 103.68114533810031,
+    "avg_fps": 24.372527849608975,
+    "avg_detections_per_frame": 1.5780346820809248,
+    "total_detections": 273
+  },
+  "model_comparison": {
+    "yolo": {
+      "frames_processed": 123,
+      "avg_inference_time_ms": 54.76725392225312,
+      "avg_fps": 23.0312331174982,
+      "avg_detections": 1.8130081300813008,
+      "inference_time_percentiles": {
+        "p50": 44.22807693481445,
+        "p90": 48.238563537597656,
+        "p95": 50.513553619384766
+      }
+    },
+    "dnn": {
+      "frames_processed": 50,
+      "avg_inference_time_ms": 36.997504234313965,
+      "avg_fps": 27.67211289060147,
+      "avg_detections": 1.0,
+      "inference_time_percentiles": {
+        "p50": 37.946105003356934,
+        "p90": 40.543556213378906,
+        "p95": 40.898895263671875
+      }
+    }
+  },
+  "object_class_analysis": {
+    "person": {
+      "total_detections": 173,
+      "avg_confidence": 0.9000086374365526,
+      "confidence_std": 0.030097721768301076,
+      "detected_by_models": [
+        "dnn",
+        "yolo"
+      ]
+    },
+    "cup": {
+      "total_detections": 99,
+      "avg_confidence": 0.6933492976005631,
+      "confidence_std": 0.07589560420407096,
+      "detected_by_models": [
+        "yolo"
+      ]
+    },
+    "tv": {
+      "total_detections": 1,
+      "avg_confidence": 0.6132503747940063,
+      "confidence_std": 0.0,
+      "detected_by_models": [
+        "yolo"
+      ]
+    }
+  },
+  "performance_insights": [
+    "Fastest model: dnn (27.67 FPS)",
+    "Slowest model: yolo (23.03 FPS)",
+    "Most detections per frame: yolo (1.81 objects)",
+    "Most stable performance: dnn (std: 6.53 ms)"
+  ]
+}

@@ -1,0 +1,1931 @@
+[
+  {
+    "timestamp": "2025-07-09T15:15:40.228887",
+    "model": "yolo",
+    "frame_number": 1,
+    "inference_time_ms": 120.41068077087402,
+    "detection_count": 1,
+    "fps": 8.304911105874991,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8917542099952698,
+        "bbox": [
+          146,
+          254,
+          799,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:40.344649",
+    "model": "yolo",
+    "frame_number": 2,
+    "inference_time_ms": 52.21080780029297,
+    "detection_count": 1,
+    "fps": 19.15312254552761,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8994063138961792,
+        "bbox": [
+          143,
+          254,
+          799,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:40.428906",
+    "model": "yolo",
+    "frame_number": 3,
+    "inference_time_ms": 71.28167152404785,
+    "detection_count": 1,
+    "fps": 14.028851717690658,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9057945609092712,
+        "bbox": [
+          148,
+          254,
+          798,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:40.492157",
+    "model": "yolo",
+    "frame_number": 4,
+    "inference_time_ms": 56.36930465698242,
+    "detection_count": 1,
+    "fps": 17.74015141902466,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9019201993942261,
+        "bbox": [
+          150,
+          254,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:40.545670",
+    "model": "yolo",
+    "frame_number": 5,
+    "inference_time_ms": 47.583580017089844,
+    "detection_count": 1,
+    "fps": 21.01565287102916,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9025918245315552,
+        "bbox": [
+          149,
+          256,
+          798,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:40.606795",
+    "model": "yolo",
+    "frame_number": 6,
+    "inference_time_ms": 51.48792266845703,
+    "detection_count": 1,
+    "fps": 19.42203041360277,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8967409729957581,
+        "bbox": [
+          148,
+          256,
+          799,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:40.663314",
+    "model": "yolo",
+    "frame_number": 7,
+    "inference_time_ms": 50.52042007446289,
+    "detection_count": 1,
+    "fps": 19.7939763471104,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8970572352409363,
+        "bbox": [
+          147,
+          255,
+          799,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:40.717876",
+    "model": "yolo",
+    "frame_number": 8,
+    "inference_time_ms": 45.56417465209961,
+    "detection_count": 1,
+    "fps": 21.947067134111244,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8966227769851685,
+        "bbox": [
+          143,
+          254,
+          798,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:40.774020",
+    "model": "yolo",
+    "frame_number": 9,
+    "inference_time_ms": 45.196533203125,
+    "detection_count": 1,
+    "fps": 22.12559081701553,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.894373893737793,
+        "bbox": [
+          145,
+          255,
+          797,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:40.831571",
+    "model": "yolo",
+    "frame_number": 10,
+    "inference_time_ms": 49.771785736083984,
+    "detection_count": 1,
+    "fps": 20.091704270016,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8979354500770569,
+        "bbox": [
+          148,
+          255,
+          798,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:40.912665",
+    "model": "yolo",
+    "frame_number": 11,
+    "inference_time_ms": 59.23128128051758,
+    "detection_count": 1,
+    "fps": 16.882970929904925,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9008956551551819,
+        "bbox": [
+          155,
+          255,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:40.967848",
+    "model": "yolo",
+    "frame_number": 12,
+    "inference_time_ms": 48.37679862976074,
+    "detection_count": 1,
+    "fps": 20.671066054892144,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8940925598144531,
+        "bbox": [
+          145,
+          255,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.031841",
+    "model": "yolo",
+    "frame_number": 13,
+    "inference_time_ms": 52.30212211608887,
+    "detection_count": 1,
+    "fps": 19.119683093936757,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8924098610877991,
+        "bbox": [
+          147,
+          255,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.086035",
+    "model": "yolo",
+    "frame_number": 14,
+    "inference_time_ms": 46.12398147583008,
+    "detection_count": 1,
+    "fps": 21.68069555148921,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8989412784576416,
+        "bbox": [
+          152,
+          254,
+          800,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.134854",
+    "model": "yolo",
+    "frame_number": 15,
+    "inference_time_ms": 42.90628433227539,
+    "detection_count": 1,
+    "fps": 23.306609173047644,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8997482061386108,
+        "bbox": [
+          147,
+          256,
+          798,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.191531",
+    "model": "yolo",
+    "frame_number": 16,
+    "inference_time_ms": 45.5472469329834,
+    "detection_count": 1,
+    "fps": 21.955223802469654,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9000778198242188,
+        "bbox": [
+          146,
+          255,
+          798,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.246632",
+    "model": "yolo",
+    "frame_number": 17,
+    "inference_time_ms": 45.522451400756836,
+    "detection_count": 1,
+    "fps": 21.967182549035012,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8946215510368347,
+        "bbox": [
+          145,
+          255,
+          798,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.308555",
+    "model": "yolo",
+    "frame_number": 18,
+    "inference_time_ms": 52.468299865722656,
+    "detection_count": 1,
+    "fps": 19.059127178871986,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8953327536582947,
+        "bbox": [
+          144,
+          255,
+          798,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.384519",
+    "model": "yolo",
+    "frame_number": 19,
+    "inference_time_ms": 51.08070373535156,
+    "detection_count": 1,
+    "fps": 19.576864194764944,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8945361971855164,
+        "bbox": [
+          150,
+          255,
+          798,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.447346",
+    "model": "yolo",
+    "frame_number": 20,
+    "inference_time_ms": 53.328514099121094,
+    "detection_count": 1,
+    "fps": 18.75169441513618,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9055523872375488,
+        "bbox": [
+          145,
+          255,
+          798,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.504044",
+    "model": "yolo",
+    "frame_number": 21,
+    "inference_time_ms": 49.28183555603027,
+    "detection_count": 1,
+    "fps": 20.29145198666686,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9004323482513428,
+        "bbox": [
+          145,
+          255,
+          799,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.558108",
+    "model": "yolo",
+    "frame_number": 22,
+    "inference_time_ms": 47.736406326293945,
+    "detection_count": 1,
+    "fps": 20.948372048885982,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9059117436408997,
+        "bbox": [
+          148,
+          256,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.614096",
+    "model": "yolo",
+    "frame_number": 23,
+    "inference_time_ms": 45.28546333312988,
+    "detection_count": 1,
+    "fps": 22.082141296507864,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8936759233474731,
+        "bbox": [
+          145,
+          256,
+          799,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.669620",
+    "model": "yolo",
+    "frame_number": 24,
+    "inference_time_ms": 45.17316818237305,
+    "detection_count": 1,
+    "fps": 22.137034886789465,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.7936797738075256,
+        "bbox": [
+          104,
+          255,
+          1035,
+          718
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.725180",
+    "model": "yolo",
+    "frame_number": 25,
+    "inference_time_ms": 44.83628273010254,
+    "detection_count": 1,
+    "fps": 22.30336546898015,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8083547949790955,
+        "bbox": [
+          117,
+          256,
+          1037,
+          717
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.780796",
+    "model": "yolo",
+    "frame_number": 26,
+    "inference_time_ms": 45.57967185974121,
+    "detection_count": 1,
+    "fps": 21.939605073885183,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8611183762550354,
+        "bbox": [
+          137,
+          258,
+          1031,
+          718
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.857429",
+    "model": "yolo",
+    "frame_number": 27,
+    "inference_time_ms": 53.830862045288086,
+    "detection_count": 1,
+    "fps": 18.576704180562754,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9112433195114136,
+        "bbox": [
+          132,
+          258,
+          1011,
+          717
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.912832",
+    "model": "yolo",
+    "frame_number": 28,
+    "inference_time_ms": 44.550180435180664,
+    "detection_count": 1,
+    "fps": 22.44659820076315,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.916700005531311,
+        "bbox": [
+          124,
+          258,
+          993,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:41.972249",
+    "model": "yolo",
+    "frame_number": 29,
+    "inference_time_ms": 49.355506896972656,
+    "detection_count": 1,
+    "fps": 20.261163604042277,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9011259078979492,
+        "bbox": [
+          130,
+          258,
+          982,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.023749",
+    "model": "yolo",
+    "frame_number": 30,
+    "inference_time_ms": 44.26932334899902,
+    "detection_count": 1,
+    "fps": 22.589005757247723,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8748397827148438,
+        "bbox": [
+          152,
+          259,
+          980,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.086303",
+    "model": "yolo",
+    "frame_number": 31,
+    "inference_time_ms": 46.16522789001465,
+    "detection_count": 1,
+    "fps": 21.66132489115896,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8474454283714294,
+        "bbox": [
+          121,
+          261,
+          953,
+          717
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.155410",
+    "model": "yolo",
+    "frame_number": 32,
+    "inference_time_ms": 53.11250686645508,
+    "detection_count": 1,
+    "fps": 18.827957085783545,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8697474598884583,
+        "bbox": [
+          134,
+          262,
+          954,
+          717
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.225260",
+    "model": "yolo",
+    "frame_number": 33,
+    "inference_time_ms": 53.963661193847656,
+    "detection_count": 1,
+    "fps": 18.530988777944685,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8803410530090332,
+        "bbox": [
+          127,
+          261,
+          964,
+          717
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.294438",
+    "model": "yolo",
+    "frame_number": 34,
+    "inference_time_ms": 44.85583305358887,
+    "detection_count": 1,
+    "fps": 22.293644592561883,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8772602081298828,
+        "bbox": [
+          127,
+          261,
+          995,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.356786",
+    "model": "yolo",
+    "frame_number": 35,
+    "inference_time_ms": 46.140432357788086,
+    "detection_count": 1,
+    "fps": 21.67296552935766,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8848667740821838,
+        "bbox": [
+          118,
+          260,
+          1007,
+          717
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.419660",
+    "model": "yolo",
+    "frame_number": 36,
+    "inference_time_ms": 46.60844802856445,
+    "detection_count": 1,
+    "fps": 21.455337868944703,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8851098418235779,
+        "bbox": [
+          117,
+          259,
+          1016,
+          718
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.475872",
+    "model": "yolo",
+    "frame_number": 37,
+    "inference_time_ms": 40.34423828125,
+    "detection_count": 1,
+    "fps": 24.786686838124055,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8698397874832153,
+        "bbox": [
+          141,
+          258,
+          1029,
+          718
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.537582",
+    "model": "yolo",
+    "frame_number": 38,
+    "inference_time_ms": 46.439409255981445,
+    "detection_count": 1,
+    "fps": 21.53343498595859,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8907875418663025,
+        "bbox": [
+          143,
+          257,
+          1007,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.594474",
+    "model": "yolo",
+    "frame_number": 39,
+    "inference_time_ms": 47.8057861328125,
+    "detection_count": 1,
+    "fps": 20.91796999680817,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.7841805219650269,
+        "bbox": [
+          153,
+          258,
+          999,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.648884",
+    "model": "yolo",
+    "frame_number": 40,
+    "inference_time_ms": 45.829057693481445,
+    "detection_count": 1,
+    "fps": 21.820217353983175,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8818343281745911,
+        "bbox": [
+          145,
+          258,
+          801,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.717868",
+    "model": "yolo",
+    "frame_number": 41,
+    "inference_time_ms": 52.49738693237305,
+    "detection_count": 1,
+    "fps": 19.048567146555246,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8996753692626953,
+        "bbox": [
+          149,
+          258,
+          800,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.773828",
+    "model": "yolo",
+    "frame_number": 42,
+    "inference_time_ms": 46.567678451538086,
+    "detection_count": 1,
+    "fps": 21.47412182122579,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9013016223907471,
+        "bbox": [
+          144,
+          257,
+          798,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.843317",
+    "model": "yolo",
+    "frame_number": 43,
+    "inference_time_ms": 53.5893440246582,
+    "detection_count": 1,
+    "fps": 18.66042621346265,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.905035138130188,
+        "bbox": [
+          142,
+          257,
+          798,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.912294",
+    "model": "yolo",
+    "frame_number": 44,
+    "inference_time_ms": 52.715301513671875,
+    "detection_count": 1,
+    "fps": 18.969824155148707,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9081640839576721,
+        "bbox": [
+          147,
+          258,
+          798,
+          716
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:42.982712",
+    "model": "yolo",
+    "frame_number": 45,
+    "inference_time_ms": 46.973466873168945,
+    "detection_count": 1,
+    "fps": 21.28861390410159,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9000470638275146,
+        "bbox": [
+          140,
+          257,
+          800,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.051157",
+    "model": "yolo",
+    "frame_number": 46,
+    "inference_time_ms": 44.62862014770508,
+    "detection_count": 1,
+    "fps": 22.40714583355593,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9105972051620483,
+        "bbox": [
+          143,
+          256,
+          800,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.107147",
+    "model": "yolo",
+    "frame_number": 47,
+    "inference_time_ms": 44.80600357055664,
+    "detection_count": 1,
+    "fps": 22.318437716170916,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9041364789009094,
+        "bbox": [
+          143,
+          256,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.156785",
+    "model": "yolo",
+    "frame_number": 48,
+    "inference_time_ms": 40.71044921875,
+    "detection_count": 1,
+    "fps": 24.563718140929534,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9048725366592407,
+        "bbox": [
+          141,
+          256,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.219355",
+    "model": "yolo",
+    "frame_number": 49,
+    "inference_time_ms": 45.96757888793945,
+    "detection_count": 1,
+    "fps": 21.75446312797585,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9056380987167358,
+        "bbox": [
+          141,
+          255,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.281412",
+    "model": "yolo",
+    "frame_number": 50,
+    "inference_time_ms": 47.3637580871582,
+    "detection_count": 1,
+    "fps": 21.113189501555436,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.902206301689148,
+        "bbox": [
+          139,
+          255,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.349773",
+    "model": "yolo",
+    "frame_number": 51,
+    "inference_time_ms": 46.78225517272949,
+    "detection_count": 1,
+    "fps": 21.375626213567493,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8999913930892944,
+        "bbox": [
+          143,
+          255,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.412245",
+    "model": "yolo",
+    "frame_number": 52,
+    "inference_time_ms": 44.74353790283203,
+    "detection_count": 1,
+    "fps": 22.349596095232005,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9035838842391968,
+        "bbox": [
+          142,
+          255,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.475121",
+    "model": "yolo",
+    "frame_number": 53,
+    "inference_time_ms": 47.479867935180664,
+    "detection_count": 1,
+    "fps": 21.06155816113887,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9052373170852661,
+        "bbox": [
+          141,
+          256,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.530298",
+    "model": "yolo",
+    "frame_number": 54,
+    "inference_time_ms": 44.88945007324219,
+    "detection_count": 1,
+    "fps": 22.276949224559168,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9051535129547119,
+        "bbox": [
+          142,
+          256,
+          799,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.599888",
+    "model": "yolo",
+    "frame_number": 55,
+    "inference_time_ms": 44.74282264709473,
+    "detection_count": 1,
+    "fps": 22.349953374363892,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9106364250183105,
+        "bbox": [
+          141,
+          257,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.670546",
+    "model": "yolo",
+    "frame_number": 56,
+    "inference_time_ms": 54.74495887756348,
+    "detection_count": 1,
+    "fps": 18.266522078069134,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.904968798160553,
+        "bbox": [
+          143,
+          258,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.745996",
+    "model": "yolo",
+    "frame_number": 57,
+    "inference_time_ms": 54.43429946899414,
+    "detection_count": 1,
+    "fps": 18.370770079802377,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9131239652633667,
+        "bbox": [
+          140,
+          258,
+          800,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.808091",
+    "model": "yolo",
+    "frame_number": 58,
+    "inference_time_ms": 53.05314064025879,
+    "detection_count": 1,
+    "fps": 18.849025485235103,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9123517274856567,
+        "bbox": [
+          141,
+          258,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.870560",
+    "model": "yolo",
+    "frame_number": 59,
+    "inference_time_ms": 45.47286033630371,
+    "detection_count": 1,
+    "fps": 21.991139167501192,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9028894901275635,
+        "bbox": [
+          141,
+          258,
+          799,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.885936",
+    "model": "dnn",
+    "frame_number": 60,
+    "inference_time_ms": 2.5787353515625,
+    "detection_count": 0,
+    "fps": 387.7869822485207,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.894125",
+    "model": "dnn",
+    "frame_number": 61,
+    "inference_time_ms": 2.1622180938720703,
+    "detection_count": 0,
+    "fps": 462.4880361671629,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.905577",
+    "model": "dnn",
+    "frame_number": 62,
+    "inference_time_ms": 1.8830299377441406,
+    "detection_count": 0,
+    "fps": 531.059002279058,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.918856",
+    "model": "dnn",
+    "frame_number": 63,
+    "inference_time_ms": 1.985311508178711,
+    "detection_count": 0,
+    "fps": 503.69929146151077,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.933198",
+    "model": "dnn",
+    "frame_number": 64,
+    "inference_time_ms": 0.9851455688476562,
+    "detection_count": 0,
+    "fps": 1015.0784123910939,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.961003",
+    "model": "dnn",
+    "frame_number": 65,
+    "inference_time_ms": 2.371072769165039,
+    "detection_count": 0,
+    "fps": 421.7500251382604,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:43.992118",
+    "model": "dnn",
+    "frame_number": 66,
+    "inference_time_ms": 0.8387565612792969,
+    "detection_count": 0,
+    "fps": 1192.2410460488913,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.037824",
+    "model": "dnn",
+    "frame_number": 67,
+    "inference_time_ms": 0.0,
+    "detection_count": 0,
+    "fps": 0.0,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.074013",
+    "model": "dnn",
+    "frame_number": 68,
+    "inference_time_ms": 3.1118392944335938,
+    "detection_count": 0,
+    "fps": 321.35335580753906,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.103234",
+    "model": "dnn",
+    "frame_number": 69,
+    "inference_time_ms": 0.7472038269042969,
+    "detection_count": 0,
+    "fps": 1338.322910019145,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.137877",
+    "model": "dnn",
+    "frame_number": 70,
+    "inference_time_ms": 1.924276351928711,
+    "detection_count": 0,
+    "fps": 519.6758765952175,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.169195",
+    "model": "dnn",
+    "frame_number": 71,
+    "inference_time_ms": 2.7060508728027344,
+    "detection_count": 0,
+    "fps": 369.54220264317183,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.199469",
+    "model": "dnn",
+    "frame_number": 72,
+    "inference_time_ms": 0.4699230194091797,
+    "detection_count": 0,
+    "fps": 2128.0081177067477,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.236030",
+    "model": "dnn",
+    "frame_number": 73,
+    "inference_time_ms": 2.301454544067383,
+    "detection_count": 0,
+    "fps": 434.50782140267273,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.262894",
+    "model": "dnn",
+    "frame_number": 74,
+    "inference_time_ms": 1.4367103576660156,
+    "detection_count": 0,
+    "fps": 696.0345170925988,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.296949",
+    "model": "dnn",
+    "frame_number": 75,
+    "inference_time_ms": 1.9984245300292969,
+    "detection_count": 0,
+    "fps": 500.3941780004772,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.329241",
+    "model": "dnn",
+    "frame_number": 76,
+    "inference_time_ms": 2.105236053466797,
+    "detection_count": 0,
+    "fps": 475.0061155152888,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.359579",
+    "model": "dnn",
+    "frame_number": 77,
+    "inference_time_ms": 1.0292530059814453,
+    "detection_count": 0,
+    "fps": 971.5784109335186,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.393266",
+    "model": "dnn",
+    "frame_number": 78,
+    "inference_time_ms": 1.6720294952392578,
+    "detection_count": 0,
+    "fps": 598.0755739341223,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.468522",
+    "model": "yolo",
+    "frame_number": 79,
+    "inference_time_ms": 46.72837257385254,
+    "detection_count": 1,
+    "fps": 21.400274499599476,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9086834192276001,
+        "bbox": [
+          135,
+          262,
+          803,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.524054",
+    "model": "yolo",
+    "frame_number": 80,
+    "inference_time_ms": 47.209978103637695,
+    "detection_count": 1,
+    "fps": 21.181962800422195,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9077020883560181,
+        "bbox": [
+          136,
+          261,
+          803,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.579495",
+    "model": "yolo",
+    "frame_number": 81,
+    "inference_time_ms": 46.46110534667969,
+    "detection_count": 1,
+    "fps": 21.523379449074262,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9060835838317871,
+        "bbox": [
+          136,
+          262,
+          805,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.634971",
+    "model": "yolo",
+    "frame_number": 82,
+    "inference_time_ms": 39.64352607727051,
+    "detection_count": 1,
+    "fps": 25.22479958142136,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9118518829345703,
+        "bbox": [
+          135,
+          259,
+          803,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.690871",
+    "model": "yolo",
+    "frame_number": 83,
+    "inference_time_ms": 44.25811767578125,
+    "detection_count": 1,
+    "fps": 22.59472504740562,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9020485877990723,
+        "bbox": [
+          134,
+          261,
+          805,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.753522",
+    "model": "yolo",
+    "frame_number": 84,
+    "inference_time_ms": 46.05913162231445,
+    "detection_count": 2,
+    "fps": 21.71122131003282,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9102189540863037,
+        "bbox": [
+          135,
+          259,
+          805,
+          714
+        ]
+      },
+      {
+        "class_name": "chair",
+        "confidence": 0.5550801753997803,
+        "bbox": [
+          637,
+          433,
+          879,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.822706",
+    "model": "yolo",
+    "frame_number": 85,
+    "inference_time_ms": 47.25790023803711,
+    "detection_count": 2,
+    "fps": 21.160483114209896,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9182177782058716,
+        "bbox": [
+          133,
+          257,
+          804,
+          715
+        ]
+      },
+      {
+        "class_name": "chair",
+        "confidence": 0.5467545986175537,
+        "bbox": [
+          640,
+          433,
+          879,
+          713
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.875495",
+    "model": "yolo",
+    "frame_number": 86,
+    "inference_time_ms": 36.945343017578125,
+    "detection_count": 1,
+    "fps": 27.067010841507486,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9110371470451355,
+        "bbox": [
+          133,
+          258,
+          803,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.941091",
+    "model": "yolo",
+    "frame_number": 87,
+    "inference_time_ms": 45.990943908691406,
+    "detection_count": 1,
+    "fps": 21.743411093831,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9077816009521484,
+        "bbox": [
+          133,
+          257,
+          804,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:44.998505",
+    "model": "yolo",
+    "frame_number": 88,
+    "inference_time_ms": 41.52369499206543,
+    "detection_count": 1,
+    "fps": 24.08263523251207,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9100599884986877,
+        "bbox": [
+          134,
+          257,
+          804,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.015408",
+    "model": "dnn",
+    "frame_number": 89,
+    "inference_time_ms": 1.007080078125,
+    "detection_count": 0,
+    "fps": 992.969696969697,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.020819",
+    "model": "dnn",
+    "frame_number": 90,
+    "inference_time_ms": 0.0,
+    "detection_count": 0,
+    "fps": 0.0,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.032669",
+    "model": "dnn",
+    "frame_number": 91,
+    "inference_time_ms": 0.0,
+    "detection_count": 0,
+    "fps": 0.0,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.060702",
+    "model": "dnn",
+    "frame_number": 92,
+    "inference_time_ms": 0.0,
+    "detection_count": 0,
+    "fps": 0.0,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.094662",
+    "model": "dnn",
+    "frame_number": 93,
+    "inference_time_ms": 0.354766845703125,
+    "detection_count": 0,
+    "fps": 2818.7526881720432,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.128926",
+    "model": "dnn",
+    "frame_number": 94,
+    "inference_time_ms": 0.7963180541992188,
+    "detection_count": 0,
+    "fps": 1255.7796407185629,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.157698",
+    "model": "dnn",
+    "frame_number": 95,
+    "inference_time_ms": 0.0,
+    "detection_count": 0,
+    "fps": 0.0,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.192400",
+    "model": "dnn",
+    "frame_number": 96,
+    "inference_time_ms": 1.6705989837646484,
+    "detection_count": 0,
+    "fps": 598.5876980162694,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.226043",
+    "model": "dnn",
+    "frame_number": 97,
+    "inference_time_ms": 2.6710033416748047,
+    "detection_count": 0,
+    "fps": 374.39114522895653,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.254741",
+    "model": "dnn",
+    "frame_number": 98,
+    "inference_time_ms": 1.8284320831298828,
+    "detection_count": 0,
+    "fps": 546.9166775329247,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.303994",
+    "model": "dnn",
+    "frame_number": 99,
+    "inference_time_ms": 2.180814743041992,
+    "detection_count": 0,
+    "fps": 458.54422214933857,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.333588",
+    "model": "dnn",
+    "frame_number": 100,
+    "inference_time_ms": 0.0,
+    "detection_count": 0,
+    "fps": 0.0,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.413037",
+    "model": "yolo",
+    "frame_number": 101,
+    "inference_time_ms": 47.52635955810547,
+    "detection_count": 2,
+    "fps": 21.040955152001604,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.905950129032135,
+        "bbox": [
+          136,
+          256,
+          814,
+          714
+        ]
+      },
+      {
+        "class_name": "chair",
+        "confidence": 0.5621501803398132,
+        "bbox": [
+          642,
+          433,
+          881,
+          713
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.463828",
+    "model": "yolo",
+    "frame_number": 102,
+    "inference_time_ms": 37.320613861083984,
+    "detection_count": 2,
+    "fps": 26.79484329283095,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9102479219436646,
+        "bbox": [
+          136,
+          256,
+          815,
+          715
+        ]
+      },
+      {
+        "class_name": "chair",
+        "confidence": 0.5439765453338623,
+        "bbox": [
+          642,
+          433,
+          881,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.518684",
+    "model": "yolo",
+    "frame_number": 103,
+    "inference_time_ms": 35.349130630493164,
+    "detection_count": 1,
+    "fps": 28.28923886284693,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9019297957420349,
+        "bbox": [
+          136,
+          255,
+          815,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.596157",
+    "model": "yolo",
+    "frame_number": 104,
+    "inference_time_ms": 43.3807373046875,
+    "detection_count": 2,
+    "fps": 23.051705944424903,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9057170152664185,
+        "bbox": [
+          138,
+          255,
+          813,
+          715
+        ]
+      },
+      {
+        "class_name": "chair",
+        "confidence": 0.5474007725715637,
+        "bbox": [
+          646,
+          434,
+          880,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.652024",
+    "model": "yolo",
+    "frame_number": 105,
+    "inference_time_ms": 41.681528091430664,
+    "detection_count": 1,
+    "fps": 23.99144287144287,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9028354287147522,
+        "bbox": [
+          139,
+          256,
+          809,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.707873",
+    "model": "yolo",
+    "frame_number": 106,
+    "inference_time_ms": 42.75989532470703,
+    "detection_count": 1,
+    "fps": 23.386399625309455,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9046699404716492,
+        "bbox": [
+          140,
+          256,
+          807,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.761049",
+    "model": "yolo",
+    "frame_number": 107,
+    "inference_time_ms": 39.9935245513916,
+    "detection_count": 1,
+    "fps": 25.004047810664996,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9053446054458618,
+        "bbox": [
+          141,
+          255,
+          805,
+          715
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.831858",
+    "model": "yolo",
+    "frame_number": 108,
+    "inference_time_ms": 41.502952575683594,
+    "detection_count": 1,
+    "fps": 24.09467129299846,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8976321816444397,
+        "bbox": [
+          141,
+          257,
+          807,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.931075",
+    "model": "yolo",
+    "frame_number": 109,
+    "inference_time_ms": 65.83833694458008,
+    "detection_count": 1,
+    "fps": 15.188719010957971,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9020099639892578,
+        "bbox": [
+          141,
+          257,
+          809,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:45.992726",
+    "model": "yolo",
+    "frame_number": 110,
+    "inference_time_ms": 42.26875305175781,
+    "detection_count": 1,
+    "fps": 23.65813817066017,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9080340266227722,
+        "bbox": [
+          139,
+          255,
+          810,
+          714
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T15:15:46.069036",
+    "model": "yolo",
+    "frame_number": 111,
+    "inference_time_ms": 43.041229248046875,
+    "detection_count": 1,
+    "fps": 23.23353717982806,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9049281477928162,
+        "bbox": [
+          138,
+          253,
+          812,
+          713
+        ]
+      }
+    ]
+  }
+]
