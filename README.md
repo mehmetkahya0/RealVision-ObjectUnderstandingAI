@@ -84,9 +84,27 @@ Watch the application in action detecting objects in real-time:
 ### Alternative Installation Methods
 
 #### Using Virtual Environment (Recommended)
+
+**Linux/macOS:**
 ```bash
 python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+source venv/bin/activate
+pip install -r requirements.txt
+python run.py
+```
+
+**Windows (PowerShell):**
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python run.py
+```
+
+**Windows (Command Prompt):**
+```cmd
+python -m venv venv
+venv\Scripts\activate.bat
 pip install -r requirements.txt
 python run.py
 ```
@@ -98,6 +116,47 @@ conda activate object_detection
 pip install -r requirements.txt
 python run.py
 ```
+
+#### Windows Setup (Recommended for Windows Users)
+
+For Windows users, we provide convenient activation scripts that automatically set up the virtual environment:
+
+**Option 1: PowerShell Script (Recommended)**
+```powershell
+# Navigate to project directory
+cd "c:\Users\[YourUsername]\Desktop\RealVision-ObjectUnderstandingAI"
+
+# Run the setup script (creates venv and installs dependencies automatically)
+.\activate_env.ps1
+```
+
+**Option 2: Batch File**
+```cmd
+# Double-click activate_env.bat or run from Command Prompt:
+activate_env.bat
+```
+
+**Option 3: Manual Windows Setup**
+```powershell
+# Create virtual environment
+python -m venv venv
+
+# Activate environment
+.\venv\Scripts\Activate.ps1
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run application
+python run.py
+```
+
+**Windows Features:**
+- 🚀 **One-click activation scripts** (`activate_env.bat` and `activate_env.ps1`)
+- 📊 **Automatic environment setup** with all dependencies
+- 🐍 **Python version verification** and path confirmation
+- 💡 **Built-in command reference** displayed on activation
+- ✅ **Library verification** with `test_imports.py`
 
 ## 🎯 Usage
 
@@ -118,6 +177,35 @@ python run.py --confidence 0.7
 # List available cameras
 python run.py --list-cameras
 ```
+
+### Windows Quick Start
+
+After running `activate_env.bat` or `activate_env.ps1`, you'll see available commands. Here are the most common:
+
+```powershell
+# Basic operations
+python run.py                          # Use default camera
+python run.py --camera 1               # Use specific camera
+python run.py --input traffic.mp4      # Process the included sample video
+python run.py --list-cameras           # Check available cameras
+
+# Advanced features
+python run.py --confidence 0.7         # Adjust detection sensitivity
+python run.py --model yolo             # Force YOLO model
+python run.py --no-gui                 # Run without display (save results only)
+
+# Data science features (Windows optimized)
+python test_imports.py                 # Verify all libraries are working
+python demo_analytics.py               # Interactive analytics demo
+python test_data_science.py           # Test analytics features
+jupyter notebook                       # Open Jupyter for analysis
+```
+
+**Windows-Specific Tips:**
+- Use **PowerShell** for best compatibility with the activation scripts
+- The scripts automatically verify your Python environment and show library versions
+- All paths are Windows-compatible (backslashes handled automatically)
+- Screenshot and video outputs save to Windows-friendly directories
 
 ### Video Processing
 ```bash
@@ -293,6 +381,48 @@ All settings can be adjusted during runtime using keyboard shortcuts:
 
 ## 🚨 Troubleshooting
 
+### Windows-Specific Issues
+
+#### PowerShell Execution Policy
+If you get an execution policy error when running `.ps1` scripts:
+```powershell
+# Check current policy
+Get-ExecutionPolicy
+
+# Set policy for current user (if needed)
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+#### Virtual Environment Activation Issues
+```powershell
+# If activation fails, try:
+.\venv\Scripts\activate.bat  # Use batch file instead
+# or
+python -m venv venv --clear  # Recreate environment
+```
+
+#### Python Not Found
+```powershell
+# Verify Python installation
+python --version
+# or
+py --version
+
+# If Python not found, install from python.org or Microsoft Store
+```
+
+#### Library Import Errors
+```powershell
+# Run the test script to verify installation
+python test_imports.py
+
+# If imports fail, recreate virtual environment:
+Remove-Item -Recurse -Force venv
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
 ### Common Issues
 
 #### Camera Not Found
@@ -355,7 +485,11 @@ RealVision-ObjectUnderstandingAI/
 ├── performance_analysis.ipynb      # Jupyter notebook for analysis
 ├── test_data_science.py            # Data science feature tests
 ├── test_models_analyze.py          # ModelsAnalyze folder tests
+├── test_imports.py                 # Library verification script
+├── activate_env.bat                # Windows batch activation script
+├── activate_env.ps1                # Windows PowerShell activation script
 ├── .gitignore                      # Git ignore rules
+├── venv/                           # Virtual environment (after setup)
 ├── screenshots/                    # Screenshot output directory
 ├── ModelsAnalyze/                  # Model analysis and performance graphs
 ├── data/                           # Performance data exports
@@ -366,6 +500,12 @@ RealVision-ObjectUnderstandingAI/
 ├── MobileNetSSD_deploy.prototxt    # MobileNet model architecture
 └── MobileNetSSD_deploy.caffemodel  # MobileNet model weights
 ```
+
+**Windows-Specific Files:**
+- `activate_env.bat` - One-click environment setup for Command Prompt
+- `activate_env.ps1` - PowerShell environment setup with enhanced features
+- `test_imports.py` - Comprehensive library verification for Windows
+- `venv/` - Virtual environment directory (created during setup)
 
 ## 🔬 Technical Details
 
