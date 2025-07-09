@@ -29,20 +29,30 @@ sys.path.insert(0, str(src_path))
 
 def main():
     """Main launcher function"""
+    
+    # Check if arguments look like they should go to the run command
+    # This handles cases like: python app.py --input video.mp4
+    run_like_args = ['--input', '--camera', '--model', '--confidence', '--output-dir', '--no-gui', '--list-cameras']
+    if len(sys.argv) > 1 and any(arg in sys.argv for arg in run_like_args):
+        # If we have run-like arguments but no subcommand, inject 'run'
+        if sys.argv[1] not in ['run', 'demo', 'visualize', 'test']:
+            sys.argv.insert(1, 'run')
+    
     parser = argparse.ArgumentParser(
         description="RealVision Object Understanding AI - Professional Computer Vision Application",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
   python app.py                          # Launch main application with webcam
-  python app.py --input video.mp4       # Process video file
+  python app.py --input video.mp4       # Process video file (auto-detects run command)
+  python app.py run --input video.mp4   # Process video file (explicit run command)
   python app.py --camera 1              # Use camera index 1
   python app.py --model yolo            # Force YOLO model
   python app.py --confidence 0.7        # Set confidence threshold
-  python app.py --demo                  # Run analytics demo
-  python app.py --visualize             # Launch visualization tools
-  python app.py --test                  # Run test suite
-  python app.py --list-cameras          # List available cameras
+  python app.py demo                    # Run analytics demo
+  python app.py visualize               # Launch visualization tools
+  python app.py test                    # Run test suite
+  python app.py run --list-cameras      # List available cameras
 
 For more options, see: python app.py run --help
         """
@@ -82,12 +92,6 @@ For more options, see: python app.py run --help
     # If no command specified, default to run
     if args.command is None:
         args.command = 'run'
-        # Copy all unknown args to run command
-        from types import SimpleNamespace
-        run_args = SimpleNamespace()
-        for key, value in vars(args).items():
-            setattr(run_args, key, value)
-        args = run_args
     
     # Execute appropriate command
     if args.command == 'run':
