@@ -115,6 +115,55 @@ def run_analytics_demo(video_path=None, duration=30):
     print("\n✅ Analytics demo completed!")
     print("📁 Check the 'reports/' and 'plots/' folders for generated analysis files")
 
+def generate_analytics_demo():
+    """Generate sample analytics data for demonstration"""
+    import json
+    import numpy as np
+    from datetime import datetime, timedelta
+    
+    # Create sample performance data
+    sample_data = []
+    base_time = datetime.now()
+    
+    models = ['yolo', 'dnn', 'onnx']
+    
+    for i in range(100):
+        for model in models:
+            # Simulate different performance characteristics
+            if model == 'yolo':
+                fps = np.random.normal(30, 5)
+                inference_time = np.random.normal(33, 5)
+                detections = np.random.poisson(3)
+            elif model == 'dnn':
+                fps = np.random.normal(20, 3)
+                inference_time = np.random.normal(50, 8)
+                detections = np.random.poisson(2)
+            else:  # onnx
+                fps = np.random.normal(25, 4)
+                inference_time = np.random.normal(40, 6)
+                detections = np.random.poisson(2.5)
+                
+            sample_data.append({
+                'timestamp': (base_time + timedelta(seconds=i)).isoformat(),
+                'model': model,
+                'frame_number': i,
+                'fps': max(1, fps),
+                'inference_time_ms': max(10, inference_time),
+                'detection_count': max(0, detections),
+                'confidence_threshold': 0.5
+            })
+    
+    # Save sample data
+    os.makedirs('data', exist_ok=True)
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    filename = f"data/sample_performance_data_{timestamp}.json"
+    
+    with open(filename, 'w') as f:
+        json.dump(sample_data, f, indent=2)
+    
+    print(f"📊 Sample analytics data generated: {filename}")
+    return filename
+
 def main():
     """Main demo function"""
     parser = argparse.ArgumentParser(

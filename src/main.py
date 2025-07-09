@@ -35,8 +35,12 @@ try:
     from performance_analyzer import ModelPerformanceAnalyzer
     PERFORMANCE_ANALYZER_AVAILABLE = True
 except ImportError:
-    PERFORMANCE_ANALYZER_AVAILABLE = False
-    print("Warning: Performance analyzer not available. Install pandas, matplotlib, seaborn for advanced analytics.")
+    try:
+        from src.performance_analyzer import ModelPerformanceAnalyzer
+        PERFORMANCE_ANALYZER_AVAILABLE = True
+    except ImportError:
+        PERFORMANCE_ANALYZER_AVAILABLE = False
+        print("Warning: Performance analyzer not available. Install pandas, matplotlib, seaborn for advanced analytics.")
 
 # Import TensorFlow for EfficientDet
 try:
@@ -1218,6 +1222,78 @@ class ObjectUnderstandingApp:
         
         print("=" * 40)
         print("✅ Application closed successfully")
+    
+    def process_frame(self, frame: np.ndarray) -> Tuple[np.ndarray, Dict]:
+        """
+        Process a single frame for GUI integration
+        Returns: (processed_frame, stats)
+        """
+        start_time = time.time()
+        
+        # Detect objects
+        detections = self.detect_objects(frame)
+        self.total_detections += len(detections)
+        
+        # Update tracking
+        rects = [det['bbox'] for det in detections]
+        tracked_objects = self.tracker.update(rects)
+        
+        # Draw detections and tracking
+        processed_frame = self.draw_detections(frame, detections, tracked_objects)
+        
+        # Calculate processing time
+        processing_time = time.time() - start_time
+        
+        # Update frame counter
+        self.frame_count += 1
+        
+        # Calculate FPS
+        current_time = time.time()
+        if not hasattr(self, '_last_fps_time'):
+            self._last_fps_time = current_time
+            self._fps_frame_count = 0
+        
+        self._fps_frame_count += 1
+        time_diff = current_time - self._last_fps_time
+        
+        if time_diff >= 1.0:  # Update FPS every second
+            fps = self._fps_frame_count / time_diff
+            self._last_fps_time = current_time
+            self._fps_frame_count = 0
+        else:
+            fps = getattr(self, '_current_fps', 0)
+        
+        self._current_fps = fps
+        
+        # Update performance monitor
+        self.performance_monitor.update(fps, processing_time, len(detections))
+        
+        # Log data for analytics if enabled
+        if self.enable_data_logging and self.data_analyzer:
+            try:
+                self.data_analyzer.log_frame_data(
+                    frame_number=self.frame_count,
+                    model_name=self.current_model,
+                    processing_time=processing_time,
+                    detection_count=len(detections),
+                    fps=fps,
+                    confidence_threshold=self.confidence_threshold,
+                    frame_size=frame.shape[:2]
+                )
+            except Exception as e:
+                print(f"Warning: Failed to log analytics data: {e}")
+        
+        # Prepare stats
+        stats = {
+            'fps': fps,
+            'processing_time': processing_time,
+            'detection_count': len(detections),
+            'tracked_objects': len(tracked_objects),
+            'total_detections': self.total_detections,
+            'frame_count': self.frame_count
+        }
+        
+        return processed_frame, stats
 
 def main():
     """Main function"""

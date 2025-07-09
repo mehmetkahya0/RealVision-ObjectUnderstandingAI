@@ -1,0 +1,8672 @@
+[
+  {
+    "timestamp": "2025-07-09T16:52:46.399469",
+    "model": "yolo",
+    "frame_number": 0,
+    "inference_time_ms": 19.205937514825717,
+    "detection_count": 2,
+    "fps": 52.06723177288617,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.607032236044585,
+        "bbox": [
+          297,
+          163,
+          159,
+          189
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6774094631126873,
+        "bbox": [
+          68,
+          152,
+          178,
+          149
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.432469",
+    "model": "dnn",
+    "frame_number": 1,
+    "inference_time_ms": 20.53661471589131,
+    "detection_count": 6,
+    "fps": 48.69351710757841,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7931626803325926,
+        "bbox": [
+          404,
+          381,
+          173,
+          189
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5983025489258551,
+        "bbox": [
+          134,
+          183,
+          143,
+          198
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6893895390259003,
+        "bbox": [
+          97,
+          276,
+          154,
+          167
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5269660775330972,
+        "bbox": [
+          131,
+          104,
+          180,
+          164
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.933334428600006,
+        "bbox": [
+          99,
+          400,
+          199,
+          187
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7153150633491226,
+        "bbox": [
+          69,
+          70,
+          146,
+          103
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.465469",
+    "model": "onnx",
+    "frame_number": 2,
+    "inference_time_ms": 25.291699339387204,
+    "detection_count": 0,
+    "fps": 39.538663914238555,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.498469",
+    "model": "yolo",
+    "frame_number": 3,
+    "inference_time_ms": 25.128955436923718,
+    "detection_count": 0,
+    "fps": 39.794730127565536,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.531469",
+    "model": "dnn",
+    "frame_number": 4,
+    "inference_time_ms": 17.606105036040354,
+    "detection_count": 8,
+    "fps": 56.79847972921681,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.5759469518355181,
+        "bbox": [
+          132,
+          345,
+          109,
+          112
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.9015835109343704,
+        "bbox": [
+          190,
+          268,
+          128,
+          103
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6378925299468354,
+        "bbox": [
+          421,
+          203,
+          168,
+          172
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8533682370654581,
+        "bbox": [
+          107,
+          256,
+          180,
+          177
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6788312801658785,
+        "bbox": [
+          309,
+          250,
+          189,
+          102
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5459747632620524,
+        "bbox": [
+          186,
+          104,
+          134,
+          116
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.9426543517758358,
+        "bbox": [
+          438,
+          282,
+          115,
+          196
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.9007011848584652,
+        "bbox": [
+          389,
+          333,
+          103,
+          141
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.564469",
+    "model": "onnx",
+    "frame_number": 5,
+    "inference_time_ms": 27.06785040384647,
+    "detection_count": 6,
+    "fps": 36.94419708548024,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.8448682508835346,
+        "bbox": [
+          219,
+          361,
+          167,
+          118
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7424874255570819,
+        "bbox": [
+          431,
+          288,
+          140,
+          163
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6722638007857451,
+        "bbox": [
+          339,
+          386,
+          181,
+          128
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.8938052409684456,
+        "bbox": [
+          189,
+          104,
+          101,
+          120
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8334253987700263,
+        "bbox": [
+          118,
+          81,
+          123,
+          114
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7319458593829767,
+        "bbox": [
+          396,
+          85,
+          184,
+          118
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.597469",
+    "model": "yolo",
+    "frame_number": 6,
+    "inference_time_ms": 16.613863654670602,
+    "detection_count": 3,
+    "fps": 60.190694999406304,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.5485178414839262,
+        "bbox": [
+          410,
+          295,
+          115,
+          168
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5964593330795058,
+        "bbox": [
+          327,
+          105,
+          192,
+          163
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8468643211631619,
+        "bbox": [
+          199,
+          64,
+          155,
+          190
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.630469",
+    "model": "dnn",
+    "frame_number": 7,
+    "inference_time_ms": 28.23044130645935,
+    "detection_count": 5,
+    "fps": 35.42275478956795,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.6060957028281431,
+        "bbox": [
+          96,
+          50,
+          148,
+          131
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6596802941233656,
+        "bbox": [
+          69,
+          104,
+          158,
+          189
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7152071269232376,
+        "bbox": [
+          110,
+          250,
+          164,
+          100
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.9089032122830523,
+        "bbox": [
+          265,
+          339,
+          176,
+          180
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8722028475841016,
+        "bbox": [
+          75,
+          196,
+          174,
+          106
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.663469",
+    "model": "onnx",
+    "frame_number": 8,
+    "inference_time_ms": 23.713565301782488,
+    "detection_count": 7,
+    "fps": 42.1699557731554,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8726070889565293,
+        "bbox": [
+          68,
+          370,
+          168,
+          197
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.616549716220072,
+        "bbox": [
+          487,
+          131,
+          161,
+          106
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.7465718821343919,
+        "bbox": [
+          214,
+          304,
+          196,
+          122
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.8137076722630159,
+        "bbox": [
+          440,
+          265,
+          186,
+          175
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8965248533215624,
+        "bbox": [
+          408,
+          272,
+          111,
+          190
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.8989673531510308,
+        "bbox": [
+          113,
+          211,
+          156,
+          120
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.9237572976405397,
+        "bbox": [
+          172,
+          179,
+          155,
+          160
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.696469",
+    "model": "yolo",
+    "frame_number": 9,
+    "inference_time_ms": 36.10112924255683,
+    "detection_count": 3,
+    "fps": 27.699964543523954,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8754582356192318,
+        "bbox": [
+          83,
+          355,
+          133,
+          177
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5495580013900585,
+        "bbox": [
+          332,
+          272,
+          153,
+          152
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.8713026690811638,
+        "bbox": [
+          189,
+          293,
+          174,
+          197
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.729469",
+    "model": "dnn",
+    "frame_number": 10,
+    "inference_time_ms": 17.7908625678566,
+    "detection_count": 1,
+    "fps": 56.208629355989544,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8702487274718755,
+        "bbox": [
+          325,
+          166,
+          122,
+          126
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.762469",
+    "model": "onnx",
+    "frame_number": 11,
+    "inference_time_ms": 34.02626050801984,
+    "detection_count": 0,
+    "fps": 29.38906553555318,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.795469",
+    "model": "yolo",
+    "frame_number": 12,
+    "inference_time_ms": 22.283414106565214,
+    "detection_count": 0,
+    "fps": 44.8764267099168,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.828469",
+    "model": "dnn",
+    "frame_number": 13,
+    "inference_time_ms": 20.076351617867896,
+    "detection_count": 7,
+    "fps": 49.80984688024705,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.9034304312888372,
+        "bbox": [
+          246,
+          260,
+          187,
+          156
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.9233219727851206,
+        "bbox": [
+          246,
+          191,
+          197,
+          121
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.502350251604264,
+        "bbox": [
+          205,
+          399,
+          128,
+          121
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.6654874421846613,
+        "bbox": [
+          308,
+          161,
+          153,
+          167
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6685374912371982,
+        "bbox": [
+          389,
+          111,
+          107,
+          148
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5769342181520188,
+        "bbox": [
+          232,
+          268,
+          183,
+          163
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.9361313198901986,
+        "bbox": [
+          138,
+          210,
+          126,
+          129
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.861469",
+    "model": "onnx",
+    "frame_number": 14,
+    "inference_time_ms": 28.467898706555875,
+    "detection_count": 3,
+    "fps": 35.127285308546845,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8843968350901914,
+        "bbox": [
+          368,
+          140,
+          102,
+          101
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5329704678426814,
+        "bbox": [
+          51,
+          245,
+          128,
+          176
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.844086952458716,
+        "bbox": [
+          260,
+          195,
+          143,
+          182
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.894469",
+    "model": "yolo",
+    "frame_number": 15,
+    "inference_time_ms": 33.820642230497654,
+    "detection_count": 0,
+    "fps": 29.567741297894493,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.927469",
+    "model": "dnn",
+    "frame_number": 16,
+    "inference_time_ms": 23.194827943296296,
+    "detection_count": 0,
+    "fps": 43.11305962021663,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.960469",
+    "model": "onnx",
+    "frame_number": 17,
+    "inference_time_ms": 29.342407897633297,
+    "detection_count": 7,
+    "fps": 34.080365983892484,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.6304456283215681,
+        "bbox": [
+          159,
+          239,
+          138,
+          140
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5304906982059872,
+        "bbox": [
+          132,
+          268,
+          129,
+          115
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.7165351399923773,
+        "bbox": [
+          168,
+          235,
+          166,
+          150
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7248724923530555,
+        "bbox": [
+          317,
+          184,
+          186,
+          151
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5301415650658323,
+        "bbox": [
+          463,
+          242,
+          186,
+          102
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.8040965889462874,
+        "bbox": [
+          370,
+          101,
+          197,
+          150
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7682398285583554,
+        "bbox": [
+          203,
+          94,
+          119,
+          136
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:46.993469",
+    "model": "yolo",
+    "frame_number": 18,
+    "inference_time_ms": 21.98975731634688,
+    "detection_count": 1,
+    "fps": 45.47571788146175,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8201797631962706,
+        "bbox": [
+          493,
+          230,
+          109,
+          124
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.026469",
+    "model": "dnn",
+    "frame_number": 19,
+    "inference_time_ms": 33.07824260848508,
+    "detection_count": 6,
+    "fps": 30.231352125807454,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6474079406493656,
+        "bbox": [
+          112,
+          390,
+          175,
+          145
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7523284761621616,
+        "bbox": [
+          156,
+          180,
+          159,
+          107
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.9023820642360079,
+        "bbox": [
+          433,
+          208,
+          128,
+          141
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7178627675326434,
+        "bbox": [
+          197,
+          130,
+          134,
+          108
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7744326088800819,
+        "bbox": [
+          277,
+          84,
+          126,
+          173
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7887978003887912,
+        "bbox": [
+          136,
+          80,
+          129,
+          148
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.059469",
+    "model": "onnx",
+    "frame_number": 20,
+    "inference_time_ms": 23.679961514737027,
+    "detection_count": 3,
+    "fps": 42.22979836253781,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8839501844029407,
+        "bbox": [
+          405,
+          127,
+          153,
+          199
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7623258255982835,
+        "bbox": [
+          366,
+          166,
+          168,
+          165
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5179901914072487,
+        "bbox": [
+          380,
+          285,
+          166,
+          159
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.092469",
+    "model": "yolo",
+    "frame_number": 21,
+    "inference_time_ms": 24.152286626325974,
+    "detection_count": 3,
+    "fps": 41.40394719024246,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.7840168885629435,
+        "bbox": [
+          51,
+          122,
+          146,
+          147
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7216793205789268,
+        "bbox": [
+          142,
+          77,
+          173,
+          121
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7587226770643474,
+        "bbox": [
+          107,
+          298,
+          153,
+          115
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.125469",
+    "model": "dnn",
+    "frame_number": 22,
+    "inference_time_ms": 19.699940679491128,
+    "detection_count": 0,
+    "fps": 50.76157417271122,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.158469",
+    "model": "onnx",
+    "frame_number": 23,
+    "inference_time_ms": 29.57890931114533,
+    "detection_count": 7,
+    "fps": 33.80787267984895,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8711946328523833,
+        "bbox": [
+          356,
+          217,
+          188,
+          164
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7951665689676806,
+        "bbox": [
+          343,
+          377,
+          162,
+          175
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6394218088621025,
+        "bbox": [
+          78,
+          390,
+          128,
+          150
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.8128957633359938,
+        "bbox": [
+          407,
+          389,
+          194,
+          181
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6800316914301381,
+        "bbox": [
+          466,
+          353,
+          144,
+          163
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7869858016787761,
+        "bbox": [
+          194,
+          312,
+          105,
+          153
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6468218826527375,
+        "bbox": [
+          304,
+          373,
+          170,
+          162
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.191469",
+    "model": "yolo",
+    "frame_number": 24,
+    "inference_time_ms": 23.942957462833462,
+    "detection_count": 1,
+    "fps": 41.76593478697421,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6355259261174642,
+        "bbox": [
+          110,
+          150,
+          100,
+          159
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.224469",
+    "model": "dnn",
+    "frame_number": 25,
+    "inference_time_ms": 24.763984889180982,
+    "detection_count": 3,
+    "fps": 40.38122315431089,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.7360181918706112,
+        "bbox": [
+          299,
+          173,
+          186,
+          179
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6821824578934095,
+        "bbox": [
+          476,
+          342,
+          146,
+          197
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7872091158871091,
+        "bbox": [
+          291,
+          221,
+          181,
+          171
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.257469",
+    "model": "onnx",
+    "frame_number": 26,
+    "inference_time_ms": 24.36646094326109,
+    "detection_count": 0,
+    "fps": 41.04001817615475,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.290469",
+    "model": "yolo",
+    "frame_number": 27,
+    "inference_time_ms": 26.03238102992362,
+    "detection_count": 4,
+    "fps": 38.413697112474004,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.7843361794093207,
+        "bbox": [
+          197,
+          375,
+          193,
+          139
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5630566575644772,
+        "bbox": [
+          254,
+          324,
+          103,
+          159
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7089692534498143,
+        "bbox": [
+          176,
+          218,
+          183,
+          114
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.9385459814600456,
+        "bbox": [
+          414,
+          181,
+          177,
+          114
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.323469",
+    "model": "dnn",
+    "frame_number": 28,
+    "inference_time_ms": 21.796793341343147,
+    "detection_count": 6,
+    "fps": 45.878308076777806,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.6588866855405718,
+        "bbox": [
+          185,
+          223,
+          116,
+          109
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.574010918357172,
+        "bbox": [
+          114,
+          354,
+          111,
+          123
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.659412204263549,
+        "bbox": [
+          223,
+          179,
+          167,
+          112
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5217480434290157,
+        "bbox": [
+          409,
+          367,
+          199,
+          128
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5514799865149057,
+        "bbox": [
+          414,
+          130,
+          185,
+          147
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6000638107458885,
+        "bbox": [
+          472,
+          133,
+          174,
+          175
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.356469",
+    "model": "onnx",
+    "frame_number": 29,
+    "inference_time_ms": 21.6838840700313,
+    "detection_count": 1,
+    "fps": 46.11719914985491,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.5160027030298777,
+        "bbox": [
+          66,
+          145,
+          191,
+          110
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.389469",
+    "model": "yolo",
+    "frame_number": 30,
+    "inference_time_ms": 26.84412115344619,
+    "detection_count": 5,
+    "fps": 37.25210426088478,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7832599331092385,
+        "bbox": [
+          437,
+          311,
+          175,
+          189
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.8255824176456785,
+        "bbox": [
+          291,
+          226,
+          182,
+          121
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7183790522585494,
+        "bbox": [
+          438,
+          100,
+          198,
+          163
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.7388680435804005,
+        "bbox": [
+          262,
+          233,
+          121,
+          195
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.9189274098380492,
+        "bbox": [
+          474,
+          142,
+          119,
+          170
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.422469",
+    "model": "dnn",
+    "frame_number": 31,
+    "inference_time_ms": 30.768220716836204,
+    "detection_count": 0,
+    "fps": 32.501066902864665,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.455469",
+    "model": "onnx",
+    "frame_number": 32,
+    "inference_time_ms": 21.773624894492322,
+    "detection_count": 6,
+    "fps": 45.92712535674075,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.6364907566402839,
+        "bbox": [
+          340,
+          159,
+          192,
+          176
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7841482782202749,
+        "bbox": [
+          258,
+          183,
+          161,
+          163
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7139130987224213,
+        "bbox": [
+          69,
+          295,
+          165,
+          192
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8587084923867543,
+        "bbox": [
+          459,
+          348,
+          153,
+          139
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.9284415430778228,
+        "bbox": [
+          141,
+          373,
+          116,
+          115
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.6458969280170912,
+        "bbox": [
+          327,
+          69,
+          142,
+          187
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.488469",
+    "model": "yolo",
+    "frame_number": 33,
+    "inference_time_ms": 22.42260807428126,
+    "detection_count": 0,
+    "fps": 44.597845027091225,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.521469",
+    "model": "dnn",
+    "frame_number": 34,
+    "inference_time_ms": 15.172026070872917,
+    "detection_count": 8,
+    "fps": 65.91077522070626,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8414137862579811,
+        "bbox": [
+          289,
+          266,
+          137,
+          105
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7211126736789557,
+        "bbox": [
+          133,
+          127,
+          101,
+          107
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7568013445751562,
+        "bbox": [
+          124,
+          179,
+          188,
+          120
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6585458958699874,
+        "bbox": [
+          147,
+          55,
+          176,
+          182
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6026927338858876,
+        "bbox": [
+          122,
+          250,
+          186,
+          173
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8975015389914642,
+        "bbox": [
+          62,
+          192,
+          171,
+          137
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.506421336177158,
+        "bbox": [
+          59,
+          136,
+          119,
+          140
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6824896869750099,
+        "bbox": [
+          165,
+          213,
+          119,
+          120
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.554469",
+    "model": "onnx",
+    "frame_number": 35,
+    "inference_time_ms": 21.842883700211758,
+    "detection_count": 0,
+    "fps": 45.78150091007926,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.587469",
+    "model": "yolo",
+    "frame_number": 36,
+    "inference_time_ms": 26.46373840829176,
+    "detection_count": 0,
+    "fps": 37.78755611061643,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.620469",
+    "model": "dnn",
+    "frame_number": 37,
+    "inference_time_ms": 13.823947838906081,
+    "detection_count": 5,
+    "fps": 72.33823591156809,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8180789330467131,
+        "bbox": [
+          234,
+          166,
+          166,
+          128
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6273387016785713,
+        "bbox": [
+          177,
+          183,
+          107,
+          107
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6422444183853419,
+        "bbox": [
+          325,
+          357,
+          110,
+          167
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8983230471069987,
+        "bbox": [
+          299,
+          326,
+          138,
+          169
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5876672232253026,
+        "bbox": [
+          355,
+          263,
+          159,
+          108
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.653469",
+    "model": "onnx",
+    "frame_number": 38,
+    "inference_time_ms": 17.39851057346771,
+    "detection_count": 2,
+    "fps": 57.47618428470393,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9318116259948963,
+        "bbox": [
+          471,
+          88,
+          124,
+          199
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.7030699157307376,
+        "bbox": [
+          444,
+          227,
+          113,
+          200
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.686469",
+    "model": "yolo",
+    "frame_number": 39,
+    "inference_time_ms": 17.598354790558652,
+    "detection_count": 5,
+    "fps": 56.82349355386848,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.5621830861321161,
+        "bbox": [
+          335,
+          121,
+          188,
+          152
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.9392218153071032,
+        "bbox": [
+          122,
+          203,
+          140,
+          132
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.8286164072168966,
+        "bbox": [
+          475,
+          358,
+          150,
+          158
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6301290754941268,
+        "bbox": [
+          193,
+          95,
+          154,
+          144
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.883989517309231,
+        "bbox": [
+          332,
+          147,
+          195,
+          160
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.719469",
+    "model": "dnn",
+    "frame_number": 40,
+    "inference_time_ms": 25.234587731107588,
+    "detection_count": 7,
+    "fps": 39.62814889847651,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8608515857192498,
+        "bbox": [
+          138,
+          307,
+          125,
+          158
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6352390238214565,
+        "bbox": [
+          259,
+          347,
+          115,
+          177
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5918324357691409,
+        "bbox": [
+          398,
+          289,
+          120,
+          169
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8641840566897427,
+        "bbox": [
+          272,
+          240,
+          191,
+          161
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.9331658766908228,
+        "bbox": [
+          457,
+          89,
+          192,
+          192
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6834881761446969,
+        "bbox": [
+          179,
+          54,
+          141,
+          196
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7173289457117746,
+        "bbox": [
+          399,
+          275,
+          130,
+          177
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.752469",
+    "model": "onnx",
+    "frame_number": 41,
+    "inference_time_ms": 25.732420300873343,
+    "detection_count": 2,
+    "fps": 38.86148245317059,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6651818455718194,
+        "bbox": [
+          429,
+          167,
+          154,
+          127
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7984785415938077,
+        "bbox": [
+          169,
+          336,
+          157,
+          151
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.785469",
+    "model": "yolo",
+    "frame_number": 42,
+    "inference_time_ms": 26.07723229791548,
+    "detection_count": 5,
+    "fps": 38.3476278684658,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.7780842816664537,
+        "bbox": [
+          77,
+          333,
+          123,
+          187
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8241445622203476,
+        "bbox": [
+          170,
+          233,
+          159,
+          128
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5230246471091192,
+        "bbox": [
+          288,
+          128,
+          155,
+          149
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.8344023556010115,
+        "bbox": [
+          422,
+          243,
+          111,
+          154
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.9336172703111906,
+        "bbox": [
+          434,
+          241,
+          116,
+          155
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.818469",
+    "model": "dnn",
+    "frame_number": 43,
+    "inference_time_ms": 17.004471972983737,
+    "detection_count": 8,
+    "fps": 58.80805952626897,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.7266619288857928,
+        "bbox": [
+          142,
+          124,
+          179,
+          114
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.9109037598711831,
+        "bbox": [
+          81,
+          228,
+          116,
+          139
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6191893171638718,
+        "bbox": [
+          382,
+          129,
+          140,
+          195
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6996512027358157,
+        "bbox": [
+          200,
+          117,
+          164,
+          107
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7133683777413038,
+        "bbox": [
+          242,
+          389,
+          199,
+          117
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7718864765016857,
+        "bbox": [
+          361,
+          145,
+          146,
+          187
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8400451731764647,
+        "bbox": [
+          478,
+          301,
+          123,
+          198
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7567651125390865,
+        "bbox": [
+          394,
+          74,
+          154,
+          187
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.851469",
+    "model": "onnx",
+    "frame_number": 44,
+    "inference_time_ms": 18.691855888378452,
+    "detection_count": 7,
+    "fps": 53.49923549441358,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8405056440773457,
+        "bbox": [
+          433,
+          235,
+          151,
+          163
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5533755835043032,
+        "bbox": [
+          304,
+          64,
+          180,
+          128
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8904748748780773,
+        "bbox": [
+          354,
+          278,
+          157,
+          149
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7548371104814875,
+        "bbox": [
+          414,
+          372,
+          116,
+          106
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6086249931277707,
+        "bbox": [
+          326,
+          318,
+          178,
+          145
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7608396534274615,
+        "bbox": [
+          347,
+          119,
+          108,
+          194
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7321100367925233,
+        "bbox": [
+          274,
+          329,
+          186,
+          143
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.884469",
+    "model": "yolo",
+    "frame_number": 45,
+    "inference_time_ms": 24.551873950838345,
+    "detection_count": 1,
+    "fps": 40.73008854649378,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.920432345812696,
+        "bbox": [
+          277,
+          198,
+          187,
+          126
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.917469",
+    "model": "dnn",
+    "frame_number": 46,
+    "inference_time_ms": 20.91116835826097,
+    "detection_count": 4,
+    "fps": 47.82133560724499,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.7618753010414783,
+        "bbox": [
+          221,
+          211,
+          109,
+          154
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7099144652149322,
+        "bbox": [
+          224,
+          351,
+          139,
+          153
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.82668476040359,
+        "bbox": [
+          179,
+          76,
+          164,
+          100
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5827740000101511,
+        "bbox": [
+          175,
+          307,
+          142,
+          108
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.950469",
+    "model": "onnx",
+    "frame_number": 47,
+    "inference_time_ms": 35.31856406397515,
+    "detection_count": 1,
+    "fps": 28.313721876932068,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6697686112795818,
+        "bbox": [
+          103,
+          273,
+          171,
+          155
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:47.983469",
+    "model": "yolo",
+    "frame_number": 48,
+    "inference_time_ms": 19.885089529107585,
+    "detection_count": 7,
+    "fps": 50.28893626735804,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.924355546511362,
+        "bbox": [
+          381,
+          388,
+          169,
+          163
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.8730181201807385,
+        "bbox": [
+          375,
+          200,
+          111,
+          195
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8658561005340069,
+        "bbox": [
+          213,
+          384,
+          196,
+          132
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7118633165578181,
+        "bbox": [
+          377,
+          68,
+          161,
+          162
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8482532447748259,
+        "bbox": [
+          53,
+          53,
+          192,
+          194
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5719217667511788,
+        "bbox": [
+          325,
+          315,
+          144,
+          151
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5203457154362416,
+        "bbox": [
+          324,
+          103,
+          186,
+          180
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.016469",
+    "model": "dnn",
+    "frame_number": 49,
+    "inference_time_ms": 15.085234293952617,
+    "detection_count": 0,
+    "fps": 66.28998797856795,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.049469",
+    "model": "onnx",
+    "frame_number": 50,
+    "inference_time_ms": 25.083973259573323,
+    "detection_count": 8,
+    "fps": 39.86609257041641,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.9330883314727128,
+        "bbox": [
+          343,
+          188,
+          181,
+          182
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8682365645256952,
+        "bbox": [
+          320,
+          90,
+          166,
+          176
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.5208382122655337,
+        "bbox": [
+          56,
+          89,
+          132,
+          147
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6105168747581857,
+        "bbox": [
+          316,
+          319,
+          111,
+          157
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7861879141682451,
+        "bbox": [
+          367,
+          88,
+          122,
+          192
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6793811167242159,
+        "bbox": [
+          315,
+          317,
+          145,
+          175
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5305574049330468,
+        "bbox": [
+          82,
+          115,
+          130,
+          109
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.8135751429092226,
+        "bbox": [
+          231,
+          254,
+          186,
+          121
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.082469",
+    "model": "yolo",
+    "frame_number": 51,
+    "inference_time_ms": 34.28494761180685,
+    "detection_count": 2,
+    "fps": 29.16731888648492,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.5427448519326559,
+        "bbox": [
+          54,
+          62,
+          114,
+          116
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6844916868599299,
+        "bbox": [
+          335,
+          391,
+          130,
+          106
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.115469",
+    "model": "dnn",
+    "frame_number": 52,
+    "inference_time_ms": 22.67294601587846,
+    "detection_count": 5,
+    "fps": 44.10542852700632,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.7767667458664308,
+        "bbox": [
+          117,
+          153,
+          192,
+          185
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8443848090343369,
+        "bbox": [
+          51,
+          216,
+          113,
+          128
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.560638868721576,
+        "bbox": [
+          356,
+          363,
+          148,
+          168
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7990931811373382,
+        "bbox": [
+          164,
+          195,
+          183,
+          155
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.693092352699586,
+        "bbox": [
+          218,
+          97,
+          120,
+          149
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.148469",
+    "model": "onnx",
+    "frame_number": 53,
+    "inference_time_ms": 20.378182711882715,
+    "detection_count": 1,
+    "fps": 49.07208921121756,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.5873071562461553,
+        "bbox": [
+          490,
+          51,
+          167,
+          172
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.181469",
+    "model": "yolo",
+    "frame_number": 54,
+    "inference_time_ms": 28.034890746500366,
+    "detection_count": 1,
+    "fps": 35.66983759780948,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7000834562637527,
+        "bbox": [
+          78,
+          79,
+          191,
+          117
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.214469",
+    "model": "dnn",
+    "frame_number": 55,
+    "inference_time_ms": 13.663891859024366,
+    "detection_count": 3,
+    "fps": 73.18559092221932,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6038391264864409,
+        "bbox": [
+          273,
+          186,
+          117,
+          126
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.663503360892335,
+        "bbox": [
+          274,
+          123,
+          199,
+          112
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6224914593363626,
+        "bbox": [
+          286,
+          168,
+          157,
+          179
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.247469",
+    "model": "onnx",
+    "frame_number": 56,
+    "inference_time_ms": 25.728361091213173,
+    "detection_count": 0,
+    "fps": 38.86761369893564,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.280469",
+    "model": "yolo",
+    "frame_number": 57,
+    "inference_time_ms": 22.85315706880771,
+    "detection_count": 2,
+    "fps": 43.757630378557224,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7691139203049866,
+        "bbox": [
+          476,
+          264,
+          136,
+          132
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6150121242851834,
+        "bbox": [
+          455,
+          133,
+          182,
+          139
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.313469",
+    "model": "dnn",
+    "frame_number": 58,
+    "inference_time_ms": 27.50650082476643,
+    "detection_count": 7,
+    "fps": 36.35504226330437,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9494191956326898,
+        "bbox": [
+          254,
+          322,
+          118,
+          171
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7530515100056567,
+        "bbox": [
+          183,
+          258,
+          193,
+          146
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.9131894550829318,
+        "bbox": [
+          204,
+          156,
+          115,
+          145
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.8250980289691838,
+        "bbox": [
+          72,
+          391,
+          124,
+          134
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7191142719018,
+        "bbox": [
+          87,
+          171,
+          172,
+          169
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5383825715897648,
+        "bbox": [
+          151,
+          181,
+          125,
+          109
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5617333437593843,
+        "bbox": [
+          327,
+          104,
+          138,
+          109
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.346469",
+    "model": "onnx",
+    "frame_number": 59,
+    "inference_time_ms": 27.850366540567812,
+    "detection_count": 0,
+    "fps": 35.90617015913831,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.379469",
+    "model": "yolo",
+    "frame_number": 60,
+    "inference_time_ms": 33.151370499099016,
+    "detection_count": 6,
+    "fps": 30.1646654405186,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.5527886593389768,
+        "bbox": [
+          293,
+          147,
+          105,
+          149
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.9169864621485135,
+        "bbox": [
+          477,
+          84,
+          164,
+          171
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7038093890148057,
+        "bbox": [
+          97,
+          69,
+          181,
+          133
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8677432344888742,
+        "bbox": [
+          352,
+          320,
+          185,
+          191
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6088476386688195,
+        "bbox": [
+          157,
+          355,
+          134,
+          136
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.7642964886884378,
+        "bbox": [
+          444,
+          213,
+          114,
+          196
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.412469",
+    "model": "dnn",
+    "frame_number": 61,
+    "inference_time_ms": 15.53968500656782,
+    "detection_count": 1,
+    "fps": 64.35136874250358,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.7886611999027946,
+        "bbox": [
+          491,
+          275,
+          114,
+          153
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.445469",
+    "model": "onnx",
+    "frame_number": 62,
+    "inference_time_ms": 22.016996175426804,
+    "detection_count": 0,
+    "fps": 45.41945649770795,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.478469",
+    "model": "yolo",
+    "frame_number": 63,
+    "inference_time_ms": 17.35755713522979,
+    "detection_count": 3,
+    "fps": 57.61179365328711,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.7546647032685163,
+        "bbox": [
+          175,
+          395,
+          136,
+          143
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6781797188686987,
+        "bbox": [
+          72,
+          78,
+          144,
+          121
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.8886668492513623,
+        "bbox": [
+          324,
+          56,
+          124,
+          192
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.511469",
+    "model": "dnn",
+    "frame_number": 64,
+    "inference_time_ms": 27.675244641482987,
+    "detection_count": 0,
+    "fps": 36.133375258445945,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.544469",
+    "model": "onnx",
+    "frame_number": 65,
+    "inference_time_ms": 27.11843213602274,
+    "detection_count": 4,
+    "fps": 36.875288179793074,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.5040110254254164,
+        "bbox": [
+          392,
+          315,
+          134,
+          189
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.678902381835381,
+        "bbox": [
+          136,
+          96,
+          172,
+          137
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8910957202994183,
+        "bbox": [
+          388,
+          143,
+          153,
+          124
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.747074607539698,
+        "bbox": [
+          416,
+          353,
+          178,
+          137
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.577469",
+    "model": "yolo",
+    "frame_number": 66,
+    "inference_time_ms": 21.639606278252813,
+    "detection_count": 0,
+    "fps": 46.211561668059154,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.610469",
+    "model": "dnn",
+    "frame_number": 67,
+    "inference_time_ms": 15.530577317425362,
+    "detection_count": 5,
+    "fps": 64.38910669972304,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.6694491608882541,
+        "bbox": [
+          73,
+          344,
+          146,
+          149
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6303382715347132,
+        "bbox": [
+          185,
+          376,
+          158,
+          162
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.631478979286366,
+        "bbox": [
+          370,
+          387,
+          158,
+          146
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7057450528548498,
+        "bbox": [
+          372,
+          196,
+          176,
+          142
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8739623944247413,
+        "bbox": [
+          73,
+          359,
+          146,
+          158
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.643469",
+    "model": "onnx",
+    "frame_number": 68,
+    "inference_time_ms": 27.564356835853886,
+    "detection_count": 8,
+    "fps": 36.27873510544844,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7480632965609202,
+        "bbox": [
+          454,
+          303,
+          158,
+          167
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7077108124095333,
+        "bbox": [
+          433,
+          63,
+          172,
+          143
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6265806896058126,
+        "bbox": [
+          294,
+          187,
+          190,
+          188
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.5897206110201197,
+        "bbox": [
+          465,
+          185,
+          119,
+          104
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.9309000466696218,
+        "bbox": [
+          378,
+          56,
+          193,
+          188
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.9180926569935606,
+        "bbox": [
+          449,
+          81,
+          198,
+          129
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7398719859276096,
+        "bbox": [
+          417,
+          341,
+          160,
+          185
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.5695175692961544,
+        "bbox": [
+          496,
+          87,
+          119,
+          163
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.676469",
+    "model": "yolo",
+    "frame_number": 69,
+    "inference_time_ms": 28.15038978331433,
+    "detection_count": 0,
+    "fps": 35.5234868041768,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.709469",
+    "model": "dnn",
+    "frame_number": 70,
+    "inference_time_ms": 22.645620030558028,
+    "detection_count": 0,
+    "fps": 44.158649604232465,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.742469",
+    "model": "onnx",
+    "frame_number": 71,
+    "inference_time_ms": 18.56536090399859,
+    "detection_count": 7,
+    "fps": 53.863752241122384,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5246213733786429,
+        "bbox": [
+          243,
+          232,
+          174,
+          169
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.7116505396334022,
+        "bbox": [
+          428,
+          210,
+          126,
+          188
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.9198660701224833,
+        "bbox": [
+          458,
+          374,
+          198,
+          127
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.78745201101987,
+        "bbox": [
+          499,
+          338,
+          198,
+          196
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8672806395155535,
+        "bbox": [
+          257,
+          209,
+          134,
+          104
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5743719607107688,
+        "bbox": [
+          389,
+          126,
+          118,
+          151
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.772638550838794,
+        "bbox": [
+          321,
+          315,
+          162,
+          129
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.775469",
+    "model": "yolo",
+    "frame_number": 72,
+    "inference_time_ms": 30.46755767531466,
+    "detection_count": 7,
+    "fps": 32.82179722630729,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8550266264894868,
+        "bbox": [
+          229,
+          210,
+          102,
+          157
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.9429010135957834,
+        "bbox": [
+          439,
+          97,
+          105,
+          131
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8617882814419116,
+        "bbox": [
+          478,
+          170,
+          154,
+          172
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.689324385657567,
+        "bbox": [
+          366,
+          315,
+          115,
+          181
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5851189552518613,
+        "bbox": [
+          57,
+          189,
+          133,
+          141
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5503629209437605,
+        "bbox": [
+          241,
+          227,
+          191,
+          104
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.8890635525944912,
+        "bbox": [
+          465,
+          64,
+          183,
+          163
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.808469",
+    "model": "dnn",
+    "frame_number": 73,
+    "inference_time_ms": 21.189958915997092,
+    "detection_count": 8,
+    "fps": 47.192163229965615,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.7375308707308477,
+        "bbox": [
+          344,
+          278,
+          154,
+          195
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7993562585508319,
+        "bbox": [
+          116,
+          103,
+          140,
+          134
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7525189385496003,
+        "bbox": [
+          225,
+          365,
+          175,
+          143
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8461332432452862,
+        "bbox": [
+          51,
+          241,
+          150,
+          177
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7722099739921476,
+        "bbox": [
+          242,
+          149,
+          176,
+          180
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.8779619253133762,
+        "bbox": [
+          260,
+          119,
+          150,
+          150
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8285471429159421,
+        "bbox": [
+          460,
+          90,
+          148,
+          187
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6531419605294183,
+        "bbox": [
+          103,
+          241,
+          149,
+          108
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.841469",
+    "model": "onnx",
+    "frame_number": 74,
+    "inference_time_ms": 26.088701610315766,
+    "detection_count": 0,
+    "fps": 38.330769194147585,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.874469",
+    "model": "yolo",
+    "frame_number": 75,
+    "inference_time_ms": 29.203824662380736,
+    "detection_count": 3,
+    "fps": 34.24209025909412,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7313682723565524,
+        "bbox": [
+          321,
+          331,
+          119,
+          112
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7407713380303168,
+        "bbox": [
+          359,
+          358,
+          160,
+          110
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7199020481179854,
+        "bbox": [
+          90,
+          186,
+          190,
+          101
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.907469",
+    "model": "dnn",
+    "frame_number": 76,
+    "inference_time_ms": 14.356795203179423,
+    "detection_count": 0,
+    "fps": 69.65342793066675,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.940469",
+    "model": "onnx",
+    "frame_number": 77,
+    "inference_time_ms": 24.90201001068034,
+    "detection_count": 0,
+    "fps": 40.15740093153546,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:48.973469",
+    "model": "yolo",
+    "frame_number": 78,
+    "inference_time_ms": 28.512571153807155,
+    "detection_count": 0,
+    "fps": 35.07224917057242,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.006469",
+    "model": "dnn",
+    "frame_number": 79,
+    "inference_time_ms": 16.681210986683734,
+    "detection_count": 6,
+    "fps": 59.94768610014461,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.7076103406069457,
+        "bbox": [
+          268,
+          348,
+          174,
+          143
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7349224476112932,
+        "bbox": [
+          120,
+          387,
+          138,
+          171
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.909017251910696,
+        "bbox": [
+          187,
+          355,
+          100,
+          182
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.7297073112251234,
+        "bbox": [
+          436,
+          340,
+          137,
+          151
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.9228465313707535,
+        "bbox": [
+          386,
+          322,
+          191,
+          156
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5212513517012892,
+        "bbox": [
+          413,
+          231,
+          134,
+          186
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.039469",
+    "model": "onnx",
+    "frame_number": 80,
+    "inference_time_ms": 28.513251153744218,
+    "detection_count": 0,
+    "fps": 35.0714127479877,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.072469",
+    "model": "yolo",
+    "frame_number": 81,
+    "inference_time_ms": 26.267304001030336,
+    "detection_count": 0,
+    "fps": 38.070142255968676,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.105469",
+    "model": "dnn",
+    "frame_number": 82,
+    "inference_time_ms": 16.50664231965229,
+    "detection_count": 5,
+    "fps": 60.581672555504,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8620978943358528,
+        "bbox": [
+          100,
+          171,
+          125,
+          162
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6652014951637365,
+        "bbox": [
+          146,
+          188,
+          168,
+          103
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.561928548630539,
+        "bbox": [
+          114,
+          99,
+          156,
+          189
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5552789135558769,
+        "bbox": [
+          122,
+          373,
+          113,
+          197
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6961479872404797,
+        "bbox": [
+          193,
+          302,
+          126,
+          138
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.138469",
+    "model": "onnx",
+    "frame_number": 83,
+    "inference_time_ms": 22.781673879258733,
+    "detection_count": 3,
+    "fps": 43.8949308685538,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8431240392192454,
+        "bbox": [
+          226,
+          316,
+          187,
+          159
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.581190977797322,
+        "bbox": [
+          263,
+          236,
+          185,
+          100
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8523972182146449,
+        "bbox": [
+          482,
+          333,
+          108,
+          112
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.171469",
+    "model": "yolo",
+    "frame_number": 84,
+    "inference_time_ms": 19.678627295442105,
+    "detection_count": 0,
+    "fps": 50.81655264804047,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.204469",
+    "model": "dnn",
+    "frame_number": 85,
+    "inference_time_ms": 21.150941074759338,
+    "detection_count": 0,
+    "fps": 47.27922017585113,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.237469",
+    "model": "onnx",
+    "frame_number": 86,
+    "inference_time_ms": 21.737453975493306,
+    "detection_count": 6,
+    "fps": 46.00354766144162,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7519508143426884,
+        "bbox": [
+          433,
+          238,
+          132,
+          130
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7641843429766113,
+        "bbox": [
+          419,
+          121,
+          166,
+          116
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.53139425350642,
+        "bbox": [
+          410,
+          266,
+          144,
+          155
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.8894804176135107,
+        "bbox": [
+          490,
+          380,
+          153,
+          191
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8045606593730005,
+        "bbox": [
+          364,
+          97,
+          182,
+          138
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.75767096560056,
+        "bbox": [
+          377,
+          238,
+          123,
+          147
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.270469",
+    "model": "yolo",
+    "frame_number": 87,
+    "inference_time_ms": 24.675900731567328,
+    "detection_count": 5,
+    "fps": 40.525369707000095,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8141612038894392,
+        "bbox": [
+          461,
+          396,
+          134,
+          106
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.7833690849757258,
+        "bbox": [
+          416,
+          361,
+          122,
+          172
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.5708813381992452,
+        "bbox": [
+          487,
+          175,
+          164,
+          199
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.9417972763214497,
+        "bbox": [
+          287,
+          277,
+          142,
+          115
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5678947284439174,
+        "bbox": [
+          170,
+          298,
+          111,
+          164
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.303469",
+    "model": "dnn",
+    "frame_number": 88,
+    "inference_time_ms": 16.759716720973213,
+    "detection_count": 0,
+    "fps": 59.66687961668194,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.336469",
+    "model": "onnx",
+    "frame_number": 89,
+    "inference_time_ms": 22.304768347974832,
+    "detection_count": 8,
+    "fps": 44.83346271071205,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.7748083674193338,
+        "bbox": [
+          282,
+          157,
+          156,
+          164
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7789376619697164,
+        "bbox": [
+          425,
+          275,
+          159,
+          147
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.913176057009311,
+        "bbox": [
+          193,
+          130,
+          147,
+          109
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8483416213602608,
+        "bbox": [
+          212,
+          63,
+          119,
+          190
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7709091227360167,
+        "bbox": [
+          330,
+          327,
+          166,
+          199
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6561518535540581,
+        "bbox": [
+          347,
+          324,
+          115,
+          156
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.9187409622253581,
+        "bbox": [
+          128,
+          361,
+          164,
+          173
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7225176813269952,
+        "bbox": [
+          179,
+          386,
+          122,
+          196
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.369469",
+    "model": "yolo",
+    "frame_number": 90,
+    "inference_time_ms": 32.62677166208021,
+    "detection_count": 2,
+    "fps": 30.649676601691773,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.7490967924006026,
+        "bbox": [
+          362,
+          185,
+          136,
+          115
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.9250163920852401,
+        "bbox": [
+          144,
+          112,
+          163,
+          152
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.402469",
+    "model": "dnn",
+    "frame_number": 91,
+    "inference_time_ms": 22.040245199899747,
+    "detection_count": 4,
+    "fps": 45.37154604816051,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6311915805466699,
+        "bbox": [
+          346,
+          321,
+          166,
+          196
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.614406773942463,
+        "bbox": [
+          118,
+          164,
+          199,
+          115
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6522119364382931,
+        "bbox": [
+          395,
+          212,
+          152,
+          139
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7133519669666828,
+        "bbox": [
+          113,
+          182,
+          175,
+          128
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.435469",
+    "model": "onnx",
+    "frame_number": 92,
+    "inference_time_ms": 32.11477161958107,
+    "detection_count": 5,
+    "fps": 31.13831889716066,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.88027443992659,
+        "bbox": [
+          470,
+          254,
+          177,
+          194
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.901749040754328,
+        "bbox": [
+          408,
+          183,
+          174,
+          123
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6415613636686238,
+        "bbox": [
+          84,
+          390,
+          115,
+          160
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7825643386004842,
+        "bbox": [
+          410,
+          96,
+          163,
+          154
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.8101732375948885,
+        "bbox": [
+          183,
+          84,
+          152,
+          166
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.468469",
+    "model": "yolo",
+    "frame_number": 93,
+    "inference_time_ms": 16.716499858238965,
+    "detection_count": 4,
+    "fps": 59.82113531422882,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6569829723220137,
+        "bbox": [
+          195,
+          374,
+          150,
+          116
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8547368334015892,
+        "bbox": [
+          176,
+          110,
+          120,
+          160
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7266399746720236,
+        "bbox": [
+          450,
+          299,
+          141,
+          117
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7671743085695926,
+        "bbox": [
+          415,
+          149,
+          104,
+          186
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.501469",
+    "model": "dnn",
+    "frame_number": 94,
+    "inference_time_ms": 20.240199134644183,
+    "detection_count": 4,
+    "fps": 49.4066285290814,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8329715304249912,
+        "bbox": [
+          161,
+          218,
+          173,
+          107
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.6073731348944383,
+        "bbox": [
+          340,
+          196,
+          143,
+          194
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8009117814845033,
+        "bbox": [
+          242,
+          69,
+          200,
+          142
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7619050083289509,
+        "bbox": [
+          411,
+          149,
+          118,
+          152
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.534469",
+    "model": "onnx",
+    "frame_number": 95,
+    "inference_time_ms": 26.645528635188466,
+    "detection_count": 1,
+    "fps": 37.5297489380408,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.9052186166550829,
+        "bbox": [
+          126,
+          226,
+          112,
+          117
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.567469",
+    "model": "yolo",
+    "frame_number": 96,
+    "inference_time_ms": 34.375726637032635,
+    "detection_count": 8,
+    "fps": 29.090294164799115,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8716037569878304,
+        "bbox": [
+          450,
+          192,
+          133,
+          159
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5581296288095187,
+        "bbox": [
+          312,
+          235,
+          126,
+          130
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6092940103806006,
+        "bbox": [
+          360,
+          241,
+          102,
+          101
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5674334192788814,
+        "bbox": [
+          341,
+          237,
+          156,
+          161
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.50268251681474,
+        "bbox": [
+          52,
+          232,
+          175,
+          100
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.8923606660080634,
+        "bbox": [
+          217,
+          363,
+          152,
+          169
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5007465864260437,
+        "bbox": [
+          276,
+          390,
+          104,
+          182
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7488586483981333,
+        "bbox": [
+          122,
+          206,
+          188,
+          107
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.600469",
+    "model": "dnn",
+    "frame_number": 97,
+    "inference_time_ms": 19.385732701833174,
+    "detection_count": 0,
+    "fps": 51.58432829858615,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.633469",
+    "model": "onnx",
+    "frame_number": 98,
+    "inference_time_ms": 24.67303582265499,
+    "detection_count": 7,
+    "fps": 40.530075309248794,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.6787661794608546,
+        "bbox": [
+          121,
+          100,
+          169,
+          188
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.5686590253181658,
+        "bbox": [
+          309,
+          318,
+          135,
+          184
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6187615991195625,
+        "bbox": [
+          499,
+          357,
+          120,
+          160
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5471764879639078,
+        "bbox": [
+          113,
+          388,
+          193,
+          199
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6780651733664899,
+        "bbox": [
+          244,
+          115,
+          184,
+          149
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7606128911584455,
+        "bbox": [
+          481,
+          359,
+          180,
+          112
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6518372048548566,
+        "bbox": [
+          421,
+          96,
+          106,
+          151
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.666469",
+    "model": "yolo",
+    "frame_number": 99,
+    "inference_time_ms": 27.46834456058104,
+    "detection_count": 5,
+    "fps": 36.405543034983936,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6265389451522541,
+        "bbox": [
+          238,
+          150,
+          165,
+          198
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5288350160591591,
+        "bbox": [
+          405,
+          117,
+          128,
+          189
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5679133545714904,
+        "bbox": [
+          440,
+          292,
+          125,
+          169
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6946358117077566,
+        "bbox": [
+          300,
+          54,
+          147,
+          126
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6103792976299226,
+        "bbox": [
+          156,
+          188,
+          187,
+          197
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.699469",
+    "model": "dnn",
+    "frame_number": 100,
+    "inference_time_ms": 28.780513124473305,
+    "detection_count": 1,
+    "fps": 34.745732144353504,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.62799491320503,
+        "bbox": [
+          70,
+          370,
+          130,
+          193
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.732469",
+    "model": "onnx",
+    "frame_number": 101,
+    "inference_time_ms": 31.162578912612158,
+    "detection_count": 2,
+    "fps": 32.08977032370318,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8022762196154043,
+        "bbox": [
+          328,
+          318,
+          111,
+          127
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5018755623520528,
+        "bbox": [
+          55,
+          61,
+          192,
+          158
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.765469",
+    "model": "yolo",
+    "frame_number": 102,
+    "inference_time_ms": 28.70482109687646,
+    "detection_count": 6,
+    "fps": 34.8373535102372,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.8106791171148977,
+        "bbox": [
+          274,
+          114,
+          158,
+          159
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5042402109818722,
+        "bbox": [
+          186,
+          387,
+          176,
+          172
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.592756899242124,
+        "bbox": [
+          242,
+          360,
+          136,
+          191
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6677858552996254,
+        "bbox": [
+          422,
+          187,
+          177,
+          150
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7241149712061843,
+        "bbox": [
+          200,
+          375,
+          139,
+          125
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.85002633182209,
+        "bbox": [
+          59,
+          261,
+          160,
+          140
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.798469",
+    "model": "dnn",
+    "frame_number": 103,
+    "inference_time_ms": 22.55705524570781,
+    "detection_count": 6,
+    "fps": 44.33202778941109,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7061035855460456,
+        "bbox": [
+          156,
+          108,
+          178,
+          116
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5558045989868412,
+        "bbox": [
+          192,
+          151,
+          141,
+          181
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5068763482321916,
+        "bbox": [
+          145,
+          72,
+          198,
+          123
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6712150486060067,
+        "bbox": [
+          209,
+          195,
+          183,
+          110
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7469322818019939,
+        "bbox": [
+          77,
+          115,
+          163,
+          152
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7654816837101377,
+        "bbox": [
+          484,
+          283,
+          120,
+          120
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.831469",
+    "model": "onnx",
+    "frame_number": 104,
+    "inference_time_ms": 20.749635078234668,
+    "detection_count": 8,
+    "fps": 48.19361864580212,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.7431771390267126,
+        "bbox": [
+          52,
+          102,
+          154,
+          157
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8673650433891492,
+        "bbox": [
+          486,
+          274,
+          169,
+          128
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.5951820806905533,
+        "bbox": [
+          460,
+          384,
+          125,
+          115
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.9411085334255396,
+        "bbox": [
+          474,
+          388,
+          145,
+          160
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8340064410572177,
+        "bbox": [
+          220,
+          126,
+          139,
+          129
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.5105267496422303,
+        "bbox": [
+          470,
+          61,
+          191,
+          166
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.5403411562210764,
+        "bbox": [
+          69,
+          61,
+          159,
+          101
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6814262759602727,
+        "bbox": [
+          134,
+          220,
+          198,
+          185
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.864469",
+    "model": "yolo",
+    "frame_number": 105,
+    "inference_time_ms": 23.334856911518816,
+    "detection_count": 1,
+    "fps": 42.854344630944304,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.5739371316116046,
+        "bbox": [
+          97,
+          154,
+          155,
+          141
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.897469",
+    "model": "dnn",
+    "frame_number": 106,
+    "inference_time_ms": 33.34535352108869,
+    "detection_count": 2,
+    "fps": 29.9891857307066,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6203900886534757,
+        "bbox": [
+          257,
+          205,
+          178,
+          127
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7625593828195486,
+        "bbox": [
+          201,
+          139,
+          117,
+          152
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.930469",
+    "model": "onnx",
+    "frame_number": 107,
+    "inference_time_ms": 20.54527312887287,
+    "detection_count": 7,
+    "fps": 48.672996154754,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7347038767310572,
+        "bbox": [
+          68,
+          140,
+          148,
+          141
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6770946258885735,
+        "bbox": [
+          411,
+          162,
+          157,
+          119
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.5894669545413098,
+        "bbox": [
+          360,
+          193,
+          155,
+          190
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.85118697831964,
+        "bbox": [
+          433,
+          264,
+          122,
+          125
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.757545523133826,
+        "bbox": [
+          60,
+          215,
+          109,
+          191
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.8447217902025058,
+        "bbox": [
+          219,
+          276,
+          106,
+          185
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6605322900919253,
+        "bbox": [
+          76,
+          122,
+          134,
+          160
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.963469",
+    "model": "yolo",
+    "frame_number": 108,
+    "inference_time_ms": 20.898927682464848,
+    "detection_count": 1,
+    "fps": 47.84934496132285,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8204766334196069,
+        "bbox": [
+          273,
+          197,
+          149,
+          102
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:49.996469",
+    "model": "dnn",
+    "frame_number": 109,
+    "inference_time_ms": 23.523374132864504,
+    "detection_count": 2,
+    "fps": 42.51090827156892,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7989327194774067,
+        "bbox": [
+          406,
+          267,
+          192,
+          192
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7168597121135358,
+        "bbox": [
+          54,
+          148,
+          163,
+          137
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.029469",
+    "model": "onnx",
+    "frame_number": 110,
+    "inference_time_ms": 26.849698409387514,
+    "detection_count": 4,
+    "fps": 37.24436620302476,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.6223833484742592,
+        "bbox": [
+          452,
+          154,
+          102,
+          110
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7195285565484257,
+        "bbox": [
+          312,
+          393,
+          116,
+          152
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.5009965702931237,
+        "bbox": [
+          346,
+          210,
+          183,
+          132
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8226993556167841,
+        "bbox": [
+          232,
+          327,
+          200,
+          200
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.062469",
+    "model": "yolo",
+    "frame_number": 111,
+    "inference_time_ms": 35.445264562390584,
+    "detection_count": 4,
+    "fps": 28.212513359571766,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.6151728612127143,
+        "bbox": [
+          307,
+          167,
+          167,
+          200
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.9470270975807245,
+        "bbox": [
+          500,
+          114,
+          169,
+          107
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.5566803227088821,
+        "bbox": [
+          119,
+          95,
+          128,
+          124
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7561959297002168,
+        "bbox": [
+          63,
+          397,
+          115,
+          164
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.095469",
+    "model": "dnn",
+    "frame_number": 112,
+    "inference_time_ms": 22.34443401523214,
+    "detection_count": 0,
+    "fps": 44.753874692834145,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.128469",
+    "model": "onnx",
+    "frame_number": 113,
+    "inference_time_ms": 20.041533779573836,
+    "detection_count": 2,
+    "fps": 49.89638073604884,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.6101563089675769,
+        "bbox": [
+          272,
+          135,
+          138,
+          148
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5677052783760546,
+        "bbox": [
+          225,
+          62,
+          182,
+          166
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.161469",
+    "model": "yolo",
+    "frame_number": 114,
+    "inference_time_ms": 23.308335495832694,
+    "detection_count": 3,
+    "fps": 42.90310649504725,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.937398601039852,
+        "bbox": [
+          422,
+          253,
+          109,
+          139
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.5453404473677382,
+        "bbox": [
+          124,
+          336,
+          136,
+          195
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8586865250411855,
+        "bbox": [
+          429,
+          337,
+          127,
+          185
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.194469",
+    "model": "dnn",
+    "frame_number": 115,
+    "inference_time_ms": 22.55609496717293,
+    "detection_count": 3,
+    "fps": 44.333915132710366,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.7266800412985479,
+        "bbox": [
+          470,
+          282,
+          111,
+          147
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6131925584634983,
+        "bbox": [
+          111,
+          316,
+          128,
+          111
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.602899021304367,
+        "bbox": [
+          291,
+          276,
+          175,
+          179
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.227469",
+    "model": "onnx",
+    "frame_number": 116,
+    "inference_time_ms": 18.48759659849181,
+    "detection_count": 6,
+    "fps": 54.09031913221097,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8119872206877634,
+        "bbox": [
+          395,
+          75,
+          150,
+          153
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8834363152557505,
+        "bbox": [
+          370,
+          320,
+          152,
+          200
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.810528266506331,
+        "bbox": [
+          414,
+          258,
+          100,
+          179
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8225096904848328,
+        "bbox": [
+          423,
+          388,
+          163,
+          102
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5748501921676766,
+        "bbox": [
+          293,
+          137,
+          182,
+          113
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5925632966005131,
+        "bbox": [
+          267,
+          91,
+          111,
+          137
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.260469",
+    "model": "yolo",
+    "frame_number": 117,
+    "inference_time_ms": 33.04607913114649,
+    "detection_count": 3,
+    "fps": 30.260776052475254,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.6393525055272926,
+        "bbox": [
+          322,
+          170,
+          101,
+          124
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8591717247190565,
+        "bbox": [
+          340,
+          116,
+          117,
+          194
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6923794305781867,
+        "bbox": [
+          57,
+          138,
+          137,
+          151
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.293469",
+    "model": "dnn",
+    "frame_number": 118,
+    "inference_time_ms": 19.0122995635172,
+    "detection_count": 8,
+    "fps": 52.5975301756188,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7335527233138677,
+        "bbox": [
+          496,
+          384,
+          103,
+          157
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.8918472240807442,
+        "bbox": [
+          84,
+          254,
+          163,
+          149
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8076537845886882,
+        "bbox": [
+          360,
+          252,
+          110,
+          132
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6996112724887104,
+        "bbox": [
+          189,
+          185,
+          119,
+          131
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.9175525439749012,
+        "bbox": [
+          456,
+          208,
+          136,
+          177
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6454555370918323,
+        "bbox": [
+          236,
+          95,
+          181,
+          148
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.9102387839877264,
+        "bbox": [
+          168,
+          358,
+          129,
+          124
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.709844375462163,
+        "bbox": [
+          256,
+          331,
+          142,
+          155
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.326469",
+    "model": "onnx",
+    "frame_number": 119,
+    "inference_time_ms": 18.224748438892277,
+    "detection_count": 1,
+    "fps": 54.870441880336934,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.5596217432334335,
+        "bbox": [
+          56,
+          366,
+          116,
+          108
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.359469",
+    "model": "yolo",
+    "frame_number": 120,
+    "inference_time_ms": 36.912957585957834,
+    "detection_count": 1,
+    "fps": 27.09075797221984,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.9274160589370327,
+        "bbox": [
+          366,
+          160,
+          178,
+          130
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.392469",
+    "model": "dnn",
+    "frame_number": 121,
+    "inference_time_ms": 31.114970527024052,
+    "detection_count": 0,
+    "fps": 32.13887023069739,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.425469",
+    "model": "onnx",
+    "frame_number": 122,
+    "inference_time_ms": 26.9477080085834,
+    "detection_count": 1,
+    "fps": 37.10890735796452,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8912402641377971,
+        "bbox": [
+          215,
+          73,
+          119,
+          105
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.458469",
+    "model": "yolo",
+    "frame_number": 123,
+    "inference_time_ms": 24.424734144934945,
+    "detection_count": 2,
+    "fps": 40.942103773415035,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7535885952374526,
+        "bbox": [
+          99,
+          132,
+          175,
+          139
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7256123117123545,
+        "bbox": [
+          202,
+          235,
+          135,
+          181
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.491469",
+    "model": "dnn",
+    "frame_number": 124,
+    "inference_time_ms": 21.545272327168703,
+    "detection_count": 8,
+    "fps": 46.41389465005716,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.7126519901967946,
+        "bbox": [
+          96,
+          82,
+          186,
+          200
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5235461357549003,
+        "bbox": [
+          213,
+          342,
+          199,
+          162
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7955534802054178,
+        "bbox": [
+          86,
+          221,
+          154,
+          189
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.737112870731363,
+        "bbox": [
+          413,
+          265,
+          165,
+          180
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6329914278846769,
+        "bbox": [
+          126,
+          389,
+          194,
+          200
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.5690647928641221,
+        "bbox": [
+          365,
+          164,
+          101,
+          101
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7666560480335682,
+        "bbox": [
+          459,
+          96,
+          151,
+          196
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6379813024212379,
+        "bbox": [
+          348,
+          200,
+          154,
+          151
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.524469",
+    "model": "onnx",
+    "frame_number": 125,
+    "inference_time_ms": 26.79679013490314,
+    "detection_count": 5,
+    "fps": 37.3179024415125,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.5208707549173774,
+        "bbox": [
+          285,
+          329,
+          187,
+          172
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5493448036457671,
+        "bbox": [
+          440,
+          107,
+          124,
+          130
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7388712291097681,
+        "bbox": [
+          443,
+          236,
+          132,
+          167
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7432949269047957,
+        "bbox": [
+          147,
+          282,
+          101,
+          180
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7685812469123079,
+        "bbox": [
+          71,
+          179,
+          145,
+          191
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.557469",
+    "model": "yolo",
+    "frame_number": 126,
+    "inference_time_ms": 21.69012431145862,
+    "detection_count": 0,
+    "fps": 46.103931247259496,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.590469",
+    "model": "dnn",
+    "frame_number": 127,
+    "inference_time_ms": 16.659604217495342,
+    "detection_count": 3,
+    "fps": 60.02543559527269,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7201405648520272,
+        "bbox": [
+          377,
+          83,
+          148,
+          143
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.9115030659180707,
+        "bbox": [
+          173,
+          335,
+          116,
+          123
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.5138337873136625,
+        "bbox": [
+          431,
+          77,
+          148,
+          194
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.623469",
+    "model": "onnx",
+    "frame_number": 128,
+    "inference_time_ms": 29.75694199677028,
+    "detection_count": 6,
+    "fps": 33.605603697736704,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8192753823318596,
+        "bbox": [
+          444,
+          188,
+          155,
+          139
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6603864601615822,
+        "bbox": [
+          63,
+          290,
+          104,
+          113
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.774557170555255,
+        "bbox": [
+          480,
+          307,
+          135,
+          115
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.8827435408318196,
+        "bbox": [
+          460,
+          293,
+          113,
+          150
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.6721244718211156,
+        "bbox": [
+          77,
+          245,
+          108,
+          166
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8191310851876761,
+        "bbox": [
+          76,
+          235,
+          109,
+          191
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.656469",
+    "model": "yolo",
+    "frame_number": 129,
+    "inference_time_ms": 33.53353587980709,
+    "detection_count": 8,
+    "fps": 29.820893435880425,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.64956053827683,
+        "bbox": [
+          58,
+          62,
+          173,
+          118
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7050809127661243,
+        "bbox": [
+          354,
+          262,
+          186,
+          102
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7776250809068671,
+        "bbox": [
+          376,
+          66,
+          130,
+          135
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.9021706923800517,
+        "bbox": [
+          487,
+          132,
+          197,
+          129
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7096835020641148,
+        "bbox": [
+          406,
+          214,
+          122,
+          144
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6331583360745314,
+        "bbox": [
+          465,
+          118,
+          168,
+          170
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5088898278002529,
+        "bbox": [
+          159,
+          351,
+          173,
+          151
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6801455920013111,
+        "bbox": [
+          300,
+          149,
+          124,
+          200
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.689469",
+    "model": "dnn",
+    "frame_number": 130,
+    "inference_time_ms": 22.145708738201606,
+    "detection_count": 6,
+    "fps": 45.15547512259061,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.8329573629514224,
+        "bbox": [
+          267,
+          50,
+          109,
+          125
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6136586152665994,
+        "bbox": [
+          415,
+          372,
+          146,
+          156
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.5482392546398146,
+        "bbox": [
+          399,
+          187,
+          105,
+          124
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5403889443195247,
+        "bbox": [
+          434,
+          107,
+          147,
+          182
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.6977171731799334,
+        "bbox": [
+          126,
+          349,
+          140,
+          192
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7802102939825352,
+        "bbox": [
+          458,
+          241,
+          158,
+          177
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.722469",
+    "model": "onnx",
+    "frame_number": 131,
+    "inference_time_ms": 27.610129295790966,
+    "detection_count": 8,
+    "fps": 36.21859170911037,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6012858457161678,
+        "bbox": [
+          329,
+          311,
+          144,
+          159
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8054687019331848,
+        "bbox": [
+          244,
+          279,
+          134,
+          166
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5677759921189374,
+        "bbox": [
+          223,
+          250,
+          160,
+          168
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.9126378996346647,
+        "bbox": [
+          53,
+          60,
+          144,
+          128
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.5736396316505691,
+        "bbox": [
+          65,
+          376,
+          185,
+          149
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.62580907343134,
+        "bbox": [
+          466,
+          270,
+          148,
+          145
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7255805090908805,
+        "bbox": [
+          256,
+          157,
+          162,
+          166
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8813211796593005,
+        "bbox": [
+          499,
+          342,
+          107,
+          110
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.755469",
+    "model": "yolo",
+    "frame_number": 132,
+    "inference_time_ms": 36.59226627948366,
+    "detection_count": 5,
+    "fps": 27.3281789207102,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.686344563755988,
+        "bbox": [
+          187,
+          83,
+          115,
+          107
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.676832694420354,
+        "bbox": [
+          353,
+          252,
+          170,
+          154
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7520020836110983,
+        "bbox": [
+          146,
+          312,
+          190,
+          143
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.755994441765261,
+        "bbox": [
+          370,
+          120,
+          185,
+          124
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.9237279459341381,
+        "bbox": [
+          389,
+          387,
+          188,
+          193
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.788469",
+    "model": "dnn",
+    "frame_number": 133,
+    "inference_time_ms": 24.417759552104243,
+    "detection_count": 0,
+    "fps": 40.95379831495733,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.821469",
+    "model": "onnx",
+    "frame_number": 134,
+    "inference_time_ms": 30.98352067346117,
+    "detection_count": 3,
+    "fps": 32.27522173929532,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.7154068031065881,
+        "bbox": [
+          141,
+          190,
+          175,
+          174
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6599757881035769,
+        "bbox": [
+          193,
+          161,
+          147,
+          147
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6907451068283128,
+        "bbox": [
+          392,
+          311,
+          143,
+          200
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.854469",
+    "model": "yolo",
+    "frame_number": 135,
+    "inference_time_ms": 22.56070427928316,
+    "detection_count": 7,
+    "fps": 44.32485739898957,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5206684003253813,
+        "bbox": [
+          438,
+          278,
+          178,
+          141
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7919992185947414,
+        "bbox": [
+          257,
+          162,
+          199,
+          192
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8899920105917739,
+        "bbox": [
+          59,
+          206,
+          181,
+          159
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6875887633364605,
+        "bbox": [
+          245,
+          305,
+          137,
+          147
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7319841829103517,
+        "bbox": [
+          367,
+          304,
+          154,
+          128
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.5511529870328704,
+        "bbox": [
+          340,
+          115,
+          182,
+          122
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.503211258029422,
+        "bbox": [
+          320,
+          200,
+          179,
+          114
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.887469",
+    "model": "dnn",
+    "frame_number": 136,
+    "inference_time_ms": 29.707813799751243,
+    "detection_count": 7,
+    "fps": 33.661177720468054,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8966798073205978,
+        "bbox": [
+          328,
+          104,
+          199,
+          124
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7970861483226105,
+        "bbox": [
+          386,
+          359,
+          198,
+          153
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5267130118996124,
+        "bbox": [
+          267,
+          146,
+          154,
+          129
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.576055503794934,
+        "bbox": [
+          199,
+          176,
+          163,
+          190
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5732571700877779,
+        "bbox": [
+          347,
+          95,
+          143,
+          157
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.5492621986487551,
+        "bbox": [
+          381,
+          204,
+          108,
+          172
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7800920725818006,
+        "bbox": [
+          204,
+          78,
+          136,
+          122
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.920469",
+    "model": "onnx",
+    "frame_number": 137,
+    "inference_time_ms": 26.969254180923798,
+    "detection_count": 0,
+    "fps": 37.07926045308778,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.953469",
+    "model": "yolo",
+    "frame_number": 138,
+    "inference_time_ms": 18.830043080509718,
+    "detection_count": 7,
+    "fps": 53.10662305574134,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.8377239934407166,
+        "bbox": [
+          72,
+          351,
+          104,
+          109
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.6655632848112909,
+        "bbox": [
+          400,
+          278,
+          172,
+          109
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.6873889501411166,
+        "bbox": [
+          299,
+          223,
+          136,
+          119
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6998194309205434,
+        "bbox": [
+          149,
+          53,
+          175,
+          165
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8973799667973855,
+        "bbox": [
+          244,
+          239,
+          132,
+          107
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.9313128937578061,
+        "bbox": [
+          109,
+          167,
+          125,
+          198
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6167221326078889,
+        "bbox": [
+          149,
+          279,
+          168,
+          136
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:50.986469",
+    "model": "dnn",
+    "frame_number": 139,
+    "inference_time_ms": 22.39939808539357,
+    "detection_count": 5,
+    "fps": 44.644056781690495,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.5096912913939985,
+        "bbox": [
+          141,
+          351,
+          179,
+          159
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6315773680621259,
+        "bbox": [
+          172,
+          193,
+          143,
+          105
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6356429112810358,
+        "bbox": [
+          80,
+          267,
+          166,
+          162
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.794108653961132,
+        "bbox": [
+          136,
+          354,
+          198,
+          161
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6862590640832902,
+        "bbox": [
+          226,
+          242,
+          165,
+          181
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.019469",
+    "model": "onnx",
+    "frame_number": 140,
+    "inference_time_ms": 22.627942328534687,
+    "detection_count": 8,
+    "fps": 44.1931478117196,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.9331468009940711,
+        "bbox": [
+          492,
+          381,
+          173,
+          138
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7139339188416429,
+        "bbox": [
+          241,
+          310,
+          122,
+          178
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.8291453105295192,
+        "bbox": [
+          237,
+          168,
+          143,
+          145
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.7820523620936364,
+        "bbox": [
+          217,
+          399,
+          124,
+          149
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6260580879260167,
+        "bbox": [
+          483,
+          268,
+          196,
+          156
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7675573307136598,
+        "bbox": [
+          240,
+          62,
+          144,
+          139
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6989319599772644,
+        "bbox": [
+          186,
+          149,
+          179,
+          175
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.8825825443719924,
+        "bbox": [
+          331,
+          239,
+          121,
+          100
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.052469",
+    "model": "yolo",
+    "frame_number": 141,
+    "inference_time_ms": 32.4995171582379,
+    "detection_count": 4,
+    "fps": 30.769687904317752,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.5226102730838418,
+        "bbox": [
+          423,
+          261,
+          167,
+          147
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7036838969055493,
+        "bbox": [
+          161,
+          210,
+          108,
+          162
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5634339507597845,
+        "bbox": [
+          387,
+          358,
+          173,
+          182
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5084334879924849,
+        "bbox": [
+          172,
+          388,
+          179,
+          123
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.085469",
+    "model": "dnn",
+    "frame_number": 142,
+    "inference_time_ms": 27.4097890270721,
+    "detection_count": 2,
+    "fps": 36.48331619817723,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.9237314770713192,
+        "bbox": [
+          267,
+          360,
+          130,
+          166
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.9456465569757067,
+        "bbox": [
+          263,
+          267,
+          188,
+          155
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.118469",
+    "model": "onnx",
+    "frame_number": 143,
+    "inference_time_ms": 18.49089056315145,
+    "detection_count": 5,
+    "fps": 54.08068349032333,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.5947038471491358,
+        "bbox": [
+          366,
+          314,
+          141,
+          122
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5233748678655793,
+        "bbox": [
+          296,
+          386,
+          123,
+          156
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6750640615248342,
+        "bbox": [
+          94,
+          317,
+          177,
+          121
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7922725090758421,
+        "bbox": [
+          315,
+          233,
+          158,
+          102
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5685115608783143,
+        "bbox": [
+          176,
+          74,
+          111,
+          102
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.151469",
+    "model": "yolo",
+    "frame_number": 144,
+    "inference_time_ms": 34.03229653954905,
+    "detection_count": 7,
+    "fps": 29.38385303612692,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.7262541530045419,
+        "bbox": [
+          493,
+          375,
+          103,
+          198
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6218662029291186,
+        "bbox": [
+          277,
+          194,
+          191,
+          140
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6217590296130819,
+        "bbox": [
+          290,
+          317,
+          179,
+          115
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8738168421390378,
+        "bbox": [
+          429,
+          180,
+          142,
+          164
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.840028436092847,
+        "bbox": [
+          467,
+          215,
+          173,
+          193
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5502203387676932,
+        "bbox": [
+          121,
+          137,
+          194,
+          178
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6632154174191927,
+        "bbox": [
+          406,
+          285,
+          174,
+          105
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.184469",
+    "model": "dnn",
+    "frame_number": 145,
+    "inference_time_ms": 23.944352820906843,
+    "detection_count": 0,
+    "fps": 41.763500875532415,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.217469",
+    "model": "onnx",
+    "frame_number": 146,
+    "inference_time_ms": 24.512077743591384,
+    "detection_count": 4,
+    "fps": 40.79621525602607,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6757274328840482,
+        "bbox": [
+          60,
+          357,
+          151,
+          197
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.715642370264797,
+        "bbox": [
+          290,
+          254,
+          186,
+          107
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.9207343661516447,
+        "bbox": [
+          485,
+          174,
+          174,
+          181
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.875903439018916,
+        "bbox": [
+          56,
+          295,
+          197,
+          152
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.250469",
+    "model": "yolo",
+    "frame_number": 147,
+    "inference_time_ms": 26.30546923047208,
+    "detection_count": 5,
+    "fps": 38.01490827776631,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.9330034374093998,
+        "bbox": [
+          55,
+          326,
+          125,
+          197
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7067294691959363,
+        "bbox": [
+          242,
+          80,
+          191,
+          153
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8116014067716921,
+        "bbox": [
+          371,
+          334,
+          197,
+          120
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.692545869724869,
+        "bbox": [
+          450,
+          179,
+          138,
+          166
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6574583943359551,
+        "bbox": [
+          227,
+          338,
+          108,
+          174
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.283469",
+    "model": "dnn",
+    "frame_number": 148,
+    "inference_time_ms": 23.2986032409745,
+    "detection_count": 5,
+    "fps": 42.921027911292654,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.564415785516159,
+        "bbox": [
+          148,
+          113,
+          187,
+          194
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.9417242423952437,
+        "bbox": [
+          286,
+          395,
+          187,
+          193
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.9197136598843476,
+        "bbox": [
+          424,
+          63,
+          119,
+          139
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.9286854727807223,
+        "bbox": [
+          365,
+          349,
+          101,
+          109
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8598371952975976,
+        "bbox": [
+          200,
+          365,
+          107,
+          149
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.316469",
+    "model": "onnx",
+    "frame_number": 149,
+    "inference_time_ms": 29.580765963887792,
+    "detection_count": 0,
+    "fps": 33.805750710471806,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.349469",
+    "model": "yolo",
+    "frame_number": 150,
+    "inference_time_ms": 20.630085600794143,
+    "detection_count": 0,
+    "fps": 48.472896300609904,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.382469",
+    "model": "dnn",
+    "frame_number": 151,
+    "inference_time_ms": 20.984388240688364,
+    "detection_count": 5,
+    "fps": 47.65447477096413,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.8405301111032337,
+        "bbox": [
+          76,
+          259,
+          141,
+          121
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.8199234409664724,
+        "bbox": [
+          122,
+          57,
+          160,
+          179
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.942847081439462,
+        "bbox": [
+          180,
+          359,
+          186,
+          164
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.9102907622180656,
+        "bbox": [
+          353,
+          301,
+          156,
+          102
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.9083230332470602,
+        "bbox": [
+          452,
+          299,
+          194,
+          135
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.415469",
+    "model": "onnx",
+    "frame_number": 152,
+    "inference_time_ms": 17.446187744806846,
+    "detection_count": 4,
+    "fps": 57.319112612305055,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.9104078313657898,
+        "bbox": [
+          493,
+          164,
+          154,
+          127
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5406327570239026,
+        "bbox": [
+          299,
+          81,
+          199,
+          106
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5187921224515009,
+        "bbox": [
+          335,
+          137,
+          110,
+          180
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5973622424887157,
+        "bbox": [
+          437,
+          246,
+          142,
+          122
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.448469",
+    "model": "yolo",
+    "frame_number": 153,
+    "inference_time_ms": 23.873027766260623,
+    "detection_count": 3,
+    "fps": 41.88827700411275,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7836017286134309,
+        "bbox": [
+          264,
+          54,
+          132,
+          193
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5513637849541306,
+        "bbox": [
+          183,
+          66,
+          140,
+          109
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.9118444671980478,
+        "bbox": [
+          366,
+          65,
+          109,
+          105
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.481469",
+    "model": "dnn",
+    "frame_number": 154,
+    "inference_time_ms": 21.65361635514825,
+    "detection_count": 1,
+    "fps": 46.18166238833567,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.6047251234250371,
+        "bbox": [
+          376,
+          106,
+          122,
+          200
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.514469",
+    "model": "onnx",
+    "frame_number": 155,
+    "inference_time_ms": 29.92566322636819,
+    "detection_count": 1,
+    "fps": 33.416134921911336,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6546484889552411,
+        "bbox": [
+          479,
+          374,
+          117,
+          134
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.547469",
+    "model": "yolo",
+    "frame_number": 156,
+    "inference_time_ms": 25.836542524953423,
+    "detection_count": 8,
+    "fps": 38.704869238373554,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6473670863148652,
+        "bbox": [
+          305,
+          378,
+          139,
+          197
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.9245922864891543,
+        "bbox": [
+          309,
+          60,
+          141,
+          191
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.9430347915538356,
+        "bbox": [
+          257,
+          87,
+          198,
+          151
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5620126908425681,
+        "bbox": [
+          338,
+          302,
+          169,
+          128
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5885348020924953,
+        "bbox": [
+          444,
+          268,
+          155,
+          126
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7575067718514219,
+        "bbox": [
+          165,
+          392,
+          122,
+          125
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5375760441105525,
+        "bbox": [
+          434,
+          81,
+          130,
+          135
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5431872573917131,
+        "bbox": [
+          253,
+          315,
+          132,
+          153
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.580469",
+    "model": "dnn",
+    "frame_number": 157,
+    "inference_time_ms": 22.38125164206951,
+    "detection_count": 2,
+    "fps": 44.68025363337248,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8223189474865826,
+        "bbox": [
+          253,
+          252,
+          162,
+          162
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.8669819047825722,
+        "bbox": [
+          355,
+          266,
+          102,
+          105
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.613469",
+    "model": "onnx",
+    "frame_number": 158,
+    "inference_time_ms": 23.754452383539135,
+    "detection_count": 0,
+    "fps": 42.09737121504679,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.646469",
+    "model": "yolo",
+    "frame_number": 159,
+    "inference_time_ms": 30.131808017840545,
+    "detection_count": 0,
+    "fps": 33.18752062298806,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.679469",
+    "model": "dnn",
+    "frame_number": 160,
+    "inference_time_ms": 18.499178765542876,
+    "detection_count": 6,
+    "fps": 54.056453676885916,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.9304491748134924,
+        "bbox": [
+          411,
+          168,
+          197,
+          170
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.548673831456144,
+        "bbox": [
+          119,
+          274,
+          165,
+          170
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.9466267103793564,
+        "bbox": [
+          368,
+          204,
+          186,
+          196
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7213990857751311,
+        "bbox": [
+          445,
+          62,
+          110,
+          183
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8449908602198968,
+        "bbox": [
+          359,
+          96,
+          170,
+          137
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5546260769267891,
+        "bbox": [
+          471,
+          112,
+          181,
+          139
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.712469",
+    "model": "onnx",
+    "frame_number": 161,
+    "inference_time_ms": 30.61196815308694,
+    "detection_count": 0,
+    "fps": 32.66696198686457,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.745469",
+    "model": "yolo",
+    "frame_number": 162,
+    "inference_time_ms": 26.69805137016208,
+    "detection_count": 2,
+    "fps": 37.45591714298695,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8005344979614735,
+        "bbox": [
+          252,
+          357,
+          141,
+          147
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8009583621427985,
+        "bbox": [
+          199,
+          300,
+          178,
+          173
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.778469",
+    "model": "dnn",
+    "frame_number": 163,
+    "inference_time_ms": 14.978984713170844,
+    "detection_count": 1,
+    "fps": 66.76019898202526,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.5812782003974424,
+        "bbox": [
+          350,
+          180,
+          146,
+          158
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.811469",
+    "model": "onnx",
+    "frame_number": 164,
+    "inference_time_ms": 26.200910455212558,
+    "detection_count": 5,
+    "fps": 38.166612633915335,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.7052915604497235,
+        "bbox": [
+          453,
+          260,
+          189,
+          199
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5525215825817376,
+        "bbox": [
+          420,
+          90,
+          162,
+          151
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8387180608680354,
+        "bbox": [
+          53,
+          61,
+          176,
+          186
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6605989076943802,
+        "bbox": [
+          200,
+          79,
+          157,
+          119
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.9174181309826891,
+        "bbox": [
+          186,
+          54,
+          187,
+          101
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.844469",
+    "model": "yolo",
+    "frame_number": 165,
+    "inference_time_ms": 26.58213864415656,
+    "detection_count": 5,
+    "fps": 37.61924551619272,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5714059872128306,
+        "bbox": [
+          316,
+          121,
+          196,
+          107
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.8090214977565913,
+        "bbox": [
+          357,
+          124,
+          101,
+          200
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.6647370263660228,
+        "bbox": [
+          239,
+          77,
+          112,
+          194
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5707616164180758,
+        "bbox": [
+          273,
+          248,
+          101,
+          155
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.687714772647136,
+        "bbox": [
+          337,
+          129,
+          158,
+          100
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.877469",
+    "model": "dnn",
+    "frame_number": 166,
+    "inference_time_ms": 17.905445288047186,
+    "detection_count": 0,
+    "fps": 55.84893220541976,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.910469",
+    "model": "onnx",
+    "frame_number": 167,
+    "inference_time_ms": 24.767740643485187,
+    "detection_count": 3,
+    "fps": 40.37509978783778,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.7848140083768935,
+        "bbox": [
+          305,
+          291,
+          148,
+          200
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7510225803157805,
+        "bbox": [
+          147,
+          156,
+          154,
+          187
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7728437301657047,
+        "bbox": [
+          174,
+          190,
+          182,
+          184
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.943469",
+    "model": "yolo",
+    "frame_number": 168,
+    "inference_time_ms": 26.638131431537637,
+    "detection_count": 3,
+    "fps": 37.54017065987112,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.7863019001755618,
+        "bbox": [
+          364,
+          273,
+          122,
+          133
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.6150141670544605,
+        "bbox": [
+          331,
+          344,
+          180,
+          146
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.7967045287637128,
+        "bbox": [
+          73,
+          188,
+          142,
+          135
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:51.976469",
+    "model": "dnn",
+    "frame_number": 169,
+    "inference_time_ms": 21.330115341606138,
+    "detection_count": 0,
+    "fps": 46.88207184934523,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.009469",
+    "model": "onnx",
+    "frame_number": 170,
+    "inference_time_ms": 28.394491184489514,
+    "detection_count": 4,
+    "fps": 35.21809894400396,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.5593460923101699,
+        "bbox": [
+          274,
+          74,
+          107,
+          185
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.7552969728262102,
+        "bbox": [
+          476,
+          150,
+          179,
+          141
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.942072201280511,
+        "bbox": [
+          321,
+          381,
+          180,
+          146
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8098752510534065,
+        "bbox": [
+          263,
+          146,
+          197,
+          188
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.042469",
+    "model": "yolo",
+    "frame_number": 171,
+    "inference_time_ms": 40.032790319257224,
+    "detection_count": 7,
+    "fps": 24.97952283678222,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6380466779763385,
+        "bbox": [
+          369,
+          313,
+          195,
+          130
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6750748109334943,
+        "bbox": [
+          71,
+          111,
+          102,
+          127
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6802290879290982,
+        "bbox": [
+          123,
+          229,
+          178,
+          178
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.9142279798190263,
+        "bbox": [
+          145,
+          221,
+          106,
+          110
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.7316459400325167,
+        "bbox": [
+          431,
+          123,
+          104,
+          179
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.5624082126968929,
+        "bbox": [
+          328,
+          216,
+          161,
+          104
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6090832850959478,
+        "bbox": [
+          328,
+          117,
+          100,
+          186
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.075469",
+    "model": "dnn",
+    "frame_number": 172,
+    "inference_time_ms": 30.516103966963897,
+    "detection_count": 7,
+    "fps": 32.76958294160288,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.8282745372117111,
+        "bbox": [
+          363,
+          319,
+          110,
+          188
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8861471755675727,
+        "bbox": [
+          85,
+          328,
+          116,
+          170
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8325660640392998,
+        "bbox": [
+          92,
+          385,
+          178,
+          169
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5504486279505532,
+        "bbox": [
+          195,
+          362,
+          171,
+          119
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.711794226337999,
+        "bbox": [
+          179,
+          182,
+          189,
+          104
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.575758580993799,
+        "bbox": [
+          236,
+          57,
+          132,
+          192
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8730476825569622,
+        "bbox": [
+          91,
+          90,
+          176,
+          126
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.108469",
+    "model": "onnx",
+    "frame_number": 173,
+    "inference_time_ms": 20.5254404410802,
+    "detection_count": 3,
+    "fps": 48.7200263921534,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.8097022704882881,
+        "bbox": [
+          310,
+          183,
+          191,
+          110
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8296779361760078,
+        "bbox": [
+          435,
+          295,
+          177,
+          106
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.9128382832602278,
+        "bbox": [
+          297,
+          317,
+          120,
+          200
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.141469",
+    "model": "yolo",
+    "frame_number": 174,
+    "inference_time_ms": 26.13199834854104,
+    "detection_count": 6,
+    "fps": 38.26726095196736,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.9485638030350219,
+        "bbox": [
+          76,
+          271,
+          104,
+          102
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7919577317511102,
+        "bbox": [
+          201,
+          153,
+          168,
+          194
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.7314184895303486,
+        "bbox": [
+          293,
+          387,
+          173,
+          109
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8578600796534367,
+        "bbox": [
+          483,
+          308,
+          149,
+          114
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.59308718999648,
+        "bbox": [
+          249,
+          388,
+          158,
+          137
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7293172741056004,
+        "bbox": [
+          79,
+          140,
+          129,
+          127
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.174469",
+    "model": "dnn",
+    "frame_number": 175,
+    "inference_time_ms": 14.791317068302208,
+    "detection_count": 5,
+    "fps": 67.60723168750131,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.6051084122177941,
+        "bbox": [
+          315,
+          287,
+          132,
+          135
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.5981112205383007,
+        "bbox": [
+          86,
+          362,
+          174,
+          113
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.8932461802019246,
+        "bbox": [
+          315,
+          68,
+          108,
+          194
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6518265863398223,
+        "bbox": [
+          466,
+          295,
+          181,
+          143
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6048118867533139,
+        "bbox": [
+          300,
+          87,
+          124,
+          138
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.207469",
+    "model": "onnx",
+    "frame_number": 176,
+    "inference_time_ms": 18.263143356099807,
+    "detection_count": 4,
+    "fps": 54.75508681620268,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.6273771424248734,
+        "bbox": [
+          101,
+          200,
+          125,
+          104
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.8985607464549827,
+        "bbox": [
+          423,
+          315,
+          151,
+          116
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.826497754813233,
+        "bbox": [
+          193,
+          186,
+          118,
+          171
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8320756978282373,
+        "bbox": [
+          346,
+          221,
+          155,
+          113
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.240469",
+    "model": "yolo",
+    "frame_number": 177,
+    "inference_time_ms": 36.79831670626408,
+    "detection_count": 0,
+    "fps": 27.17515608070661,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.273469",
+    "model": "dnn",
+    "frame_number": 178,
+    "inference_time_ms": 16.60422432974493,
+    "detection_count": 6,
+    "fps": 60.225637773912304,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5491414380148465,
+        "bbox": [
+          56,
+          91,
+          200,
+          104
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.9471948827672629,
+        "bbox": [
+          173,
+          283,
+          163,
+          176
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7513932819095914,
+        "bbox": [
+          87,
+          208,
+          133,
+          146
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6593856569977584,
+        "bbox": [
+          337,
+          311,
+          179,
+          146
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.8479348829264506,
+        "bbox": [
+          491,
+          138,
+          117,
+          200
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8060001292103236,
+        "bbox": [
+          103,
+          129,
+          126,
+          126
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.306469",
+    "model": "onnx",
+    "frame_number": 179,
+    "inference_time_ms": 21.07020561558896,
+    "detection_count": 2,
+    "fps": 47.46038165190671,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8037058380349644,
+        "bbox": [
+          178,
+          325,
+          108,
+          143
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7609643954830156,
+        "bbox": [
+          141,
+          319,
+          163,
+          140
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.339469",
+    "model": "yolo",
+    "frame_number": 180,
+    "inference_time_ms": 34.28893353632401,
+    "detection_count": 2,
+    "fps": 29.163928325173753,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6195032891703103,
+        "bbox": [
+          164,
+          138,
+          177,
+          157
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6959620571604742,
+        "bbox": [
+          148,
+          381,
+          182,
+          199
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.372469",
+    "model": "dnn",
+    "frame_number": 181,
+    "inference_time_ms": 20.924126930104784,
+    "detection_count": 8,
+    "fps": 47.791719259800544,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.8206135732714988,
+        "bbox": [
+          179,
+          399,
+          112,
+          109
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7593246620198334,
+        "bbox": [
+          365,
+          50,
+          149,
+          158
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7495650653588901,
+        "bbox": [
+          380,
+          325,
+          100,
+          177
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.6680330571208108,
+        "bbox": [
+          400,
+          353,
+          136,
+          136
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6970841242440275,
+        "bbox": [
+          424,
+          282,
+          159,
+          152
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.517485426922529,
+        "bbox": [
+          194,
+          92,
+          120,
+          179
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7001834480465269,
+        "bbox": [
+          433,
+          194,
+          125,
+          101
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.9076101304984423,
+        "bbox": [
+          450,
+          386,
+          192,
+          171
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.405469",
+    "model": "onnx",
+    "frame_number": 182,
+    "inference_time_ms": 27.312725934995846,
+    "detection_count": 2,
+    "fps": 36.61296944069205,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7419131766719462,
+        "bbox": [
+          387,
+          335,
+          189,
+          117
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6155987278618411,
+        "bbox": [
+          107,
+          63,
+          110,
+          128
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.438469",
+    "model": "yolo",
+    "frame_number": 183,
+    "inference_time_ms": 36.76504105092639,
+    "detection_count": 8,
+    "fps": 27.199752031143248,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8857176623268646,
+        "bbox": [
+          494,
+          201,
+          149,
+          139
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.7998814507840222,
+        "bbox": [
+          159,
+          170,
+          147,
+          197
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.6952207939526416,
+        "bbox": [
+          202,
+          202,
+          130,
+          159
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.9293215316062289,
+        "bbox": [
+          301,
+          252,
+          146,
+          149
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.6435264489539325,
+        "bbox": [
+          167,
+          205,
+          148,
+          149
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.9020655095406331,
+        "bbox": [
+          396,
+          192,
+          158,
+          113
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8276579435812632,
+        "bbox": [
+          154,
+          180,
+          183,
+          165
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5239473140836525,
+        "bbox": [
+          359,
+          176,
+          127,
+          146
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.471469",
+    "model": "dnn",
+    "frame_number": 184,
+    "inference_time_ms": 17.489571916113515,
+    "detection_count": 4,
+    "fps": 57.176928331715125,
+    "detections": [
+      {
+        "class_name": "bicycle",
+        "confidence": 0.8249284157532397,
+        "bbox": [
+          425,
+          344,
+          163,
+          199
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.9403695693112506,
+        "bbox": [
+          202,
+          171,
+          105,
+          102
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5703484631441875,
+        "bbox": [
+          340,
+          200,
+          108,
+          161
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6055921071238412,
+        "bbox": [
+          285,
+          139,
+          193,
+          198
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.504469",
+    "model": "onnx",
+    "frame_number": 185,
+    "inference_time_ms": 25.572068645325604,
+    "detection_count": 0,
+    "fps": 39.10516641690593,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.537469",
+    "model": "yolo",
+    "frame_number": 186,
+    "inference_time_ms": 33.96680585742416,
+    "detection_count": 6,
+    "fps": 29.440507423556546,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.8846028837118841,
+        "bbox": [
+          270,
+          351,
+          180,
+          104
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5548222499921777,
+        "bbox": [
+          480,
+          117,
+          132,
+          169
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6817035342642742,
+        "bbox": [
+          278,
+          341,
+          131,
+          162
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.5589642979399785,
+        "bbox": [
+          350,
+          177,
+          193,
+          116
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7076524463369183,
+        "bbox": [
+          156,
+          210,
+          166,
+          167
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6135286976101632,
+        "bbox": [
+          204,
+          346,
+          110,
+          166
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.570469",
+    "model": "dnn",
+    "frame_number": 187,
+    "inference_time_ms": 24.75135713424735,
+    "detection_count": 7,
+    "fps": 40.40182502220634,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.8546460326037938,
+        "bbox": [
+          157,
+          192,
+          175,
+          168
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7021288297012079,
+        "bbox": [
+          384,
+          195,
+          186,
+          189
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8959661353062853,
+        "bbox": [
+          418,
+          261,
+          192,
+          108
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.5161715577945041,
+        "bbox": [
+          403,
+          124,
+          168,
+          185
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8781927898962448,
+        "bbox": [
+          297,
+          112,
+          170,
+          125
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6699572494440216,
+        "bbox": [
+          456,
+          385,
+          142,
+          184
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.6858018580802735,
+        "bbox": [
+          173,
+          310,
+          173,
+          119
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.603469",
+    "model": "onnx",
+    "frame_number": 188,
+    "inference_time_ms": 15.198061943373366,
+    "detection_count": 0,
+    "fps": 65.79786315688878,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.636469",
+    "model": "yolo",
+    "frame_number": 189,
+    "inference_time_ms": 36.603713170068104,
+    "detection_count": 6,
+    "fps": 27.3196327201506,
+    "detections": [
+      {
+        "class_name": "bus",
+        "confidence": 0.5930200635869604,
+        "bbox": [
+          295,
+          157,
+          168,
+          129
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5909311147199852,
+        "bbox": [
+          109,
+          64,
+          105,
+          200
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7836033964684403,
+        "bbox": [
+          456,
+          89,
+          152,
+          152
+        ]
+      },
+      {
+        "class_name": "truck",
+        "confidence": 0.8386285497942021,
+        "bbox": [
+          75,
+          308,
+          143,
+          116
+        ]
+      },
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8240304449565208,
+        "bbox": [
+          222,
+          213,
+          159,
+          152
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8214114417636615,
+        "bbox": [
+          333,
+          166,
+          169,
+          198
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.669469",
+    "model": "dnn",
+    "frame_number": 190,
+    "inference_time_ms": 24.281975979721445,
+    "detection_count": 6,
+    "fps": 41.18280986832076,
+    "detections": [
+      {
+        "class_name": "car",
+        "confidence": 0.9103627149800345,
+        "bbox": [
+          405,
+          229,
+          129,
+          194
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.9474267373172512,
+        "bbox": [
+          181,
+          131,
+          155,
+          142
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8695061279570655,
+        "bbox": [
+          237,
+          252,
+          118,
+          158
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.6865944969336941,
+        "bbox": [
+          400,
+          371,
+          120,
+          157
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8419918193509441,
+        "bbox": [
+          444,
+          363,
+          198,
+          134
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8711241321472507,
+        "bbox": [
+          258,
+          291,
+          144,
+          189
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.702469",
+    "model": "onnx",
+    "frame_number": 191,
+    "inference_time_ms": 34.717506436670845,
+    "detection_count": 0,
+    "fps": 28.80391199247352,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.735469",
+    "model": "yolo",
+    "frame_number": 192,
+    "inference_time_ms": 18.05494367550377,
+    "detection_count": 0,
+    "fps": 55.386492363128234,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.768469",
+    "model": "dnn",
+    "frame_number": 193,
+    "inference_time_ms": 23.96922258490896,
+    "detection_count": 2,
+    "fps": 41.72016828904584,
+    "detections": [
+      {
+        "class_name": "stop sign",
+        "confidence": 0.8548372710590206,
+        "bbox": [
+          272,
+          67,
+          200,
+          182
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.7590078842943289,
+        "bbox": [
+          278,
+          54,
+          161,
+          150
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.801469",
+    "model": "onnx",
+    "frame_number": 194,
+    "inference_time_ms": 18.89655577913376,
+    "detection_count": 4,
+    "fps": 52.919696673201955,
+    "detections": [
+      {
+        "class_name": "motorcycle",
+        "confidence": 0.8361126015486489,
+        "bbox": [
+          244,
+          343,
+          196,
+          107
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5477717872623851,
+        "bbox": [
+          431,
+          215,
+          105,
+          113
+        ]
+      },
+      {
+        "class_name": "bus",
+        "confidence": 0.5866216182506854,
+        "bbox": [
+          222,
+          260,
+          139,
+          123
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.6945477930843298,
+        "bbox": [
+          226,
+          339,
+          164,
+          177
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.834469",
+    "model": "yolo",
+    "frame_number": 195,
+    "inference_time_ms": 34.469770606548245,
+    "detection_count": 0,
+    "fps": 29.010927035587216,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.867469",
+    "model": "dnn",
+    "frame_number": 196,
+    "inference_time_ms": 25.94889551708015,
+    "detection_count": 5,
+    "fps": 38.537285694559806,
+    "detections": [
+      {
+        "class_name": "truck",
+        "confidence": 0.6874005163908288,
+        "bbox": [
+          165,
+          198,
+          119,
+          123
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.8347777241125006,
+        "bbox": [
+          195,
+          228,
+          164,
+          113
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.5870194018896451,
+        "bbox": [
+          449,
+          81,
+          134,
+          105
+        ]
+      },
+      {
+        "class_name": "car",
+        "confidence": 0.559945243446902,
+        "bbox": [
+          423,
+          218,
+          171,
+          194
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.7814690466610026,
+        "bbox": [
+          338,
+          208,
+          125,
+          187
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.900469",
+    "model": "onnx",
+    "frame_number": 197,
+    "inference_time_ms": 30.710671983457516,
+    "detection_count": 0,
+    "fps": 32.561970657583004,
+    "detections": []
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.933469",
+    "model": "yolo",
+    "frame_number": 198,
+    "inference_time_ms": 21.115114823144875,
+    "detection_count": 4,
+    "fps": 47.359439357813564,
+    "detections": [
+      {
+        "class_name": "person",
+        "confidence": 0.5305873297104153,
+        "bbox": [
+          411,
+          148,
+          190,
+          195
+        ]
+      },
+      {
+        "class_name": "bicycle",
+        "confidence": 0.5422005207571823,
+        "bbox": [
+          197,
+          185,
+          126,
+          169
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.5765177366383101,
+        "bbox": [
+          191,
+          307,
+          132,
+          172
+        ]
+      },
+      {
+        "class_name": "traffic light",
+        "confidence": 0.6148867933568364,
+        "bbox": [
+          286,
+          195,
+          193,
+          149
+        ]
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-07-09T16:52:52.966469",
+    "model": "dnn",
+    "frame_number": 199,
+    "inference_time_ms": 27.16798403143005,
+    "detection_count": 3,
+    "fps": 36.80803105755369,
+    "detections": [
+      {
+        "class_name": "traffic light",
+        "confidence": 0.8837182989976227,
+        "bbox": [
+          50,
+          380,
+          163,
+          127
+        ]
+      },
+      {
+        "class_name": "stop sign",
+        "confidence": 0.7452396723822836,
+        "bbox": [
+          282,
+          289,
+          123,
+          177
+        ]
+      },
+      {
+        "class_name": "person",
+        "confidence": 0.9431308013185082,
+        "bbox": [
+          322,
+          313,
+          104,
+          173
+        ]
+      }
+    ]
+  }
+]

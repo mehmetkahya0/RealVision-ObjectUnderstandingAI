@@ -1,29 +1,38 @@
-numpy<2.0.0
+# Core Computer Vision Dependencies
+numpy>=1.24.0,<2.0.0
 opencv-python>=4.8.0,<5.0.0
-torch>=2.0.0
-torchvision>=0.15.0
-ultralytics>=8.0.0
-Pillow>=9.0.0
-matplotlib>=3.6.0
-scipy>=1.9.0
-requests>=2.28.0
-tqdm>=4.64.0
+Pillow>=9.0.0,<11.0.0
 
-# Data Science Libraries for Performance Analysis
-pandas>=1.5.0
-seaborn>=0.11.0
-plotly>=5.0.0
-scikit-learn>=1.2.0
-jupyter>=1.0.0
-notebook>=6.5.0
+# Deep Learning Framework
+torch>=2.0.0,<3.0.0
+torchvision>=0.15.0,<1.0.0
+ultralytics>=8.0.0,<9.0.0
 
-# Statistical Analysis
-statsmodels>=0.14.0
-bokeh>=3.0.0
+# GUI Framework
+PyQt6>=6.5.0,<7.0.0
 
-# Optional AI models (install for additional features)
-# mediapipe>=0.10.0          # Enables hand tracking and 3D object detection
-# onnxruntime>=1.15.0        # Enables ONNX model support (YOLOv5, etc.)
-# tensorflow>=2.13.0         # Enables EfficientDet model support
-tensorflow>=2.13.0          # EfficientDet model support (new!)
-PyYAML>=6.0
+# Data Science and Analytics
+pandas>=1.5.0,<3.0.0
+matplotlib>=3.6.0,<4.0.0
+seaborn>=0.11.0,<1.0.0
+plotly>=5.0.0,<6.0.0
+scikit-learn>=1.2.0,<2.0.0
+scipy>=1.9.0,<2.0.0
+statsmodels>=0.14.0,<1.0.0
+
+# Visualization Tools
+bokeh>=3.0.0,<4.0.0
+
+# Utilities
+requests>=2.28.0,<3.0.0
+tqdm>=4.64.0,<5.0.0
+PyYAML>=6.0,<7.0.0
+
+# Optional AI Model Dependencies (uncomment to enable)
+# mediapipe>=0.10.0,<1.0.0      # Hand tracking and 3D object detection
+# onnxruntime>=1.15.0,<2.0.0    # ONNX model support (YOLOv5, etc.)
+# tensorflow>=2.13.0,<3.0.0     # EfficientDet model support
+
+# Development Tools (optional)
+# jupyter>=1.0.0,<2.0.0
+# notebook>=6.5.0,<8.0.0

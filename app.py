@@ -91,7 +91,7 @@ For more options, see: python app.py run --help
     
     # Execute appropriate command
     if args.command == 'run':
-        from run import main as run_main
+        from src.run import main as run_main
         # Convert args back to sys.argv format for run.py
         sys.argv = ['run.py']
         if hasattr(args, 'input') and args.input:
@@ -113,10 +113,10 @@ For more options, see: python app.py run --help
         
     elif args.command == 'demo':
         if args.sample:
-            from demo_sample_analytics import main as demo_sample_main
+            from src.demo_sample_analytics import main as demo_sample_main
             demo_sample_main()
         else:
-            from demo_analytics import main as demo_main
+            from src.demo_analytics import main as demo_main
             if args.video:
                 sys.argv = ['demo_analytics.py', '--video', args.video]
             demo_main()
