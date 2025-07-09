@@ -54,7 +54,7 @@ For more options, see: python app.py run --help
     run_parser = subparsers.add_parser('run', help='Run the main object detection application')
     run_parser.add_argument('--input', type=str, help='Input video file path')
     run_parser.add_argument('--camera', type=int, default=0, help='Camera index (default: 0)')
-    run_parser.add_argument('--model', choices=['yolo', 'dnn', 'onnx'], help='Detection model to use')
+    run_parser.add_argument('--model', choices=['yolo', 'dnn', 'onnx', 'efficientdet'], help='Detection model to use')
     run_parser.add_argument('--confidence', type=float, default=0.5, help='Confidence threshold (0.0-1.0)')
     run_parser.add_argument('--output-dir', type=str, help='Output directory for screenshots')
     run_parser.add_argument('--no-gui', action='store_true', help='Run without GUI display')

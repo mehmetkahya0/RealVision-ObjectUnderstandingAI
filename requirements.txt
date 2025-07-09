@@ -24,5 +24,6 @@ bokeh>=3.0.0
 # Optional AI models (install for additional features)
 # mediapipe>=0.10.0          # Enables hand tracking and 3D object detection
 # onnxruntime>=1.15.0        # Enables ONNX model support (YOLOv5, etc.)
-# tensorflow>=2.13.0         # For future TensorFlow model support
+# tensorflow>=2.13.0         # Enables EfficientDet model support
+tensorflow>=2.13.0          # EfficientDet model support (new!)
 PyYAML>=6.0

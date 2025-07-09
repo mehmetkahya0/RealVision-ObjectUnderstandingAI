@@ -38,10 +38,18 @@ except ImportError:
     PERFORMANCE_ANALYZER_AVAILABLE = False
     print("Warning: Performance analyzer not available. Install pandas, matplotlib, seaborn for advanced analytics.")
 
+# Import TensorFlow for EfficientDet
+try:
+    import tensorflow as tf
+    TENSORFLOW_AVAILABLE = True
+except ImportError:
+    TENSORFLOW_AVAILABLE = False
+
 # Global variables to track model availability
 YOLO_AVAILABLE = False
 MEDIAPIPE_AVAILABLE = False
 ONNX_AVAILABLE = False
+TENSORFLOW_AVAILABLE = False
 
 try:
     from ultralytics import YOLO
@@ -185,8 +193,9 @@ class ObjectUnderstandingApp:
         self.mediapipe_objectron = None
         self.mediapipe_hands = None
         self.onnx_session = None
+        self.efficientdet_model = None
         self.preferred_model = preferred_model
-        self.current_model = "auto"  # "yolo", "dnn", "mediapipe", "onnx", "auto"
+        self.current_model = "auto"  # "yolo", "dnn", "mediapipe", "onnx", "efficientdet", "auto"
         self.available_models = []
         
         # Detection settings
@@ -228,7 +237,7 @@ class ObjectUnderstandingApp:
         
     def initialize_models(self):
         """Initialize all available object detection models"""
-        global YOLO_AVAILABLE, MEDIAPIPE_AVAILABLE, ONNX_AVAILABLE
+        global YOLO_AVAILABLE, MEDIAPIPE_AVAILABLE, ONNX_AVAILABLE, TENSORFLOW_AVAILABLE
         print("Initializing object detection models...")
         
         # Initialize YOLO model
@@ -312,6 +321,25 @@ class ObjectUnderstandingApp:
                 print(f"✗ Failed to load ONNX model: {e}")
                 ONNX_AVAILABLE = False
         
+        # Initialize TensorFlow EfficientDet model
+        if TENSORFLOW_AVAILABLE:
+            try:
+                print("Loading EfficientDet model...")
+                self.download_efficientdet_model()
+                
+                # Try to load the model
+                model_path = "efficientdet_model"
+                if os.path.exists(os.path.join(model_path, "saved_model.pb")):
+                    self.efficientdet_model = tf.saved_model.load(model_path)
+                    self.available_models.append("efficientdet")
+                    print("✓ EfficientDet model loaded successfully")
+                else:
+                    print("✗ EfficientDet model files not found")
+                    
+            except Exception as e:
+                print(f"✗ Failed to load EfficientDet model: {e}")
+                TENSORFLOW_AVAILABLE = False
+        
         # Set model based on preference and availability
         if not self.available_models:
             raise RuntimeError("No object detection models available!")
@@ -321,7 +349,7 @@ class ObjectUnderstandingApp:
             self.current_model = self.preferred_model
         else:
             # Prioritize models by performance and accuracy
-            model_priority = ["yolo", "onnx", "dnn", "mediapipe"]
+            model_priority = ["yolo", "onnx", "dnn", "mediapipe", "efficientdet"]
             for model in model_priority:
                 if model in self.available_models:
                     self.current_model = model
@@ -373,6 +401,38 @@ class ObjectUnderstandingApp:
                 print(f"✓ Downloaded {onnx_model_info['filename']}")
             except Exception as e:
                 print(f"✗ Failed to download {onnx_model_info['filename']}: {e}")
+    
+    def download_efficientdet_model(self):
+        """Download EfficientDet model files if not present"""
+        import urllib.request
+        import zipfile
+        
+        model_dir = "efficientdet_model"
+        os.makedirs(model_dir, exist_ok=True)
+        
+        efficientdet_model_info = {
+            'url': 'https://tfhub.dev/tensorflow/efficientdet/d0/1?tf-hub-format=compressed',
+            'filename': f'{model_dir}/efficientdet_d0.tar.gz',
+            'extracted_dir': model_dir
+        }
+        
+        saved_model_path = os.path.join(model_dir, "saved_model.pb")
+        
+        if not os.path.exists(saved_model_path):
+            try:
+                print(f"Downloading EfficientDet model...")
+                urllib.request.urlretrieve(efficientdet_model_info['url'], efficientdet_model_info['filename'])
+                
+                # Extract the model
+                with zipfile.ZipFile(efficientdet_model_info['filename'], 'r') as zip_ref:
+                    zip_ref.extractall(efficientdet_model_info['extracted_dir'])
+                
+                # Clean up zip file
+                os.remove(efficientdet_model_info['filename'])
+                print(f"✓ Downloaded and extracted EfficientDet model")
+            except Exception as e:
+                print(f"✗ Failed to download EfficientDet model: {e}")
+                print("Note: You can manually download from TensorFlow Hub and place in efficientdet_model/")
     
     def detect_objects_yolo(self, frame: np.ndarray) -> List[Dict]:
         """Detect objects using YOLO model"""
@@ -660,6 +720,65 @@ class ObjectUnderstandingApp:
             print(f"Error in ONNX detection: {e}")
             return []
     
+    def detect_objects_efficientdet(self, frame: np.ndarray) -> List[Dict]:
+        """Detect objects using TensorFlow EfficientDet model"""
+        if not TENSORFLOW_AVAILABLE or self.efficientdet_model is None:
+            return []
+        
+        try:
+            # COCO class names for EfficientDet
+            class_names = [
+                'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
+                'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
+                'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
+                'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard',
+                'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
+                'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
+                'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard',
+                'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase',
+                'scissors', 'teddy bear', 'hair drier', 'toothbrush'
+            ]
+            
+            # Preprocess image
+            h, w = frame.shape[:2]
+            input_tensor = tf.convert_to_tensor(frame)
+            input_tensor = tf.expand_dims(input_tensor, 0)  # Add batch dimension
+            input_tensor = tf.cast(input_tensor, tf.uint8)
+            
+            # Run inference
+            detections = self.efficientdet_model(input_tensor)
+            
+            # Process results
+            detection_results = []
+            
+            # Extract detection results
+            boxes = detections['detection_boxes'][0].numpy()
+            classes = detections['detection_classes'][0].numpy().astype(int)
+            scores = detections['detection_scores'][0].numpy()
+            
+            for i in range(len(boxes)):
+                if scores[i] > self.confidence_threshold:
+                    # Convert normalized coordinates to pixel coordinates
+                    y1, x1, y2, x2 = boxes[i]
+                    x1, y1, x2, y2 = int(x1 * w), int(y1 * h), int(x2 * w), int(y2 * h)
+                    
+                    # Get class info
+                    class_id = classes[i] - 1  # COCO classes are 1-indexed
+                    class_name = class_names[class_id] if 0 <= class_id < len(class_names) else 'unknown'
+                    
+                    detection_results.append({
+                        'bbox': [x1, y1, x2, y2],
+                        'confidence': float(scores[i]),
+                        'class_name': class_name,
+                        'class_id': class_id
+                    })
+            
+            return detection_results
+            
+        except Exception as e:
+            print(f"Error in EfficientDet detection: {e}")
+            return []
+    
     def detect_objects(self, frame: np.ndarray) -> List[Dict]:
         """Detect objects using the current model"""
         if self.current_model == "yolo":
@@ -670,6 +789,8 @@ class ObjectUnderstandingApp:
             return self.detect_objects_mediapipe(frame)
         elif self.current_model == "onnx":
             return self.detect_objects_onnx(frame)
+        elif self.current_model == "efficientdet":
+            return self.detect_objects_efficientdet(frame)
         else:
             return []
     

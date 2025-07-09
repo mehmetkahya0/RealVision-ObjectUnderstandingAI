@@ -1,6 +1,6 @@
 # 🤖 RealVision-ObjectUnderstandingAI
 
-A powerful, real-time object detection and understanding application using Python, OpenCV, and state-of-the-art AI models. Features dual model support (YOLO v8 + MobileNet-SSD), object tracking, performance monitoring, and modern GUI interface.
+A powerful, real-time object detection and understanding application using Python, OpenCV, and state-of-the-art AI models. Features multiple model support (YOLOv8, MobileNet-SSD, EfficientDet), object tracking, performance monitoring, and modern GUI interface.
 
 
 
@@ -35,6 +35,8 @@ Watch the application in action detecting objects in real-time:
 ### Detection Models
 - **YOLOv8**: State-of-the-art accuracy and speed
 - **MobileNet-SSD**: Lightweight and efficient for lower-end devices
+- **EfficientDet**: Google's efficient and accurate detection model
+- **ONNX**: Cross-platform model compatibility
 - **Automatic model switching** during runtime
 - **GPU acceleration** support when available
 
@@ -223,6 +225,7 @@ python run.py --input media/sample.mov
 # Process video with specific model
 python run.py --input media/traffic.mp4 --model yolo
 python run.py --input media/traffic.mp4 --model onnx
+python run.py --input media/traffic.mp4 --model efficientdet
 
 # Save processed video output
 python run.py --input media/traffic.mp4 --output processed_video.mp4
@@ -236,6 +239,7 @@ python run.py --input-dir ./videos/ --output-dir ./processed/
 # Use specific model
 python run.py --model yolo
 python run.py --model dnn
+python run.py --model efficientdet
 
 # Custom output directory
 python run.py --output-dir my_screenshots
@@ -263,7 +267,7 @@ app.run(camera_index=0)
 | **Q** or **ESC** | Quit application |
 | **SPACE** | Pause/Resume detection |
 | **S** | Take screenshot |
-| **M** | Switch between models (YOLO ↔ MobileNet ↔ ONNX) |
+| **M** | Switch between models (YOLO ↔ MobileNet ↔ ONNX ↔ EfficientDet) |
 | **C** | Toggle confidence display |
 | **T** | Toggle tracking IDs |
 | **P** | Toggle performance statistics |
@@ -329,7 +333,9 @@ The application can detect 80+ object classes including:
 
 ### Detection Accuracy
 - **High accuracy** with YOLOv8 model (mAP 50-95: ~37%)
+- **Excellent accuracy** with EfficientDet model (mAP 50-95: ~39%)
 - **Fast inference** with MobileNet-SSD (suitable for real-time)
+- **Cross-platform** with ONNX models
 - **Adjustable confidence** thresholds (0.05 - 0.95)
 - **Non-Maximum Suppression** to eliminate duplicate detections
 
@@ -519,6 +525,7 @@ RealVision-ObjectUnderstandingAI/
 ├── 📁 models/                        # AI model files
 │   ├── yolov8n.pt                    # YOLOv8 model weights
 │   ├── yolov5s.onnx                  # ONNX model weights
+│   ├── efficientdet_model/           # EfficientDet model directory
 │   ├── MobileNetSSD_deploy.prototxt  # MobileNet architecture
 │   └── MobileNetSSD_deploy.caffemodel # MobileNet weights
 ├── 📁 visualization/                 # Performance data visualization tools
@@ -582,14 +589,16 @@ RealVision-ObjectUnderstandingAI/
 ### Dependencies
 - **OpenCV**: Computer vision and image processing
 - **PyTorch**: Deep learning framework
+- **TensorFlow**: For EfficientDet model support
 - **Ultralytics**: YOLOv8 implementation
 - **NumPy**: Numerical computations
 - **Pillow**: Image processing utilities
 
 ### Model Details
 - **YOLOv8n**: Nano version for speed (6.2M parameters)
+- **EfficientDet-D0**: Efficient model with excellent accuracy (6.5M parameters)
 - **MobileNet-SSD**: Efficient architecture (5.8M parameters)
-- **Input size**: 640x640 (YOLO), 300x300 (MobileNet)
+- **Input size**: 640x640 (YOLO), 512x512 (EfficientDet), 300x300 (MobileNet)
 - **Output**: Bounding boxes, confidence scores, class predictions
 
 ## 📊 Data Science & Performance Analysis

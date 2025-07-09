@@ -112,7 +112,7 @@ Examples:
     
     parser.add_argument(
         '--model', '-m',
-        choices=['yolo', 'dnn', 'mediapipe', 'onnx', 'auto'],
+        choices=['yolo', 'dnn', 'mediapipe', 'onnx', 'efficientdet', 'auto'],
         default='auto',
         help='Object detection model to use (default: auto)'
     )

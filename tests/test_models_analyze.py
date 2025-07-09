@@ -17,7 +17,7 @@ def test_models_analyze_folder():
     
     # Add sample data
     for i in range(20):
-        model = ['yolo', 'dnn', 'onnx'][i % 3]
+        model = ['yolo', 'dnn', 'onnx', 'efficientdet'][i % 4]
         
         detections = [
             {'class_name': 'car', 'confidence': 0.85, 'bbox': [100, 100, 200, 200]},

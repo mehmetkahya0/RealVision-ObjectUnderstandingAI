@@ -21,7 +21,7 @@ def create_sample_performance_data():
     start_time = datetime.now() - timedelta(minutes=5)
     sample_data = []
     
-    models = ['yolo', 'dnn']
+    models = ['yolo', 'dnn', 'efficientdet']
     classes = ['car', 'person', 'truck', 'bicycle', 'motorcycle']
     
     for i in range(100):
