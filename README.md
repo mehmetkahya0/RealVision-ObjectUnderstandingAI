@@ -17,6 +17,7 @@ RealVision Object Understanding AI is a comprehensive computer vision platform t
 ### 🎬 Demo Video
 
 ![RealVision Demo](media/demo.mov)
+<video src="media/demo.mov" width="320" height="240" controls></video>
 
 
 *Watch our demo video showcasing real-time object detection, tracking, and analytics features.*
